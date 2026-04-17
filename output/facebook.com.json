@@ -1,0 +1,31 @@
+{
+  "crawl_metadata": {
+    "target_url": "https://facebook.com",
+    "site_domain": "facebook.com",
+    "crawled_at": "2026-04-17T18:37:23.342285+00:00",
+    "max_depth": 1,
+    "pages_crawled": 1,
+    "pages_blocked_by_robots": 1
+  },
+  "summary": {
+    "total_resources": 0,
+    "first_party_count": 0,
+    "third_party_count": 0,
+    "third_party_script_count": 0,
+    "unique_third_party_domains": 0,
+    "third_party_domains": [],
+    "by_category": {},
+    "by_provider": {},
+    "risk_indicators": []
+  },
+  "resources": [],
+  "pages": [
+    {
+      "url": "https://facebook.com",
+      "depth": 0,
+      "status": "blocked_by_robots",
+      "resources": [],
+      "internal_links_found": []
+    }
+  ]
+}

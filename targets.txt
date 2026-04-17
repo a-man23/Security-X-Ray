@@ -1,0 +1,8 @@
+# Targets list
+# One URL per line. Blank lines and lines starting with # are ignored.
+# Can use bare domains (https:// will be added automatically).
+ 
+https://bbc.com
+https://facebook.com
+nytimes.com
+nypost.com
