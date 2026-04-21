@@ -1,7 +1,12 @@
 {
-    "guim.co.uk": "theguardian.com",
-    "guardianapps.co.uk": "theguardian.com",
-    "nyt.com": "nytimes.com",
-    "bbc.co.uk":  "bbc.com",
-    "bbci.co.uk": "bbc.com"
+  "guim.co.uk": "theguardian.com",
+  "guardianapps.co.uk": "theguardian.com",
+  "ophan.co.uk": "theguardian.com",
+  "nyt.com": "nytimes.com",
+  "bbc.co.uk": "bbc.com",
+  "bbci.co.uk": "bbc.com",
+  "turner.com": "cnn.com",
+  "cnn.io": "cnn.com",
+  "pagesix.com": "nypost.com",
+  "decider.com": "nypost.com"
 }
