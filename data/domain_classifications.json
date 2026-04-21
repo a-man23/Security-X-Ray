@@ -1,0 +1,558 @@
+{
+  "addthis.com": {
+    "category": "social",
+    "provider": "AddThis"
+  },
+  "adnxs.com": {
+    "category": "advertising",
+    "provider": "AppNexus/Xandr"
+  },
+  "ads-twitter.com": {
+    "category": "advertising",
+    "provider": "Twitter Ads"
+  },
+  "ads.linkedin.com": {
+    "category": "advertising",
+    "provider": "LinkedIn Ads"
+  },
+  "adsrvr.org": {
+    "category": "advertising",
+    "provider": "The Trade Desk"
+  },
+  "ajax.aspnetcdn.com": {
+    "category": "cdn",
+    "provider": "Microsoft Ajax CDN"
+  },
+  "ajax.googleapis.com": {
+    "category": "cdn",
+    "provider": "Google Hosted Libraries"
+  },
+  "akamai.net": {
+    "category": "cdn",
+    "provider": "Akamai"
+  },
+  "akamaihd.net": {
+    "category": "cdn",
+    "provider": "Akamai"
+  },
+  "akismet.com": {
+    "category": "security",
+    "provider": "Akismet"
+  },
+  "amazon-adsystem.com": {
+    "category": "advertising",
+    "provider": "Amazon Ads"
+  },
+  "amazonaws.com": {
+    "category": "cdn",
+    "provider": "Amazon S3/CloudFront"
+  },
+  "amplitude.com": {
+    "category": "analytics",
+    "provider": "Amplitude"
+  },
+  "analytics.google.com": {
+    "category": "analytics",
+    "provider": "Google Analytics"
+  },
+  "azureedge.net": {
+    "category": "cdn",
+    "provider": "Azure CDN"
+  },
+  "bidswitch.net": {
+    "category": "advertising",
+    "provider": "Bidswitch"
+  },
+  "bootstrapcdn.com": {
+    "category": "cdn",
+    "provider": "BootstrapCDN"
+  },
+  "bounceexchange.com": {
+    "category": "advertising",
+    "provider": "BounceX/Wunderkind"
+  },
+  "braintreegateway.com": {
+    "category": "payments",
+    "provider": "Braintree"
+  },
+  "browser.sentry-cdn.com": {
+    "category": "security",
+    "provider": "Sentry CDN"
+  },
+  "bugsnag.com": {
+    "category": "security",
+    "provider": "Bugsnag"
+  },
+  "casalemedia.com": {
+    "category": "advertising",
+    "provider": "Index Exchange"
+  },
+  "cdn.optimizely.com": {
+    "category": "ab_testing",
+    "provider": "Optimizely"
+  },
+  "cdnjs.cloudflare.com": {
+    "category": "cdn",
+    "provider": "Cloudflare CDNJS"
+  },
+  "clarity.ms": {
+    "category": "analytics",
+    "provider": "Microsoft Clarity"
+  },
+  "cloudflare.com": {
+    "category": "cdn",
+    "provider": "Cloudflare"
+  },
+  "cloudfront.net": {
+    "category": "cdn",
+    "provider": "Amazon CloudFront"
+  },
+  "code.jquery.com": {
+    "category": "cdn",
+    "provider": "jQuery CDN"
+  },
+  "connect.facebook.net": {
+    "category": "advertising",
+    "provider": "Meta Pixel"
+  },
+  "cookiebot.com": {
+    "category": "consent",
+    "provider": "Cookiebot"
+  },
+  "cookielaw.org": {
+    "category": "consent",
+    "provider": "OneTrust Cookie Law"
+  },
+  "crisp.chat": {
+    "category": "support",
+    "provider": "Crisp Chat"
+  },
+  "criteo.com": {
+    "category": "advertising",
+    "provider": "Criteo"
+  },
+  "criteo.net": {
+    "category": "advertising",
+    "provider": "Criteo"
+  },
+  "datadoghq.com": {
+    "category": "analytics",
+    "provider": "Datadog"
+  },
+  "demdex.net": {
+    "category": "advertising",
+    "provider": "Adobe Audience Manager"
+  },
+  "disqus.com": {
+    "category": "social",
+    "provider": "Disqus"
+  },
+  "disquscdn.com": {
+    "category": "social",
+    "provider": "Disqus CDN"
+  },
+  "doubleclick.net": {
+    "category": "advertising",
+    "provider": "Google DoubleClick"
+  },
+  "drift.com": {
+    "category": "support",
+    "provider": "Drift"
+  },
+  "driftt.com": {
+    "category": "support",
+    "provider": "Drift"
+  },
+  "ensighten.com": {
+    "category": "tag_manager",
+    "provider": "Ensighten"
+  },
+  "everesttech.net": {
+    "category": "advertising",
+    "provider": "Adobe Advertising"
+  },
+  "facebook.com": {
+    "category": "advertising",
+    "provider": "Meta"
+  },
+  "facebook.net": {
+    "category": "advertising",
+    "provider": "Meta Pixel"
+  },
+  "fastly.net": {
+    "category": "cdn",
+    "provider": "Fastly"
+  },
+  "fonts.googleapis.com": {
+    "category": "fonts",
+    "provider": "Google Fonts"
+  },
+  "fonts.gstatic.com": {
+    "category": "fonts",
+    "provider": "Google Fonts"
+  },
+  "freshdesk.com": {
+    "category": "support",
+    "provider": "Freshdesk"
+  },
+  "fullstory.com": {
+    "category": "analytics",
+    "provider": "FullStory"
+  },
+  "google-analytics.com": {
+    "category": "analytics",
+    "provider": "Google Analytics"
+  },
+  "googleadservices.com": {
+    "category": "advertising",
+    "provider": "Google Ads"
+  },
+  "googleapis.com": {
+    "category": "fonts",
+    "provider": "Google Fonts API"
+  },
+  "googlesyndication.com": {
+    "category": "advertising",
+    "provider": "Google AdSense"
+  },
+  "googletagmanager.com": {
+    "category": "analytics",
+    "provider": "Google Tag Manager"
+  },
+  "googletagservices.com": {
+    "category": "analytics",
+    "provider": "Google Tag Services"
+  },
+  "googleusercontent.com": {
+    "category": "cdn",
+    "provider": "Google User Content"
+  },
+  "gstatic.com": {
+    "category": "cdn",
+    "provider": "Google Static CDN"
+  },
+  "hcaptcha.com": {
+    "category": "security",
+    "provider": "hCaptcha"
+  },
+  "heap.io": {
+    "category": "analytics",
+    "provider": "Heap"
+  },
+  "hotjar.com": {
+    "category": "analytics",
+    "provider": "Hotjar"
+  },
+  "hs-analytics.net": {
+    "category": "support",
+    "provider": "HubSpot Analytics"
+  },
+  "hs-scripts.com": {
+    "category": "support",
+    "provider": "HubSpot"
+  },
+  "hsforms.com": {
+    "category": "support",
+    "provider": "HubSpot Forms"
+  },
+  "hubspot.com": {
+    "category": "support",
+    "provider": "HubSpot"
+  },
+  "indexww.com": {
+    "category": "advertising",
+    "provider": "Index Exchange"
+  },
+  "instagram.com": {
+    "category": "social",
+    "provider": "Instagram"
+  },
+  "intercom.com": {
+    "category": "support",
+    "provider": "Intercom"
+  },
+  "intercom.io": {
+    "category": "support",
+    "provider": "Intercom"
+  },
+  "intercomcdn.com": {
+    "category": "support",
+    "provider": "Intercom CDN"
+  },
+  "jquery.com": {
+    "category": "cdn",
+    "provider": "jQuery CDN"
+  },
+  "js.stripe.com": {
+    "category": "payments",
+    "provider": "Stripe JS"
+  },
+  "jsdelivr.net": {
+    "category": "cdn",
+    "provider": "jsDelivr"
+  },
+  "kameleoon.com": {
+    "category": "ab_testing",
+    "provider": "Kameleoon"
+  },
+  "kit.fontawesome.com": {
+    "category": "fonts",
+    "provider": "Font Awesome Kit"
+  },
+  "launchdarkly.com": {
+    "category": "ab_testing",
+    "provider": "LaunchDarkly"
+  },
+  "linkedin.com": {
+    "category": "social",
+    "provider": "LinkedIn"
+  },
+  "livechatinc.com": {
+    "category": "support",
+    "provider": "LiveChat"
+  },
+  "logrocket.com": {
+    "category": "analytics",
+    "provider": "LogRocket"
+  },
+  "maxcdn.bootstrapcdn.com": {
+    "category": "cdn",
+    "provider": "BootstrapCDN"
+  },
+  "mixpanel.com": {
+    "category": "analytics",
+    "provider": "Mixpanel"
+  },
+  "moatads.com": {
+    "category": "advertising",
+    "provider": "Oracle Moat"
+  },
+  "mouseflow.com": {
+    "category": "analytics",
+    "provider": "Mouseflow"
+  },
+  "mxpnl.com": {
+    "category": "analytics",
+    "provider": "Mixpanel"
+  },
+  "newrelic.com": {
+    "category": "analytics",
+    "provider": "New Relic"
+  },
+  "nr-data.net": {
+    "category": "analytics",
+    "provider": "New Relic"
+  },
+  "onetrust.com": {
+    "category": "consent",
+    "provider": "OneTrust"
+  },
+  "openx.net": {
+    "category": "advertising",
+    "provider": "OpenX"
+  },
+  "optimizely.com": {
+    "category": "ab_testing",
+    "provider": "Optimizely"
+  },
+  "outbrain.com": {
+    "category": "advertising",
+    "provider": "Outbrain"
+  },
+  "paypal.com": {
+    "category": "payments",
+    "provider": "PayPal"
+  },
+  "paypalobjects.com": {
+    "category": "payments",
+    "provider": "PayPal Objects"
+  },
+  "pinterest.com": {
+    "category": "social",
+    "provider": "Pinterest"
+  },
+  "platform.twitter.com": {
+    "category": "social",
+    "provider": "Twitter Widget"
+  },
+  "pubmatic.com": {
+    "category": "advertising",
+    "provider": "PubMatic"
+  },
+  "quantserve.com": {
+    "category": "analytics",
+    "provider": "Quantcast"
+  },
+  "qubit.com": {
+    "category": "tag_manager",
+    "provider": "Qubit"
+  },
+  "recaptcha.net": {
+    "category": "security",
+    "provider": "Google reCAPTCHA"
+  },
+  "reddit.com": {
+    "category": "social",
+    "provider": "Reddit"
+  },
+  "rubiconproject.com": {
+    "category": "advertising",
+    "provider": "Magnite/Rubicon"
+  },
+  "scorecardresearch.com": {
+    "category": "analytics",
+    "provider": "Comscore"
+  },
+  "segment.com": {
+    "category": "analytics",
+    "provider": "Segment"
+  },
+  "segment.io": {
+    "category": "analytics",
+    "provider": "Segment"
+  },
+  "sentry.io": {
+    "category": "security",
+    "provider": "Sentry"
+  },
+  "sharethis.com": {
+    "category": "social",
+    "provider": "ShareThis"
+  },
+  "smartadserver.com": {
+    "category": "advertising",
+    "provider": "Smart AdServer"
+  },
+  "snap.licdn.com": {
+    "category": "advertising",
+    "provider": "LinkedIn Ads"
+  },
+  "snapchat.com": {
+    "category": "advertising",
+    "provider": "Snapchat Ads"
+  },
+  "speedcurve.com": {
+    "category": "analytics",
+    "provider": "SpeedCurve"
+  },
+  "split.io": {
+    "category": "ab_testing",
+    "provider": "Split.io"
+  },
+  "spot.im": {
+    "category": "social",
+    "provider": "OpenWeb (Spot.IM)"
+  },
+  "square.com": {
+    "category": "payments",
+    "provider": "Square"
+  },
+  "stackpath.bootstrapcdn.com": {
+    "category": "cdn",
+    "provider": "StackPath CDN"
+  },
+  "static.ads-twitter.com": {
+    "category": "advertising",
+    "provider": "Twitter Ads"
+  },
+  "stripe.com": {
+    "category": "payments",
+    "provider": "Stripe"
+  },
+  "taboola.com": {
+    "category": "advertising",
+    "provider": "Taboola"
+  },
+  "tagcommander.com": {
+    "category": "tag_manager",
+    "provider": "TagCommander"
+  },
+  "tawk.to": {
+    "category": "support",
+    "provider": "Tawk.to"
+  },
+  "tealiumiq.com": {
+    "category": "tag_manager",
+    "provider": "Tealium IQ"
+  },
+  "tiktok.com": {
+    "category": "social",
+    "provider": "TikTok"
+  },
+  "tinypass.com": {
+    "category": "support",
+    "provider": "Piano (Tinypass)"
+  },
+  "tiqcdn.com": {
+    "category": "advertising",
+    "provider": "Tealium"
+  },
+  "trustarc.com": {
+    "category": "consent",
+    "provider": "TrustArc"
+  },
+  "twitter.com": {
+    "category": "social",
+    "provider": "Twitter/X"
+  },
+  "typekit.net": {
+    "category": "fonts",
+    "provider": "Adobe Fonts (Typekit)"
+  },
+  "unpkg.com": {
+    "category": "cdn",
+    "provider": "unpkg"
+  },
+  "use.fontawesome.com": {
+    "category": "fonts",
+    "provider": "Font Awesome"
+  },
+  "use.typekit.net": {
+    "category": "fonts",
+    "provider": "Adobe Fonts (Typekit)"
+  },
+  "visualwebsiteoptimizer.com": {
+    "category": "ab_testing",
+    "provider": "VWO"
+  },
+  "vwo.com": {
+    "category": "ab_testing",
+    "provider": "VWO"
+  },
+  "windows.net": {
+    "category": "cdn",
+    "provider": "Azure Blob/CDN"
+  },
+  "wp.com": {
+    "category": "analytics",
+    "provider": "WordPress Stats"
+  },
+  "x.com": {
+    "category": "social",
+    "provider": "Twitter/X"
+  },
+  "yahoo.com": {
+    "category": "advertising",
+    "provider": "Yahoo Ads"
+  },
+  "yimg.com": {
+    "category": "advertising",
+    "provider": "Yahoo"
+  },
+  "youtube.com": {
+    "category": "social",
+    "provider": "YouTube"
+  },
+  "ytimg.com": {
+    "category": "social",
+    "provider": "YouTube"
+  },
+  "zdassets.com": {
+    "category": "support",
+    "provider": "Zendesk Assets"
+  },
+  "zendesk.com": {
+    "category": "support",
+    "provider": "Zendesk"
+  }
+}

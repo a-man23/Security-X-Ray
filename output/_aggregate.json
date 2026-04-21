@@ -1,59 +1,99 @@
 {
   "report_type": "aggregate",
-  "generated_at": "2026-04-21T21:04:56.813615+00:00",
-  "sites_crawled": 1,
+  "generated_at": "2026-04-21T21:17:24.615284+00:00",
+  "sites_crawled": 4,
   "run_config": {
     "depth": 1,
-    "max_pages": 20,
-    "max_internal_links": 30,
+    "max_pages": 10,
+    "max_internal_links": 20,
     "rate_limit_seconds": 1.2,
     "timeout_seconds": 15,
     "targets": [
+      "https://bbc.com",
+      "https://facebook.com",
+      "https://nytimes.com",
       "https://nypost.com"
     ]
   },
   "totals": {
-    "total_resources": 813,
-    "total_third_party": 32,
-    "total_third_party_scripts": 7,
-    "unique_third_party_domains_across_all_sites": 19
+    "total_resources": 1240,
+    "total_third_party": 42,
+    "total_third_party_scripts": 12,
+    "unique_third_party_domains_across_all_sites": 23
   },
   "by_category": {
-    "unknown": 11,
-    "advertising": 9,
-    "analytics": 6,
-    "security": 2,
+    "unknown": 16,
+    "analytics": 9,
+    "cdn": 6,
+    "advertising": 6,
+    "consent": 2,
     "social": 2,
-    "cdn": 2
+    "ab_testing": 1
   },
   "by_provider": {
-    "Google": 3,
+    "Google Tag Manager": 5,
+    "Amazon CloudFront": 3,
     "Google DoubleClick": 3,
     "OneTrust Cookie Law": 2,
-    "Google Tag Manager": 2,
     "WordPress Stats": 2,
     "Google AdSense": 2,
     "Google Static CDN": 2,
+    "Optimizely": 1,
     "SpeedCurve": 1,
     "OpenWeb (Spot.IM)": 1,
     "BounceX/Wunderkind": 1,
     "Google Tag Services": 1,
     "YouTube": 1
   },
-  "domains_appearing_on_multiple_sites": [],
+  "domains_appearing_on_multiple_sites": [
+    {
+      "domain": "googletagmanager.com",
+      "site_count": 2
+    }
+  ],
   "per_site": [
+    {
+      "site_domain": "bbc.com",
+      "target_url": "https://bbc.com",
+      "third_party_count": 2,
+      "third_party_script_count": 2,
+      "unique_third_party_domains": 2,
+      "by_category": {
+        "ab_testing": 1,
+        "unknown": 1
+      }
+    },
+    {
+      "site_domain": "facebook.com",
+      "target_url": "https://facebook.com",
+      "third_party_count": 0,
+      "third_party_script_count": 0,
+      "unique_third_party_domains": 0,
+      "by_category": {}
+    },
+    {
+      "site_domain": "nytimes.com",
+      "target_url": "https://nytimes.com",
+      "third_party_count": 7,
+      "third_party_script_count": 3,
+      "unique_third_party_domains": 3,
+      "by_category": {
+        "analytics": 3,
+        "cdn": 4
+      }
+    },
     {
       "site_domain": "nypost.com",
       "target_url": "https://nypost.com",
-      "third_party_count": 32,
+      "third_party_count": 33,
       "third_party_script_count": 7,
       "unique_third_party_domains": 19,
       "by_category": {
-        "security": 2,
+        "consent": 2,
         "analytics": 6,
         "social": 2,
-        "advertising": 9,
-        "unknown": 11,
+        "advertising": 6,
+        "unknown": 15,
         "cdn": 2
       }
     }

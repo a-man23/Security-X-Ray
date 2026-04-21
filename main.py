@@ -21,10 +21,9 @@ from __future__ import annotations
 import argparse
 import json
 import logging
-import os
 import re
 import sys
-import time
+from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
  
@@ -80,6 +79,56 @@ def write_json(data: dict | list, path: Path):
     logger.info("Wrote %s  (%d bytes)", path, path.stat().st_size)
  
  
+def update_unknown_candidates(results: list[dict], path: Path):
+    """
+    Merge unknown third-party domains into a persistent review file.
+    This does not auto-edit classifiers; it builds a safe queue for manual approval.
+    """
+    existing: dict = {}
+    if path.exists():
+        try:
+            existing = json.loads(path.read_text(encoding="utf-8"))
+        except Exception:
+            existing = {}
+
+    domains = existing.get("domains", {})
+    for result in results:
+        site = result.get("crawl_metadata", {}).get("site_domain", "unknown-site")
+        for res in result.get("resources", []):
+            if res.get("party") != "third-party" or res.get("category") != "unknown":
+                continue
+            domain = res.get("registrable_domain")
+            if not domain:
+                continue
+            row = domains.setdefault(
+                domain,
+                {
+                    "proposed_category": None,
+                    "proposed_provider": None,
+                    "seen_count": 0,
+                    "sites": [],
+                    "example_urls": [],
+                    "status": "needs_review",
+                },
+            )
+            row["seen_count"] += 1
+            if site not in row["sites"]:
+                row["sites"].append(site)
+            url = res.get("url")
+            if url and url not in row["example_urls"] and len(row["example_urls"]) < 5:
+                row["example_urls"].append(url)
+
+    report = {
+        "format_version": 1,
+        "last_updated": datetime.now(timezone.utc).isoformat(),
+        "notes": "Review and promote high-confidence entries into data/domain_classifications.json",
+        "domains": dict(sorted(domains.items(), key=lambda item: (-item[1].get("seen_count", 0), item[0]))),
+    }
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    logger.info("Updated unknown domain candidates: %s", path)
+
+
 def print_summary(result: dict):
     meta = result.get("crawl_metadata", {})
     summ = result.get("summary", {})
@@ -354,6 +403,13 @@ def main():
         agg = build_aggregate(all_results, run_config=run_config)
         write_json(agg, output_dir / "_aggregate.json")
         logger.info("Aggregate report written to %s/_aggregate.json", output_dir)
+
+    # Always refresh unknown-domain review queue after crawling.
+    if all_results:
+        update_unknown_candidates(
+            all_results,
+            Path("data") / "classification_candidates.json",
+        )
  
     # Final status
     logger.info("Done. %d site(s) crawled successfully, %d failed.", len(all_results), len(failed))
