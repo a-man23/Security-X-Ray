@@ -6,6 +6,9 @@ Example Inputs:
   # Multiple sites from a file, depth 2, custom output dir
   python main.py --targets targets.txt --depth 2 --output ./results
  
+  # Limit crawl breadth by capping internal links followed per page
+  python main.py --targets targets.txt --depth 2 --max-internal-links 25
+ 
   # Multiple URLs inline
   python main.py --url https://bbc.com --url https://nytimes.com --depth 1
  
@@ -109,13 +112,18 @@ def print_summary(result: dict):
         for flag in summ["risk_indicators"]:
             level = flag["level"].upper()
             print(f"    [{level}] {flag['code']}: {flag['description']}")
+            examples = flag.get("examples", [])
+            if examples:
+                print("      Examples:")
+                for ex in examples:
+                    print(f"        - {ex}")
     print("=" * 60)
     print()
  
  
 # Multiple sites
  
-def build_aggregate(results: list[dict]) -> dict:
+def build_aggregate(results: list[dict], run_config: dict | None = None) -> dict:
     """Merge multiple site results into one aggregate report."""
     from collections import defaultdict
     from datetime import datetime, timezone
@@ -162,6 +170,7 @@ def build_aggregate(results: list[dict]) -> dict:
         "report_type": "aggregate",
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "sites_crawled": len(results),
+        "run_config": run_config or {},
         "totals": {
             "total_resources": total_resources,
             "total_third_party": total_third_party,
@@ -221,6 +230,13 @@ def parse_args():
         help="Max pages to crawl per site. Default: 20.",
     )
     parser.add_argument(
+        "--max-internal-links",
+        type=int,
+        default=30,
+        metavar="N",
+        help="Max internal links followed from each crawled page. Default: 30.",
+    )
+    parser.add_argument(
         "--rate-limit",
         type=float,
         default=1.2,
@@ -258,6 +274,21 @@ def main():
  
     if args.verbose:
         logging.getLogger().setLevel(logging.DEBUG)
+    if args.depth < 0:
+        logger.error("--depth must be >= 0")
+        return 1
+    if args.max_pages < 1:
+        logger.error("--max-pages must be >= 1")
+        return 1
+    if args.max_internal_links < 1:
+        logger.error("--max-internal-links must be >= 1")
+        return 1
+    if args.timeout < 1:
+        logger.error("--timeout must be >= 1")
+        return 1
+    if args.rate_limit < 0:
+        logger.error("--rate-limit must be >= 0")
+        return 1
  
     # Build target list
     if args.targets:
@@ -285,6 +316,7 @@ def main():
         robots_cache=robots_cache,
         timeout=args.timeout,
         max_pages_per_site=args.max_pages,
+        max_internal_links_per_page=args.max_internal_links,
     )
  
     all_results: list[dict] = []
@@ -311,7 +343,15 @@ def main():
  
     # Aggregate report
     if args.aggregate and all_results:
-        agg = build_aggregate(all_results)
+        run_config = {
+            "depth": args.depth,
+            "max_pages": args.max_pages,
+            "max_internal_links": args.max_internal_links,
+            "rate_limit_seconds": args.rate_limit,
+            "timeout_seconds": args.timeout,
+            "targets": targets,
+        }
+        agg = build_aggregate(all_results, run_config=run_config)
         write_json(agg, output_dir / "_aggregate.json")
         logger.info("Aggregate report written to %s/_aggregate.json", output_dir)
  

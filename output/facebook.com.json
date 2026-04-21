@@ -2,8 +2,9 @@
   "crawl_metadata": {
     "target_url": "https://facebook.com",
     "site_domain": "facebook.com",
-    "crawled_at": "2026-04-17T18:37:23.342285+00:00",
+    "crawled_at": "2026-04-21T20:58:44.220603+00:00",
     "max_depth": 1,
+    "max_internal_links_per_page": 20,
     "pages_crawled": 1,
     "pages_blocked_by_robots": 1
   },

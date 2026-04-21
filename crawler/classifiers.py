@@ -27,6 +27,8 @@ KNOWN_DOMAINS: dict[str, dict] = {
     "clarity.ms":              {"category": "analytics",  "provider": "Microsoft Clarity"},
     "quantserve.com":          {"category": "analytics",  "provider": "Quantcast"},
     "mxpnl.com":               {"category": "analytics",  "provider": "Mixpanel"},
+    "speedcurve.com":          {"category": "analytics",  "provider": "SpeedCurve"},
+    "wp.com":                  {"category": "analytics",  "provider": "WordPress Stats"},
  
     # Advertising
     "doubleclick.net":         {"category": "advertising", "provider": "Google DoubleClick"},
@@ -61,6 +63,7 @@ KNOWN_DOMAINS: dict[str, dict] = {
     "snap.licdn.com":          {"category": "advertising", "provider": "LinkedIn Ads"},
     "ads.linkedin.com":        {"category": "advertising", "provider": "LinkedIn Ads"},
     "snapchat.com":            {"category": "advertising", "provider": "Snapchat Ads"},
+    "bounceexchange.com":      {"category": "advertising", "provider": "BounceX/Wunderkind"},
  
     # CDN / Javascript
     "cloudflare.com":          {"category": "cdn",         "provider": "Cloudflare"},
@@ -99,6 +102,7 @@ KNOWN_DOMAINS: dict[str, dict] = {
     "disquscdn.com":           {"category": "social",      "provider": "Disqus CDN"},
     "addthis.com":             {"category": "social",      "provider": "AddThis"},
     "sharethis.com":           {"category": "social",      "provider": "ShareThis"},
+    "spot.im":                 {"category": "social",      "provider": "OpenWeb (Spot.IM)"},
  
     # Customer Support
     "intercom.io":             {"category": "support",     "provider": "Intercom"},
@@ -139,6 +143,7 @@ KNOWN_DOMAINS: dict[str, dict] = {
     "sentry.io":               {"category": "security",    "provider": "Sentry"},
     "browser.sentry-cdn.com":  {"category": "security",    "provider": "Sentry CDN"},
     "bugsnag.com":             {"category": "security",    "provider": "Bugsnag"},
+    "cookielaw.org":           {"category": "security",    "provider": "OneTrust Cookie Law"},
  
     # Payment
     "stripe.com":              {"category": "payments",    "provider": "Stripe"},

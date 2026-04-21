@@ -105,13 +105,33 @@ class RobotsCache:
         robots_url = f"{parsed.scheme}://{parsed.netloc}/robots.txt"
         rp = urllib.robotparser.RobotFileParser()
         rp.set_url(robots_url)
+        deny_all = urllib.robotparser.RobotFileParser()
+        deny_all.parse(["User-agent: *", "Disallow: /"])
         try:
-            resp = self._session.get(robots_url, timeout=self._timeout)
-            rp.parse(resp.text.splitlines())
-            logger.debug("Loaded robots.txt from %s", robots_url)
+            resp = self._session.get(robots_url, timeout=self._timeout, allow_redirects=True)
+            status = resp.status_code
+
+            # Follow Google guidance: treat most 4xx as "no robots restrictions".
+            if 200 <= status < 300:
+                rp.parse(resp.text.splitlines())
+                logger.debug("Loaded robots.txt from %s", robots_url)
+                return rp
+            if 300 <= status < 400:
+                # requests follows redirects, but keep a defensive fallback.
+                logger.warning("Unexpected robots redirect response for %s (%s)", robots_url, status)
+                return deny_all
+            if status == 429 or 500 <= status < 600:
+                # Service unavailable / rate limited: fail closed to avoid violating robots intent.
+                logger.warning("robots.txt unavailable for %s (%s), denying crawl", robots_url, status)
+                return deny_all
+            if 400 <= status < 500:
+                logger.debug("No robots.txt restrictions for %s (status %s)", robots_url, status)
+                return rp
+            logger.warning("Unhandled robots.txt status for %s (%s), denying crawl", robots_url, status)
+            return deny_all
         except Exception as e:
-            logger.debug("Could not fetch robots.txt for %s: %s", base_url, e)
-        return rp
+            logger.warning("Could not fetch robots.txt for %s: %s", base_url, e)
+            return deny_all
  
     def allowed(self, url: str) -> bool:
         parsed = urlparse(url)
@@ -197,11 +217,13 @@ class SiteCrawler:
         robots_cache: RobotsCache,
         timeout: int = DEFAULT_TIMEOUT,
         max_pages_per_site: int = 20,
+        max_internal_links_per_page: int = 30,
     ):
         self._rl = rate_limiter
         self._robots = robots_cache
         self._timeout = timeout
         self._max_pages = max_pages_per_site
+        self._max_internal_links_per_page = max_internal_links_per_page
  
     def crawl(self, start_url: str, max_depth: int) -> dict:
         """
@@ -213,12 +235,14 @@ class SiteCrawler:
         pages: list[dict] = []
         visited: set[str] = set()
         queue: list[tuple[str, int]] = [(start_url, 0)]  # (url, depth)
+        queued: set[str] = {start_url}
  
         # Aggregated across all pages
         resource_index: dict[str, dict] = {}  # resource_url → aggregated info
  
         while queue and len(visited) < self._max_pages:
             url, depth = queue.pop(0)
+            queued.discard(url)
             if url in visited:
                 continue
  
@@ -243,9 +267,11 @@ class SiteCrawler:
  
             # Queue internal links if we haven't hit max depth
             if depth < max_depth:
-                for link in page_result.get("internal_links_found", []):
-                    if link not in visited:
+                links = page_result.get("internal_links_found", [])
+                for link in links[: self._max_internal_links_per_page]:
+                    if link not in visited and link not in queued:
                         queue.append((link, depth + 1))
+                        queued.add(link)
  
             # Merge resources into index
             for res in page_result.get("resources", []):
@@ -270,6 +296,7 @@ class SiteCrawler:
                 "site_domain": site_domain,
                 "crawled_at": crawled_at,
                 "max_depth": max_depth,
+                "max_internal_links_per_page": self._max_internal_links_per_page,
                 "pages_crawled": len(visited),
                 "pages_blocked_by_robots": sum(
                     1 for p in pages if p.get("status") == "blocked_by_robots"
@@ -285,12 +312,15 @@ class SiteCrawler:
         try:
             session = requests.Session()
             session.headers["User-Agent"] = USER_AGENT
-            resp = session.get(
-                url,
-                timeout=self._timeout,
-                allow_redirects=True,
-                stream=True,
-            )
+            resp = self._get_with_checked_redirects(session, url)
+            if resp is None:
+                return {
+                    "url": url,
+                    "depth": depth,
+                    "status": "blocked_by_robots",
+                    "resources": [],
+                    "internal_links_found": [],
+                }
             # Guard against huge pages
             content = b""
             for chunk in resp.iter_content(chunk_size=65536):
@@ -344,6 +374,40 @@ class SiteCrawler:
         except Exception as e:
             logger.error("Unexpected error for %s: %s", url, e, exc_info=True)
             return {"url": url, "depth": depth, "status": "error", "error": str(e), "resources": [], "internal_links_found": []}
+
+    def _get_with_checked_redirects(self, session: requests.Session, url: str, max_redirects: int = 5) -> Optional[requests.Response]:
+        """
+        Fetch URL with manual redirect handling so every hop is checked against robots.txt.
+        Returns None when robots policy blocks any URL in the chain.
+        """
+        current_url = url
+        redirect_hops = 0
+
+        while True:
+            if not self._robots.allowed(current_url):
+                logger.info("Blocked by robots.txt: %s", current_url)
+                return None
+
+            host = urlparse(current_url).netloc
+            self._rl.wait(host)
+            resp = session.get(
+                current_url,
+                timeout=self._timeout,
+                allow_redirects=False,
+                stream=True,
+            )
+
+            if resp.is_redirect or resp.is_permanent_redirect:
+                location = resp.headers.get("location")
+                if not location:
+                    return resp
+                redirect_hops += 1
+                if redirect_hops > max_redirects:
+                    raise requests.exceptions.TooManyRedirects(f"Exceeded {max_redirects} redirects for {url}")
+                current_url = urljoin(current_url, location)
+                continue
+
+            return resp
  
     def _classify_resource(self, resource: dict, site_domain: str) -> dict:
         """party classification and category."""
