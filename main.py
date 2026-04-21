@@ -410,7 +410,7 @@ def main():
             all_results,
             Path("data") / "classification_candidates.json",
         )
- 
+
     # Final status
     logger.info("Done. %d site(s) crawled successfully, %d failed.", len(all_results), len(failed))
     if failed:

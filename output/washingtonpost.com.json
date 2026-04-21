@@ -1,12 +1,12 @@
 {
   "crawl_metadata": {
-    "target_url": "https://facebook.com",
-    "site_domain": "facebook.com",
-    "crawled_at": "2026-04-21T22:26:13.062027+00:00",
+    "target_url": "https://washingtonpost.com",
+    "site_domain": "washingtonpost.com",
+    "crawled_at": "2026-04-21T22:29:37.349781+00:00",
     "max_depth": 1,
     "max_internal_links_per_page": 20,
     "pages_crawled": 1,
-    "pages_blocked_by_robots": 1
+    "pages_blocked_by_robots": 0
   },
   "summary": {
     "total_resources": 0,
@@ -22,9 +22,9 @@
   "resources": [],
   "pages": [
     {
-      "url": "https://facebook.com",
+      "url": "https://washingtonpost.com",
       "depth": 0,
-      "status": "blocked_by_robots",
+      "status": "timeout",
       "resources": [],
       "internal_links_found": []
     }

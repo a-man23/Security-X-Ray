@@ -2,15 +2,15 @@
   "crawl_metadata": {
     "target_url": "https://nytimes.com",
     "site_domain": "nytimes.com",
-    "crawled_at": "2026-04-21T21:16:35.104092+00:00",
+    "crawled_at": "2026-04-21T22:26:13.592236+00:00",
     "max_depth": 1,
     "max_internal_links_per_page": 20,
     "pages_crawled": 10,
     "pages_blocked_by_robots": 0
   },
   "summary": {
-    "total_resources": 162,
-    "first_party_count": 155,
+    "total_resources": 138,
+    "first_party_count": 131,
     "third_party_count": 7,
     "third_party_script_count": 3,
     "unique_third_party_domains": 3,
@@ -44,8 +44,7 @@
         "https://www.nytimes.com/",
         "https://www.nytimes.com/international/",
         "https://www.nytimes.com/ca/",
-        "https://www.nytimes.com/section/todayspaper",
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
+        "https://www.nytimes.com/section/todayspaper"
       ]
     },
     {
@@ -117,6 +116,22 @@
       ]
     },
     {
+      "url": "https://static01.nyt.com/elections-assets/pages/assets/index-CL_xGvMO.js",
+      "tag": "script",
+      "attribute": "src",
+      "raw_src": "//static01.nyt.com/elections-assets/pages/assets/index-CL_xGvMO.js",
+      "registrable_domain": "nyt.com",
+      "party": "first-party",
+      "category": "first-party",
+      "provider": null,
+      "owned_cdn": "nyt.com",
+      "seen_on_pages": [
+        "https://nytimes.com",
+        "https://www.nytimes.com/",
+        "https://www.nytimes.com/ca/"
+      ]
+    },
+    {
       "url": "https://www.nytimes.com/vi-assets/static-assets/vendor-9916e8df8eecbd757328.js",
       "tag": "script",
       "attribute": "src",
@@ -130,8 +145,7 @@
         "https://www.nytimes.com/",
         "https://www.nytimes.com/international/",
         "https://www.nytimes.com/ca/",
-        "https://www.nytimes.com/section/todayspaper",
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
+        "https://www.nytimes.com/section/todayspaper"
       ]
     },
     {
@@ -161,8 +175,7 @@
       "provider": null,
       "seen_on_pages": [
         "https://nytimes.com",
-        "https://www.nytimes.com/",
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
+        "https://www.nytimes.com/"
       ]
     },
     {
@@ -176,8 +189,7 @@
       "provider": null,
       "seen_on_pages": [
         "https://nytimes.com",
-        "https://www.nytimes.com/",
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
+        "https://www.nytimes.com/"
       ]
     },
     {
@@ -194,8 +206,7 @@
         "https://www.nytimes.com/",
         "https://www.nytimes.com/international/",
         "https://www.nytimes.com/ca/",
-        "https://www.nytimes.com/section/todayspaper",
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
+        "https://www.nytimes.com/section/todayspaper"
       ]
     },
     {
@@ -212,8 +223,7 @@
         "https://www.nytimes.com/",
         "https://www.nytimes.com/international/",
         "https://www.nytimes.com/ca/",
-        "https://www.nytimes.com/section/todayspaper",
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
+        "https://www.nytimes.com/section/todayspaper"
       ]
     },
     {
@@ -230,8 +240,7 @@
         "https://www.nytimes.com/",
         "https://www.nytimes.com/international/",
         "https://www.nytimes.com/ca/",
-        "https://www.nytimes.com/section/todayspaper",
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
+        "https://www.nytimes.com/section/todayspaper"
       ]
     },
     {
@@ -248,8 +257,7 @@
         "https://www.nytimes.com/",
         "https://www.nytimes.com/international/",
         "https://www.nytimes.com/ca/",
-        "https://www.nytimes.com/section/todayspaper",
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
+        "https://www.nytimes.com/section/todayspaper"
       ]
     },
     {
@@ -274,22 +282,6 @@
       "tag": "img",
       "attribute": "src",
       "raw_src": "https://static01.nyt.com/images/2026/04/21/multimedia/21dc-fed-warsh-wkjz/21dc-fed-warsh-wkjz-verticalTwoByThree735.jpg?auto=webp&quality=30&disable=upscale&format=pjpg",
-      "registrable_domain": "nyt.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "owned_cdn": "nyt.com",
-      "seen_on_pages": [
-        "https://nytimes.com",
-        "https://www.nytimes.com/",
-        "https://www.nytimes.com/ca/"
-      ]
-    },
-    {
-      "url": "https://static01.nyt.com/images/2026/04/21/us/elections/Light/Light-mediumSquareAt3X.png?auto=webp&quality=30&disable=upscale&format=pjpg",
-      "tag": "img",
-      "attribute": "src",
-      "raw_src": "https://static01.nyt.com/images/2026/04/21/us/elections/Light/Light-mediumSquareAt3X.png?auto=webp&quality=30&disable=upscale&format=pjpg",
       "registrable_domain": "nyt.com",
       "party": "first-party",
       "category": "first-party",
@@ -399,6 +391,7 @@
       "seen_on_pages": [
         "https://nytimes.com",
         "https://www.nytimes.com/",
+        "https://www.nytimes.com/international/",
         "https://www.nytimes.com/ca/"
       ]
     },
@@ -736,8 +729,7 @@
         "https://www.nytimes.com/",
         "https://www.nytimes.com/international/",
         "https://www.nytimes.com/ca/",
-        "https://www.nytimes.com/section/todayspaper",
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
+        "https://www.nytimes.com/section/todayspaper"
       ]
     },
     {
@@ -754,8 +746,7 @@
         "https://www.nytimes.com/",
         "https://www.nytimes.com/international/",
         "https://www.nytimes.com/ca/",
-        "https://www.nytimes.com/section/todayspaper",
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
+        "https://www.nytimes.com/section/todayspaper"
       ]
     },
     {
@@ -772,8 +763,7 @@
         "https://www.nytimes.com/",
         "https://www.nytimes.com/international/",
         "https://www.nytimes.com/ca/",
-        "https://www.nytimes.com/section/todayspaper",
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
+        "https://www.nytimes.com/section/todayspaper"
       ]
     },
     {
@@ -790,8 +780,7 @@
         "https://www.nytimes.com/",
         "https://www.nytimes.com/international/",
         "https://www.nytimes.com/ca/",
-        "https://www.nytimes.com/section/todayspaper",
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
+        "https://www.nytimes.com/section/todayspaper"
       ]
     },
     {
@@ -808,8 +797,7 @@
         "https://www.nytimes.com/",
         "https://www.nytimes.com/international/",
         "https://www.nytimes.com/ca/",
-        "https://www.nytimes.com/section/todayspaper",
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
+        "https://www.nytimes.com/section/todayspaper"
       ]
     },
     {
@@ -1116,8 +1104,7 @@
         "https://www.nytimes.com/",
         "https://www.nytimes.com/international/",
         "https://www.nytimes.com/ca/",
-        "https://www.nytimes.com/section/todayspaper",
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
+        "https://www.nytimes.com/section/todayspaper"
       ]
     },
     {
@@ -1135,8 +1122,7 @@
         "https://www.nytimes.com/",
         "https://www.nytimes.com/international/",
         "https://www.nytimes.com/ca/",
-        "https://www.nytimes.com/section/todayspaper",
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
+        "https://www.nytimes.com/section/todayspaper"
       ]
     },
     {
@@ -1153,8 +1139,7 @@
         "https://www.nytimes.com/",
         "https://www.nytimes.com/international/",
         "https://www.nytimes.com/ca/",
-        "https://www.nytimes.com/section/todayspaper",
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
+        "https://www.nytimes.com/section/todayspaper"
       ]
     },
     {
@@ -1171,8 +1156,296 @@
         "https://www.nytimes.com/",
         "https://www.nytimes.com/international/",
         "https://www.nytimes.com/ca/",
-        "https://www.nytimes.com/section/todayspaper",
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
+        "https://www.nytimes.com/section/todayspaper"
+      ]
+    },
+    {
+      "url": "https://static01.nyt.com/elections-assets/pages/assets/Root-xso0SmP_.css",
+      "tag": "link",
+      "attribute": "href",
+      "raw_src": "//static01.nyt.com/elections-assets/pages/assets/Root-xso0SmP_.css",
+      "registrable_domain": "nyt.com",
+      "party": "first-party",
+      "category": "first-party",
+      "provider": null,
+      "owned_cdn": "nyt.com",
+      "seen_on_pages": [
+        "https://nytimes.com",
+        "https://www.nytimes.com/",
+        "https://www.nytimes.com/international/",
+        "https://www.nytimes.com/ca/"
+      ]
+    },
+    {
+      "url": "https://static01.nyt.com/elections-assets/pages/assets/EmbedWrapper-CN_B6kXY.css",
+      "tag": "link",
+      "attribute": "href",
+      "raw_src": "//static01.nyt.com/elections-assets/pages/assets/EmbedWrapper-CN_B6kXY.css",
+      "registrable_domain": "nyt.com",
+      "party": "first-party",
+      "category": "first-party",
+      "provider": null,
+      "owned_cdn": "nyt.com",
+      "seen_on_pages": [
+        "https://nytimes.com",
+        "https://www.nytimes.com/",
+        "https://www.nytimes.com/international/",
+        "https://www.nytimes.com/ca/"
+      ]
+    },
+    {
+      "url": "https://static01.nyt.com/elections-assets/pages/assets/ComponentLayout-CIwURVW_.css",
+      "tag": "link",
+      "attribute": "href",
+      "raw_src": "//static01.nyt.com/elections-assets/pages/assets/ComponentLayout-CIwURVW_.css",
+      "registrable_domain": "nyt.com",
+      "party": "first-party",
+      "category": "first-party",
+      "provider": null,
+      "owned_cdn": "nyt.com",
+      "seen_on_pages": [
+        "https://nytimes.com",
+        "https://www.nytimes.com/",
+        "https://www.nytimes.com/international/",
+        "https://www.nytimes.com/ca/"
+      ]
+    },
+    {
+      "url": "https://static01.nyt.com/elections-assets/pages/assets/WinProbNeedle-32MBaUZO.css",
+      "tag": "link",
+      "attribute": "href",
+      "raw_src": "//static01.nyt.com/elections-assets/pages/assets/WinProbNeedle-32MBaUZO.css",
+      "registrable_domain": "nyt.com",
+      "party": "first-party",
+      "category": "first-party",
+      "provider": null,
+      "owned_cdn": "nyt.com",
+      "seen_on_pages": [
+        "https://nytimes.com",
+        "https://www.nytimes.com/",
+        "https://www.nytimes.com/international/",
+        "https://www.nytimes.com/ca/"
+      ]
+    },
+    {
+      "url": "https://static01.nyt.com/elections-assets/pages/assets/OverflowScroll-D4wmyY6C.css",
+      "tag": "link",
+      "attribute": "href",
+      "raw_src": "//static01.nyt.com/elections-assets/pages/assets/OverflowScroll-D4wmyY6C.css",
+      "registrable_domain": "nyt.com",
+      "party": "first-party",
+      "category": "first-party",
+      "provider": null,
+      "owned_cdn": "nyt.com",
+      "seen_on_pages": [
+        "https://nytimes.com",
+        "https://www.nytimes.com/",
+        "https://www.nytimes.com/international/",
+        "https://www.nytimes.com/ca/"
+      ]
+    },
+    {
+      "url": "https://static01.nyt.com/elections-assets/pages/assets/CandidateRankedChoiceTable-B8e3CCZ2.css",
+      "tag": "link",
+      "attribute": "href",
+      "raw_src": "//static01.nyt.com/elections-assets/pages/assets/CandidateRankedChoiceTable-B8e3CCZ2.css",
+      "registrable_domain": "nyt.com",
+      "party": "first-party",
+      "category": "first-party",
+      "provider": null,
+      "owned_cdn": "nyt.com",
+      "seen_on_pages": [
+        "https://nytimes.com",
+        "https://www.nytimes.com/",
+        "https://www.nytimes.com/international/",
+        "https://www.nytimes.com/ca/"
+      ]
+    },
+    {
+      "url": "https://static01.nyt.com/elections-assets/pages/assets/CandidateVotePercentTable-Be-5n5GO.css",
+      "tag": "link",
+      "attribute": "href",
+      "raw_src": "//static01.nyt.com/elections-assets/pages/assets/CandidateVotePercentTable-Be-5n5GO.css",
+      "registrable_domain": "nyt.com",
+      "party": "first-party",
+      "category": "first-party",
+      "provider": null,
+      "owned_cdn": "nyt.com",
+      "seen_on_pages": [
+        "https://nytimes.com",
+        "https://www.nytimes.com/",
+        "https://www.nytimes.com/international/",
+        "https://www.nytimes.com/ca/"
+      ]
+    },
+    {
+      "url": "https://static01.nyt.com/elections-assets/pages/assets/AnimationNumberTween-BDcf0RiH.css",
+      "tag": "link",
+      "attribute": "href",
+      "raw_src": "//static01.nyt.com/elections-assets/pages/assets/AnimationNumberTween-BDcf0RiH.css",
+      "registrable_domain": "nyt.com",
+      "party": "first-party",
+      "category": "first-party",
+      "provider": null,
+      "owned_cdn": "nyt.com",
+      "seen_on_pages": [
+        "https://nytimes.com",
+        "https://www.nytimes.com/",
+        "https://www.nytimes.com/international/",
+        "https://www.nytimes.com/ca/"
+      ]
+    },
+    {
+      "url": "https://static01.nyt.com/elections-assets/pages/assets/StateMap-B_w0t2Oy.css",
+      "tag": "link",
+      "attribute": "href",
+      "raw_src": "//static01.nyt.com/elections-assets/pages/assets/StateMap-B_w0t2Oy.css",
+      "registrable_domain": "nyt.com",
+      "party": "first-party",
+      "category": "first-party",
+      "provider": null,
+      "owned_cdn": "nyt.com",
+      "seen_on_pages": [
+        "https://nytimes.com",
+        "https://www.nytimes.com/",
+        "https://www.nytimes.com/international/",
+        "https://www.nytimes.com/ca/"
+      ]
+    },
+    {
+      "url": "https://static01.nyt.com/elections-assets/pages/assets/CandidateImage-DkdGe0iF.css",
+      "tag": "link",
+      "attribute": "href",
+      "raw_src": "//static01.nyt.com/elections-assets/pages/assets/CandidateImage-DkdGe0iF.css",
+      "registrable_domain": "nyt.com",
+      "party": "first-party",
+      "category": "first-party",
+      "provider": null,
+      "owned_cdn": "nyt.com",
+      "seen_on_pages": [
+        "https://nytimes.com",
+        "https://www.nytimes.com/",
+        "https://www.nytimes.com/international/",
+        "https://www.nytimes.com/ca/"
+      ]
+    },
+    {
+      "url": "https://static01.nyt.com/elections-assets/pages/assets/race-C5HG5-fb.css",
+      "tag": "link",
+      "attribute": "href",
+      "raw_src": "//static01.nyt.com/elections-assets/pages/assets/race-C5HG5-fb.css",
+      "registrable_domain": "nyt.com",
+      "party": "first-party",
+      "category": "first-party",
+      "provider": null,
+      "owned_cdn": "nyt.com",
+      "seen_on_pages": [
+        "https://nytimes.com",
+        "https://www.nytimes.com/",
+        "https://www.nytimes.com/international/",
+        "https://www.nytimes.com/ca/"
+      ]
+    },
+    {
+      "url": "https://static01.nyt.com/elections-assets/pages/assets/Caption-CdDZmDI5.css",
+      "tag": "link",
+      "attribute": "href",
+      "raw_src": "//static01.nyt.com/elections-assets/pages/assets/Caption-CdDZmDI5.css",
+      "registrable_domain": "nyt.com",
+      "party": "first-party",
+      "category": "first-party",
+      "provider": null,
+      "owned_cdn": "nyt.com",
+      "seen_on_pages": [
+        "https://nytimes.com",
+        "https://www.nytimes.com/",
+        "https://www.nytimes.com/international/",
+        "https://www.nytimes.com/ca/"
+      ]
+    },
+    {
+      "url": "https://static01.nyt.com/elections-assets/pages/assets/RowToggle-HJGQvbsI.css",
+      "tag": "link",
+      "attribute": "href",
+      "raw_src": "//static01.nyt.com/elections-assets/pages/assets/RowToggle-HJGQvbsI.css",
+      "registrable_domain": "nyt.com",
+      "party": "first-party",
+      "category": "first-party",
+      "provider": null,
+      "owned_cdn": "nyt.com",
+      "seen_on_pages": [
+        "https://nytimes.com",
+        "https://www.nytimes.com/",
+        "https://www.nytimes.com/international/",
+        "https://www.nytimes.com/ca/"
+      ]
+    },
+    {
+      "url": "https://static01.nyt.com/elections-assets/pages/assets/Hed-CiOJjow7.css",
+      "tag": "link",
+      "attribute": "href",
+      "raw_src": "//static01.nyt.com/elections-assets/pages/assets/Hed-CiOJjow7.css",
+      "registrable_domain": "nyt.com",
+      "party": "first-party",
+      "category": "first-party",
+      "provider": null,
+      "owned_cdn": "nyt.com",
+      "seen_on_pages": [
+        "https://nytimes.com",
+        "https://www.nytimes.com/",
+        "https://www.nytimes.com/international/",
+        "https://www.nytimes.com/ca/"
+      ]
+    },
+    {
+      "url": "https://static01.nyt.com/elections-assets/pages/assets/leaderMargin-yEIvHOyN.css",
+      "tag": "link",
+      "attribute": "href",
+      "raw_src": "//static01.nyt.com/elections-assets/pages/assets/leaderMargin-yEIvHOyN.css",
+      "registrable_domain": "nyt.com",
+      "party": "first-party",
+      "category": "first-party",
+      "provider": null,
+      "owned_cdn": "nyt.com",
+      "seen_on_pages": [
+        "https://nytimes.com",
+        "https://www.nytimes.com/",
+        "https://www.nytimes.com/international/",
+        "https://www.nytimes.com/ca/"
+      ]
+    },
+    {
+      "url": "https://static01.nyt.com/elections-assets/pages/assets/TrendingRaces-BAYEx37Q.css",
+      "tag": "link",
+      "attribute": "href",
+      "raw_src": "//static01.nyt.com/elections-assets/pages/assets/TrendingRaces-BAYEx37Q.css",
+      "registrable_domain": "nyt.com",
+      "party": "first-party",
+      "category": "first-party",
+      "provider": null,
+      "owned_cdn": "nyt.com",
+      "seen_on_pages": [
+        "https://nytimes.com",
+        "https://www.nytimes.com/",
+        "https://www.nytimes.com/international/",
+        "https://www.nytimes.com/ca/"
+      ]
+    },
+    {
+      "url": "https://static01.nyt.com/elections-assets/pages/assets/TrendingRacePage-D6YGM2t8.css",
+      "tag": "link",
+      "attribute": "href",
+      "raw_src": "//static01.nyt.com/elections-assets/pages/assets/TrendingRacePage-D6YGM2t8.css",
+      "registrable_domain": "nyt.com",
+      "party": "first-party",
+      "category": "first-party",
+      "provider": null,
+      "owned_cdn": "nyt.com",
+      "seen_on_pages": [
+        "https://nytimes.com",
+        "https://www.nytimes.com/",
+        "https://www.nytimes.com/international/",
+        "https://www.nytimes.com/ca/"
       ]
     },
     {
@@ -1184,6 +1457,22 @@
       "party": "first-party",
       "category": "first-party",
       "provider": null,
+      "seen_on_pages": [
+        "https://nytimes.com",
+        "https://www.nytimes.com/",
+        "https://www.nytimes.com/ca/"
+      ]
+    },
+    {
+      "url": "https://static01.nyt.com/elections-assets/pages/assets/preload-helper-_x8-A-Un.js",
+      "tag": "link",
+      "attribute": "href",
+      "raw_src": "//static01.nyt.com/elections-assets/pages/assets/preload-helper-_x8-A-Un.js",
+      "registrable_domain": "nyt.com",
+      "party": "first-party",
+      "category": "first-party",
+      "provider": null,
+      "owned_cdn": "nyt.com",
       "seen_on_pages": [
         "https://nytimes.com",
         "https://www.nytimes.com/",
@@ -1464,102 +1753,6 @@
       ]
     },
     {
-      "url": "https://vp.nyt.com/video/hlsfmp4/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg/index-f1-v1-a1.m3u8",
-      "tag": "source",
-      "attribute": "src",
-      "raw_src": "https://vp.nyt.com/video/hlsfmp4/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg/index-f1-v1-a1.m3u8",
-      "registrable_domain": "nyt.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "owned_cdn": "nyt.com",
-      "seen_on_pages": [
-        "https://nytimes.com",
-        "https://www.nytimes.com/",
-        "https://www.nytimes.com/ca/"
-      ]
-    },
-    {
-      "url": "https://vp.nyt.com/video/hls/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg/index-f1-v1-a1.m3u8",
-      "tag": "source",
-      "attribute": "src",
-      "raw_src": "https://vp.nyt.com/video/hls/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg/index-f1-v1-a1.m3u8",
-      "registrable_domain": "nyt.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "owned_cdn": "nyt.com",
-      "seen_on_pages": [
-        "https://nytimes.com",
-        "https://www.nytimes.com/",
-        "https://www.nytimes.com/ca/"
-      ]
-    },
-    {
-      "url": "https://vp.nyt.com/video/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg_av1-1080p.mp4",
-      "tag": "source",
-      "attribute": "src",
-      "raw_src": "https://vp.nyt.com/video/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg_av1-1080p.mp4",
-      "registrable_domain": "nyt.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "owned_cdn": "nyt.com",
-      "seen_on_pages": [
-        "https://nytimes.com",
-        "https://www.nytimes.com/",
-        "https://www.nytimes.com/ca/"
-      ]
-    },
-    {
-      "url": "https://vp.nyt.com/video/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg_av1-720p.mp4",
-      "tag": "source",
-      "attribute": "src",
-      "raw_src": "https://vp.nyt.com/video/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg_av1-720p.mp4",
-      "registrable_domain": "nyt.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "owned_cdn": "nyt.com",
-      "seen_on_pages": [
-        "https://nytimes.com",
-        "https://www.nytimes.com/",
-        "https://www.nytimes.com/ca/"
-      ]
-    },
-    {
-      "url": "https://vp.nyt.com/video/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg_1080p.mp4",
-      "tag": "source",
-      "attribute": "src",
-      "raw_src": "https://vp.nyt.com/video/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg_1080p.mp4",
-      "registrable_domain": "nyt.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "owned_cdn": "nyt.com",
-      "seen_on_pages": [
-        "https://nytimes.com",
-        "https://www.nytimes.com/",
-        "https://www.nytimes.com/ca/"
-      ]
-    },
-    {
-      "url": "https://vp.nyt.com/video/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg_720p.mp4",
-      "tag": "source",
-      "attribute": "src",
-      "raw_src": "https://vp.nyt.com/video/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg_720p.mp4",
-      "registrable_domain": "nyt.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "owned_cdn": "nyt.com",
-      "seen_on_pages": [
-        "https://nytimes.com",
-        "https://www.nytimes.com/",
-        "https://www.nytimes.com/ca/"
-      ]
-    },
-    {
       "url": "https://static01.nyt.com/images/2026/04/21/multimedia/21int-afghan-deportees-new-zmlj/21int-afghan-deportees-new-zmlj-square640.jpg?format=pjpg&quality=75&auto=webp&disable=upscale",
       "tag": "img",
       "attribute": "src",
@@ -1602,10 +1795,10 @@
       ]
     },
     {
-      "url": "https://static01.nyt.com/images/2026/04/21/multimedia/21cul-mj-review1-clgz/21cul-mj-review1-clgz-square640.jpg?format=pjpg&quality=75&auto=webp&disable=upscale",
+      "url": "https://static01.nyt.com/images/2026/04/26/multimedia/26cul-penone-gallery-vkmq/26cul-penone-gallery-vkmq-square640.jpg?format=pjpg&quality=75&auto=webp&disable=upscale",
       "tag": "img",
       "attribute": "src",
-      "raw_src": "https://static01.nyt.com/images/2026/04/21/multimedia/21cul-mj-review1-clgz/21cul-mj-review1-clgz-square640.jpg?format=pjpg&quality=75&auto=webp&disable=upscale",
+      "raw_src": "https://static01.nyt.com/images/2026/04/26/multimedia/26cul-penone-gallery-vkmq/26cul-penone-gallery-vkmq-square640.jpg?format=pjpg&quality=75&auto=webp&disable=upscale",
       "registrable_domain": "nyt.com",
       "party": "first-party",
       "category": "first-party",
@@ -1616,10 +1809,10 @@
       ]
     },
     {
-      "url": "https://static01.nyt.com/images/2026/04/26/multimedia/26cul-penone-gallery-vkmq/26cul-penone-gallery-vkmq-square640.jpg?format=pjpg&quality=75&auto=webp&disable=upscale",
+      "url": "https://static01.nyt.com/images/2025/09/29/world/the-world-nl-icon-updated/the-world-nl-icon-updated-smallSquare252.jpg?format=pjpg&quality=75&auto=webp&disable=upscale",
       "tag": "img",
       "attribute": "src",
-      "raw_src": "https://static01.nyt.com/images/2026/04/26/multimedia/26cul-penone-gallery-vkmq/26cul-penone-gallery-vkmq-square640.jpg?format=pjpg&quality=75&auto=webp&disable=upscale",
+      "raw_src": "https://static01.nyt.com/images/2025/09/29/world/the-world-nl-icon-updated/the-world-nl-icon-updated-smallSquare252.jpg?format=pjpg&quality=75&auto=webp&disable=upscale",
       "registrable_domain": "nyt.com",
       "party": "first-party",
       "category": "first-party",
@@ -1655,7 +1848,8 @@
       "seen_on_pages": [
         "https://www.nytimes.com/es/",
         "https://www.nytimes.com/live/2026/04/21/us/trump-news",
-        "https://www.nytimes.com/2026/04/21/us/politics/trust-trump-iran.html"
+        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news",
+        "https://www.nytimes.com/live/2026/04/21/us/virginia-redistricting-election"
       ]
     },
     {
@@ -2038,491 +2232,6 @@
       "seen_on_pages": [
         "https://www.nytimes.com/section/todayspaper"
       ]
-    },
-    {
-      "url": "https://www.nytimes.com/vi-assets/static-assets/liveAsset-33a570750d20d0e29505.js",
-      "tag": "script",
-      "attribute": "src",
-      "raw_src": "/vi-assets/static-assets/liveAsset-33a570750d20d0e29505.js",
-      "registrable_domain": "nytimes.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nyt.com/images/2026/04/21/multimedia/21israel-iran-header420p-zwgc/21israel-iran-header420p-zwgc-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
-      "tag": "img",
-      "attribute": "src",
-      "raw_src": "https://static01.nyt.com/images/2026/04/21/multimedia/21israel-iran-header420p-zwgc/21israel-iran-header420p-zwgc-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
-      "registrable_domain": "nyt.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "owned_cdn": "nyt.com",
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nyt.com/images/icons/t_logo_291_black.png",
-      "tag": "img",
-      "attribute": "src",
-      "raw_src": "https://static01.nyt.com/images/icons/t_logo_291_black.png",
-      "registrable_domain": "nyt.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "owned_cdn": "nyt.com",
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nyt.com/images/2022/01/05/us/politics/author-luke-broadwater/author-luke-broadwater-thumbLarge-v3.png?quality=75&auto=webp",
-      "tag": "img",
-      "attribute": "src",
-      "raw_src": "https://static01.nyt.com/images/2022/01/05/us/politics/author-luke-broadwater/author-luke-broadwater-thumbLarge-v3.png?quality=75&auto=webp",
-      "registrable_domain": "nyt.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "owned_cdn": "nyt.com",
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nyt.com/images/2023/02/08/reader-center/author-euan-ward/author-euan-ward-thumbLarge.png?quality=75&auto=webp",
-      "tag": "img",
-      "attribute": "src",
-      "raw_src": "https://static01.nyt.com/images/2023/02/08/reader-center/author-euan-ward/author-euan-ward-thumbLarge.png?quality=75&auto=webp",
-      "registrable_domain": "nyt.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "owned_cdn": "nyt.com",
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nyt.com/images/icons/t_logo_291_black.png?quality=75&auto=webp",
-      "tag": "img",
-      "attribute": "src",
-      "raw_src": "https://static01.nyt.com/images/icons/t_logo_291_black.png?quality=75&auto=webp",
-      "registrable_domain": "nyt.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "owned_cdn": "nyt.com",
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nyt.com/images/2019/11/22/reader-center/author-christina-goldbaum/author-christina-goldbaum-thumbLarge-v2.png?quality=75&auto=webp",
-      "tag": "img",
-      "attribute": "src",
-      "raw_src": "https://static01.nyt.com/images/2019/11/22/reader-center/author-christina-goldbaum/author-christina-goldbaum-thumbLarge-v2.png?quality=75&auto=webp",
-      "registrable_domain": "nyt.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "owned_cdn": "nyt.com",
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nyt.com/images/2024/09/11/reader-center/author-rebecca-elliott/author-rebecca-elliott-thumbLarge.png?quality=75&auto=webp",
-      "tag": "img",
-      "attribute": "src",
-      "raw_src": "https://static01.nyt.com/images/2024/09/11/reader-center/author-rebecca-elliott/author-rebecca-elliott-thumbLarge.png?quality=75&auto=webp",
-      "registrable_domain": "nyt.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "owned_cdn": "nyt.com",
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nyt.com/images/2025/02/14/reader-center/author-tyler-pager/author-tyler-pager-thumbLarge-v3.png?quality=75&auto=webp",
-      "tag": "img",
-      "attribute": "src",
-      "raw_src": "https://static01.nyt.com/images/2025/02/14/reader-center/author-tyler-pager/author-tyler-pager-thumbLarge-v3.png?quality=75&auto=webp",
-      "registrable_domain": "nyt.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "owned_cdn": "nyt.com",
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nyt.com/images/2022/02/04/reader-center/author-jason-karaian/author-jason-karaian-thumbLarge.png?quality=75&auto=webp",
-      "tag": "img",
-      "attribute": "src",
-      "raw_src": "https://static01.nyt.com/images/2022/02/04/reader-center/author-jason-karaian/author-jason-karaian-thumbLarge.png?quality=75&auto=webp",
-      "registrable_domain": "nyt.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "owned_cdn": "nyt.com",
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nyt.com/images/2018/06/12/multimedia/author-alan-rappeport/author-alan-rappeport-thumbLarge-v4.png?quality=75&auto=webp",
-      "tag": "img",
-      "attribute": "src",
-      "raw_src": "https://static01.nyt.com/images/2018/06/12/multimedia/author-alan-rappeport/author-alan-rappeport-thumbLarge-v4.png?quality=75&auto=webp",
-      "registrable_domain": "nyt.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "owned_cdn": "nyt.com",
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nyt.com/images/2019/07/03/reader-center/author-elian-peltier/author-elian-peltier-thumbLarge-v7.png?quality=75&auto=webp",
-      "tag": "img",
-      "attribute": "src",
-      "raw_src": "https://static01.nyt.com/images/2019/07/03/reader-center/author-elian-peltier/author-elian-peltier-thumbLarge-v7.png?quality=75&auto=webp",
-      "registrable_domain": "nyt.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "owned_cdn": "nyt.com",
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nyt.com/images/2018/06/12/multimedia/author-eric-schmitt/author-eric-schmitt-thumbLarge-v2.png?quality=75&auto=webp",
-      "tag": "img",
-      "attribute": "src",
-      "raw_src": "https://static01.nyt.com/images/2018/06/12/multimedia/author-eric-schmitt/author-eric-schmitt-thumbLarge-v2.png?quality=75&auto=webp",
-      "registrable_domain": "nyt.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "owned_cdn": "nyt.com",
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nyt.com/images/2026/04/17/reader-center/author-leo-sands/author-leo-sands-thumbLarge.png?quality=75&auto=webp",
-      "tag": "img",
-      "attribute": "src",
-      "raw_src": "https://static01.nyt.com/images/2026/04/17/reader-center/author-leo-sands/author-leo-sands-thumbLarge.png?quality=75&auto=webp",
-      "registrable_domain": "nyt.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "owned_cdn": "nyt.com",
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nyt.com/images/2020/03/06/reader-center/author-jenny-gross/author-jenny-gross-thumbLarge-v6.png?quality=75&auto=webp",
-      "tag": "img",
-      "attribute": "src",
-      "raw_src": "https://static01.nyt.com/images/2020/03/06/reader-center/author-jenny-gross/author-jenny-gross-thumbLarge-v6.png?quality=75&auto=webp",
-      "registrable_domain": "nyt.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "owned_cdn": "nyt.com",
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nyt.com/images/2023/04/09/reader-center/author-david-pierson/author-david-pierson-thumbLarge.png?quality=75&auto=webp",
-      "tag": "img",
-      "attribute": "src",
-      "raw_src": "https://static01.nyt.com/images/2023/04/09/reader-center/author-david-pierson/author-david-pierson-thumbLarge.png?quality=75&auto=webp",
-      "registrable_domain": "nyt.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "owned_cdn": "nyt.com",
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nyt.com/images/2022/05/16/reader-center/author-erika-solomon/author-erika-solomon-thumbLarge.png?quality=75&auto=webp",
-      "tag": "img",
-      "attribute": "src",
-      "raw_src": "https://static01.nyt.com/images/2022/05/16/reader-center/author-erika-solomon/author-erika-solomon-thumbLarge.png?quality=75&auto=webp",
-      "registrable_domain": "nyt.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "owned_cdn": "nyt.com",
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nyt.com/images/2019/10/25/reader-center/author-michael-crowley/author-michael-crowley-thumbLarge-v4.png?quality=75&auto=webp",
-      "tag": "img",
-      "attribute": "src",
-      "raw_src": "https://static01.nyt.com/images/2019/10/25/reader-center/author-michael-crowley/author-michael-crowley-thumbLarge-v4.png?quality=75&auto=webp",
-      "registrable_domain": "nyt.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "owned_cdn": "nyt.com",
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news",
-      "tag": "link",
-      "attribute": "href",
-      "raw_src": "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news",
-      "registrable_domain": "nytimes.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://www.nytimes.com/vi-assets/static-assets/live-favicon-29072d699076b4150ceb4d77a33c448e.ico",
-      "tag": "link",
-      "attribute": "href",
-      "raw_src": "/vi-assets/static-assets/live-favicon-29072d699076b4150ceb4d77a33c448e.ico",
-      "registrable_domain": "nytimes.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/assets/4.ByV4iHiL.css",
-      "tag": "link",
-      "attribute": "href",
-      "raw_src": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/assets/4.ByV4iHiL.css",
-      "registrable_domain": "nytimes.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/entry/start.DvP_z-M2.js",
-      "tag": "link",
-      "attribute": "href",
-      "raw_src": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/entry/start.DvP_z-M2.js",
-      "registrable_domain": "nytimes.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/CZ2b5r9Y.js",
-      "tag": "link",
-      "attribute": "href",
-      "raw_src": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/CZ2b5r9Y.js",
-      "registrable_domain": "nytimes.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/DBjht_cN.js",
-      "tag": "link",
-      "attribute": "href",
-      "raw_src": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/DBjht_cN.js",
-      "registrable_domain": "nytimes.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/AkF08DtW.js",
-      "tag": "link",
-      "attribute": "href",
-      "raw_src": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/AkF08DtW.js",
-      "registrable_domain": "nytimes.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/entry/app.DYYEKu7D.js",
-      "tag": "link",
-      "attribute": "href",
-      "raw_src": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/entry/app.DYYEKu7D.js",
-      "registrable_domain": "nytimes.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/C68ciNhP.js",
-      "tag": "link",
-      "attribute": "href",
-      "raw_src": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/C68ciNhP.js",
-      "registrable_domain": "nytimes.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/B-eHZApt.js",
-      "tag": "link",
-      "attribute": "href",
-      "raw_src": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/B-eHZApt.js",
-      "registrable_domain": "nytimes.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/eLR1wiyd.js",
-      "tag": "link",
-      "attribute": "href",
-      "raw_src": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/eLR1wiyd.js",
-      "registrable_domain": "nytimes.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/B8smKJ9D.js",
-      "tag": "link",
-      "attribute": "href",
-      "raw_src": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/B8smKJ9D.js",
-      "registrable_domain": "nytimes.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/nodes/0.13nfVBnA.js",
-      "tag": "link",
-      "attribute": "href",
-      "raw_src": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/nodes/0.13nfVBnA.js",
-      "registrable_domain": "nytimes.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/nodes/4.iBwD0xfI.js",
-      "tag": "link",
-      "attribute": "href",
-      "raw_src": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/nodes/4.iBwD0xfI.js",
-      "registrable_domain": "nytimes.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/D5bzQx20.js",
-      "tag": "link",
-      "attribute": "href",
-      "raw_src": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/D5bzQx20.js",
-      "registrable_domain": "nytimes.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/D85Dk9iE.js",
-      "tag": "link",
-      "attribute": "href",
-      "raw_src": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/D85Dk9iE.js",
-      "registrable_domain": "nytimes.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nytimes.com/newsgraphics/bk-MH6FuKgaY0rxiQ/_app/immutable/assets/bundle.C_sbD02F.css",
-      "tag": "link",
-      "attribute": "href",
-      "raw_src": "https://static01.nytimes.com/newsgraphics/bk-MH6FuKgaY0rxiQ/_app/immutable/assets/bundle.C_sbD02F.css",
-      "registrable_domain": "nytimes.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
-    },
-    {
-      "url": "https://static01.nytimes.com/newsgraphics/bk-MH6FuKgaY0rxiQ/_app/immutable/bundle.vXacvZTv.js",
-      "tag": "link",
-      "attribute": "href",
-      "raw_src": "https://static01.nytimes.com/newsgraphics/bk-MH6FuKgaY0rxiQ/_app/immutable/bundle.vXacvZTv.js",
-      "registrable_domain": "nytimes.com",
-      "party": "first-party",
-      "category": "first-party",
-      "provider": null,
-      "seen_on_pages": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news"
-      ]
     }
   ],
   "pages": [
@@ -2588,6 +2297,17 @@
           "tag": "script",
           "attribute": "src",
           "raw_src": "https://static01.nyt.com/video-static/betamax/overlay-controls-Df1-R5DD.js",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/index-CL_xGvMO.js",
+          "tag": "script",
+          "attribute": "src",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/index-CL_xGvMO.js",
           "registrable_domain": "nyt.com",
           "party": "first-party",
           "category": "first-party",
@@ -2690,17 +2410,6 @@
           "tag": "img",
           "attribute": "src",
           "raw_src": "https://static01.nyt.com/images/2026/04/21/multimedia/21dc-fed-warsh-wkjz/21dc-fed-warsh-wkjz-verticalTwoByThree735.jpg?auto=webp&quality=30&disable=upscale&format=pjpg",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://static01.nyt.com/images/2026/04/21/us/elections/Light/Light-mediumSquareAt3X.png?auto=webp&quality=30&disable=upscale&format=pjpg",
-          "tag": "img",
-          "attribute": "src",
-          "raw_src": "https://static01.nyt.com/images/2026/04/21/us/elections/Light/Light-mediumSquareAt3X.png?auto=webp&quality=30&disable=upscale&format=pjpg",
           "registrable_domain": "nyt.com",
           "party": "first-party",
           "category": "first-party",
@@ -3255,6 +2964,193 @@
           "provider": null
         },
         {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/Root-xso0SmP_.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/Root-xso0SmP_.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/EmbedWrapper-CN_B6kXY.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/EmbedWrapper-CN_B6kXY.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/ComponentLayout-CIwURVW_.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/ComponentLayout-CIwURVW_.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/WinProbNeedle-32MBaUZO.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/WinProbNeedle-32MBaUZO.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/OverflowScroll-D4wmyY6C.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/OverflowScroll-D4wmyY6C.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/CandidateRankedChoiceTable-B8e3CCZ2.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/CandidateRankedChoiceTable-B8e3CCZ2.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/CandidateVotePercentTable-Be-5n5GO.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/CandidateVotePercentTable-Be-5n5GO.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/AnimationNumberTween-BDcf0RiH.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/AnimationNumberTween-BDcf0RiH.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/StateMap-B_w0t2Oy.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/StateMap-B_w0t2Oy.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/CandidateImage-DkdGe0iF.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/CandidateImage-DkdGe0iF.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/race-C5HG5-fb.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/race-C5HG5-fb.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/Caption-CdDZmDI5.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/Caption-CdDZmDI5.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/RowToggle-HJGQvbsI.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/RowToggle-HJGQvbsI.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/Hed-CiOJjow7.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/Hed-CiOJjow7.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/leaderMargin-yEIvHOyN.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/leaderMargin-yEIvHOyN.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/TrendingRaces-BAYEx37Q.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/TrendingRaces-BAYEx37Q.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/TrendingRacePage-D6YGM2t8.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/TrendingRacePage-D6YGM2t8.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
           "url": "https://static01.nytimes.com/newsgraphics/weather-hp-strip/6ba7540e-2691-4ad2-b02c-51ce91e43e2e/_assets/_app/immutable/assets/weather-hp-modules.cbd92ddb.css",
           "tag": "link",
           "attribute": "href",
@@ -3263,6 +3159,17 @@
           "party": "first-party",
           "category": "first-party",
           "provider": null
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/preload-helper-_x8-A-Un.js",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/preload-helper-_x8-A-Un.js",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
         },
         {
           "url": "https://static01.nytimes.com/newsgraphics/weather-hp-strip/6ba7540e-2691-4ad2-b02c-51ce91e43e2e/_assets/_app/immutable/entry/start.a672a118.js",
@@ -3445,72 +3352,6 @@
           "category": "first-party",
           "provider": null,
           "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://vp.nyt.com/video/hlsfmp4/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg/index-f1-v1-a1.m3u8",
-          "tag": "source",
-          "attribute": "src",
-          "raw_src": "https://vp.nyt.com/video/hlsfmp4/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg/index-f1-v1-a1.m3u8",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://vp.nyt.com/video/hls/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg/index-f1-v1-a1.m3u8",
-          "tag": "source",
-          "attribute": "src",
-          "raw_src": "https://vp.nyt.com/video/hls/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg/index-f1-v1-a1.m3u8",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://vp.nyt.com/video/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg_av1-1080p.mp4",
-          "tag": "source",
-          "attribute": "src",
-          "raw_src": "https://vp.nyt.com/video/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg_av1-1080p.mp4",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://vp.nyt.com/video/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg_av1-720p.mp4",
-          "tag": "source",
-          "attribute": "src",
-          "raw_src": "https://vp.nyt.com/video/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg_av1-720p.mp4",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://vp.nyt.com/video/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg_1080p.mp4",
-          "tag": "source",
-          "attribute": "src",
-          "raw_src": "https://vp.nyt.com/video/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg_1080p.mp4",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://vp.nyt.com/video/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg_720p.mp4",
-          "tag": "source",
-          "attribute": "src",
-          "raw_src": "https://vp.nyt.com/video/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg_720p.mp4",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
         }
       ],
       "internal_links_found": [
@@ -3520,15 +3361,16 @@
         "https://www.nytimes.com/es/",
         "https://cn.nytimes.com",
         "https://www.nytimes.com/section/todayspaper",
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news",
         "https://www.nytimes.com/live/2026/04/21/us/trump-news",
+        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news",
+        "https://www.nytimes.com/live/2026/04/21/us/virginia-redistricting-election",
         "https://www.nytimes.com/2026/04/21/us/politics/trust-trump-iran.html",
         "https://www.nytimes.com/2026/04/21/world/middleeast/us-iraq-security-cooperation.html",
         "https://www.nytimes.com/2026/04/21/world/middleeast/iran-war-europe-macron-france.html",
         "https://www.nytimes.com/2026/04/21/world/middleeast/southern-lebanon-israel-hezbollah-cease-fire.html",
         "https://www.nytimes.com/2026/04/21/world/middleeast/israel-soldiers-statue-lebanon-replaced.html",
         "https://www.nytimes.com/interactive/2026/business/energy-environment/gas-prices-map-iran-war-oil.html",
-        "https://www.nytimes.com/2026/04/20/us/politics/lori-chavez-deremer-labor-secretary-steps-down.html",
+        "https://www.nytimes.com/2026/04/21/business/economy/labor-secretary-trump.html",
         "https://www.nytimes.com/2026/04/20/us/politics/trump-administration-tariff-refunds.html",
         "https://www.nytimes.com/2026/04/17/us/politics/republicans-trump-pope-midterms.html",
         "https://www.nytimes.com/interactive/polls/donald-trump-approval-rating-polls.html",
@@ -3538,12 +3380,12 @@
         "https://www.nytimes.com/news-event/2026-midterm-elections",
         "https://www.nytimes.com/interactive/2026/us/elections/2026-election-calendar.html",
         "https://www.nytimes.com/interactive/polls/congressional-vote-2026.html",
-        "https://www.nytimes.com/interactive/polls/virginia-redistricting-referendum-polls-2026.html",
+        "https://www.nytimes.com/interactive/2026/us/elections/results-virginia-redistricting.html",
+        "https://www.nytimes.com/live/2026/us/times-election-results-explained",
         "https://www.nytimes.com/interactive/2026/04/21/us/politics/congress-redistricting-virginia-missouri-texas.html",
         "https://www.nytimes.com/interactive/2026/us/politics/midterms-house-maps-redistricting.html",
-        "https://www.nytimes.com/2026/04/21/us/cherfilus-mccormick-florida.html",
-        "https://www.nytimes.com/2026/04/21/us/elections/virginia-redistricting-referendum-what-to-watch.html",
-        "https://www.nytimes.com/2026/04/21/us/elections/virginia-gerrymandering-election-midterms.html",
+        "https://www.nytimes.com/2026/04/21/us/elections/virginia-redistricting-election-day-turnout.html",
+        "https://www.nytimes.com/2026/04/21/us/politics/cherfilus-mccormick-florida.html",
         "https://www.nytimes.com/2026/04/21/us/politics/usaid-former-employees.html",
         "https://www.nytimes.com/tips",
         "https://www.nytimes.com/2026/04/20/books/could-a-river-runs-through-it-have-been-a-hit-today.html",
@@ -3572,8 +3414,8 @@
         "https://www.nytimes.com/2026/04/21/opinion/ezra-klein-podcast-alex-bores.html",
         "https://www.nytimes.com/2026/04/21/opinion/measles-child-britain-vaccination.html",
         "https://www.nytimes.com/2026/04/21/world/americas/americans-cia-mexico-crash.html",
+        "https://www.nytimes.com/2026/04/21/weather/fresno-tornado-california.html",
         "https://www.nytimes.com/2026/04/21/us/ohio-state-walter-carter-relationship-president-resignation.html",
-        "https://www.nytimes.com/athletic/7213118/2026/04/21/usa-paraguay-world-cup-tickets-fifa-sofi-stadium/",
         "https://www.nytimes.com/2026/04/20/science/cocaine-salmon-sweden.html",
         "https://www.nytimes.com/athletic/",
         "https://www.nytimes.com/athletic/connections-sports-edition",
@@ -3732,6 +3574,17 @@
           "owned_cdn": "nyt.com"
         },
         {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/index-CL_xGvMO.js",
+          "tag": "script",
+          "attribute": "src",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/index-CL_xGvMO.js",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
           "url": "https://www.nytimes.com/vi-assets/static-assets/vendor-9916e8df8eecbd757328.js",
           "tag": "script",
           "attribute": "src",
@@ -3827,17 +3680,6 @@
           "tag": "img",
           "attribute": "src",
           "raw_src": "https://static01.nyt.com/images/2026/04/21/multimedia/21dc-fed-warsh-wkjz/21dc-fed-warsh-wkjz-verticalTwoByThree735.jpg?auto=webp&quality=30&disable=upscale&format=pjpg",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://static01.nyt.com/images/2026/04/21/us/elections/Light/Light-mediumSquareAt3X.png?auto=webp&quality=30&disable=upscale&format=pjpg",
-          "tag": "img",
-          "attribute": "src",
-          "raw_src": "https://static01.nyt.com/images/2026/04/21/us/elections/Light/Light-mediumSquareAt3X.png?auto=webp&quality=30&disable=upscale&format=pjpg",
           "registrable_domain": "nyt.com",
           "party": "first-party",
           "category": "first-party",
@@ -4392,6 +4234,193 @@
           "provider": null
         },
         {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/Root-xso0SmP_.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/Root-xso0SmP_.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/EmbedWrapper-CN_B6kXY.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/EmbedWrapper-CN_B6kXY.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/ComponentLayout-CIwURVW_.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/ComponentLayout-CIwURVW_.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/WinProbNeedle-32MBaUZO.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/WinProbNeedle-32MBaUZO.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/OverflowScroll-D4wmyY6C.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/OverflowScroll-D4wmyY6C.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/CandidateRankedChoiceTable-B8e3CCZ2.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/CandidateRankedChoiceTable-B8e3CCZ2.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/CandidateVotePercentTable-Be-5n5GO.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/CandidateVotePercentTable-Be-5n5GO.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/AnimationNumberTween-BDcf0RiH.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/AnimationNumberTween-BDcf0RiH.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/StateMap-B_w0t2Oy.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/StateMap-B_w0t2Oy.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/CandidateImage-DkdGe0iF.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/CandidateImage-DkdGe0iF.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/race-C5HG5-fb.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/race-C5HG5-fb.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/Caption-CdDZmDI5.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/Caption-CdDZmDI5.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/RowToggle-HJGQvbsI.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/RowToggle-HJGQvbsI.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/Hed-CiOJjow7.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/Hed-CiOJjow7.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/leaderMargin-yEIvHOyN.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/leaderMargin-yEIvHOyN.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/TrendingRaces-BAYEx37Q.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/TrendingRaces-BAYEx37Q.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/TrendingRacePage-D6YGM2t8.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/TrendingRacePage-D6YGM2t8.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
           "url": "https://static01.nytimes.com/newsgraphics/weather-hp-strip/6ba7540e-2691-4ad2-b02c-51ce91e43e2e/_assets/_app/immutable/assets/weather-hp-modules.cbd92ddb.css",
           "tag": "link",
           "attribute": "href",
@@ -4400,6 +4429,17 @@
           "party": "first-party",
           "category": "first-party",
           "provider": null
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/preload-helper-_x8-A-Un.js",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/preload-helper-_x8-A-Un.js",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
         },
         {
           "url": "https://static01.nytimes.com/newsgraphics/weather-hp-strip/6ba7540e-2691-4ad2-b02c-51ce91e43e2e/_assets/_app/immutable/entry/start.a672a118.js",
@@ -4582,72 +4622,6 @@
           "category": "first-party",
           "provider": null,
           "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://vp.nyt.com/video/hlsfmp4/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg/index-f1-v1-a1.m3u8",
-          "tag": "source",
-          "attribute": "src",
-          "raw_src": "https://vp.nyt.com/video/hlsfmp4/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg/index-f1-v1-a1.m3u8",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://vp.nyt.com/video/hls/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg/index-f1-v1-a1.m3u8",
-          "tag": "source",
-          "attribute": "src",
-          "raw_src": "https://vp.nyt.com/video/hls/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg/index-f1-v1-a1.m3u8",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://vp.nyt.com/video/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg_av1-1080p.mp4",
-          "tag": "source",
-          "attribute": "src",
-          "raw_src": "https://vp.nyt.com/video/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg_av1-1080p.mp4",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://vp.nyt.com/video/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg_av1-720p.mp4",
-          "tag": "source",
-          "attribute": "src",
-          "raw_src": "https://vp.nyt.com/video/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg_av1-720p.mp4",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://vp.nyt.com/video/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg_1080p.mp4",
-          "tag": "source",
-          "attribute": "src",
-          "raw_src": "https://vp.nyt.com/video/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg_1080p.mp4",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://vp.nyt.com/video/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg_720p.mp4",
-          "tag": "source",
-          "attribute": "src",
-          "raw_src": "https://vp.nyt.com/video/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg_720p.mp4",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
         }
       ],
       "internal_links_found": [
@@ -4657,15 +4631,16 @@
         "https://www.nytimes.com/es/",
         "https://cn.nytimes.com",
         "https://www.nytimes.com/section/todayspaper",
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news",
         "https://www.nytimes.com/live/2026/04/21/us/trump-news",
+        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news",
+        "https://www.nytimes.com/live/2026/04/21/us/virginia-redistricting-election",
         "https://www.nytimes.com/2026/04/21/us/politics/trust-trump-iran.html",
         "https://www.nytimes.com/2026/04/21/world/middleeast/us-iraq-security-cooperation.html",
         "https://www.nytimes.com/2026/04/21/world/middleeast/iran-war-europe-macron-france.html",
         "https://www.nytimes.com/2026/04/21/world/middleeast/southern-lebanon-israel-hezbollah-cease-fire.html",
         "https://www.nytimes.com/2026/04/21/world/middleeast/israel-soldiers-statue-lebanon-replaced.html",
         "https://www.nytimes.com/interactive/2026/business/energy-environment/gas-prices-map-iran-war-oil.html",
-        "https://www.nytimes.com/2026/04/20/us/politics/lori-chavez-deremer-labor-secretary-steps-down.html",
+        "https://www.nytimes.com/2026/04/21/business/economy/labor-secretary-trump.html",
         "https://www.nytimes.com/2026/04/20/us/politics/trump-administration-tariff-refunds.html",
         "https://www.nytimes.com/2026/04/17/us/politics/republicans-trump-pope-midterms.html",
         "https://www.nytimes.com/interactive/polls/donald-trump-approval-rating-polls.html",
@@ -4675,12 +4650,12 @@
         "https://www.nytimes.com/news-event/2026-midterm-elections",
         "https://www.nytimes.com/interactive/2026/us/elections/2026-election-calendar.html",
         "https://www.nytimes.com/interactive/polls/congressional-vote-2026.html",
-        "https://www.nytimes.com/interactive/polls/virginia-redistricting-referendum-polls-2026.html",
+        "https://www.nytimes.com/interactive/2026/us/elections/results-virginia-redistricting.html",
+        "https://www.nytimes.com/live/2026/us/times-election-results-explained",
         "https://www.nytimes.com/interactive/2026/04/21/us/politics/congress-redistricting-virginia-missouri-texas.html",
         "https://www.nytimes.com/interactive/2026/us/politics/midterms-house-maps-redistricting.html",
-        "https://www.nytimes.com/2026/04/21/us/cherfilus-mccormick-florida.html",
-        "https://www.nytimes.com/2026/04/21/us/elections/virginia-redistricting-referendum-what-to-watch.html",
-        "https://www.nytimes.com/2026/04/21/us/elections/virginia-gerrymandering-election-midterms.html",
+        "https://www.nytimes.com/2026/04/21/us/elections/virginia-redistricting-election-day-turnout.html",
+        "https://www.nytimes.com/2026/04/21/us/politics/cherfilus-mccormick-florida.html",
         "https://www.nytimes.com/2026/04/21/us/politics/usaid-former-employees.html",
         "https://www.nytimes.com/tips",
         "https://www.nytimes.com/2026/04/20/books/could-a-river-runs-through-it-have-been-a-hit-today.html",
@@ -4709,8 +4684,8 @@
         "https://www.nytimes.com/2026/04/21/opinion/ezra-klein-podcast-alex-bores.html",
         "https://www.nytimes.com/2026/04/21/opinion/measles-child-britain-vaccination.html",
         "https://www.nytimes.com/2026/04/21/world/americas/americans-cia-mexico-crash.html",
+        "https://www.nytimes.com/2026/04/21/weather/fresno-tornado-california.html",
         "https://www.nytimes.com/2026/04/21/us/ohio-state-walter-carter-relationship-president-resignation.html",
-        "https://www.nytimes.com/athletic/7213118/2026/04/21/usa-paraguay-world-cup-tickets-fifa-sofi-stadium/",
         "https://www.nytimes.com/2026/04/20/science/cocaine-salmon-sweden.html",
         "https://www.nytimes.com/athletic/",
         "https://www.nytimes.com/athletic/connections-sports-edition",
@@ -5017,10 +4992,10 @@
           "owned_cdn": "nyt.com"
         },
         {
-          "url": "https://static01.nyt.com/images/2026/04/21/multimedia/21cul-mj-review1-clgz/21cul-mj-review1-clgz-square640.jpg?format=pjpg&quality=75&auto=webp&disable=upscale",
+          "url": "https://static01.nyt.com/images/2026/04/21/multimedia/21ST-DWP-STYLISTS-mzfj/21ST-DWP-STYLISTS-mzfj-square640.jpg?format=pjpg&quality=75&auto=webp&disable=upscale",
           "tag": "img",
           "attribute": "src",
-          "raw_src": "https://static01.nyt.com/images/2026/04/21/multimedia/21cul-mj-review1-clgz/21cul-mj-review1-clgz-square640.jpg?format=pjpg&quality=75&auto=webp&disable=upscale",
+          "raw_src": "https://static01.nyt.com/images/2026/04/21/multimedia/21ST-DWP-STYLISTS-mzfj/21ST-DWP-STYLISTS-mzfj-square640.jpg?format=pjpg&quality=75&auto=webp&disable=upscale",
           "registrable_domain": "nyt.com",
           "party": "first-party",
           "category": "first-party",
@@ -5087,6 +5062,17 @@
           "tag": "img",
           "attribute": "src",
           "raw_src": "https://static01.nyt.com/images/2026/04/26/multimedia/26Archer-clgp/00Archer-clgp-smallSquare252.jpg?format=pjpg&quality=75&auto=webp&disable=upscale",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2025/09/29/world/the-world-nl-icon-updated/the-world-nl-icon-updated-smallSquare252.jpg?format=pjpg&quality=75&auto=webp&disable=upscale",
+          "tag": "img",
+          "attribute": "src",
+          "raw_src": "https://static01.nyt.com/images/2025/09/29/world/the-world-nl-icon-updated/the-world-nl-icon-updated-smallSquare252.jpg?format=pjpg&quality=75&auto=webp&disable=upscale",
           "registrable_domain": "nyt.com",
           "party": "first-party",
           "category": "first-party",
@@ -5531,6 +5517,193 @@
           "provider": null
         },
         {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/Root-xso0SmP_.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/Root-xso0SmP_.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/EmbedWrapper-CN_B6kXY.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/EmbedWrapper-CN_B6kXY.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/ComponentLayout-CIwURVW_.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/ComponentLayout-CIwURVW_.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/WinProbNeedle-32MBaUZO.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/WinProbNeedle-32MBaUZO.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/OverflowScroll-D4wmyY6C.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/OverflowScroll-D4wmyY6C.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/CandidateRankedChoiceTable-B8e3CCZ2.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/CandidateRankedChoiceTable-B8e3CCZ2.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/CandidateVotePercentTable-Be-5n5GO.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/CandidateVotePercentTable-Be-5n5GO.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/AnimationNumberTween-BDcf0RiH.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/AnimationNumberTween-BDcf0RiH.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/StateMap-B_w0t2Oy.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/StateMap-B_w0t2Oy.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/CandidateImage-DkdGe0iF.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/CandidateImage-DkdGe0iF.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/race-C5HG5-fb.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/race-C5HG5-fb.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/Caption-CdDZmDI5.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/Caption-CdDZmDI5.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/RowToggle-HJGQvbsI.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/RowToggle-HJGQvbsI.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/Hed-CiOJjow7.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/Hed-CiOJjow7.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/leaderMargin-yEIvHOyN.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/leaderMargin-yEIvHOyN.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/TrendingRaces-BAYEx37Q.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/TrendingRaces-BAYEx37Q.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/TrendingRacePage-D6YGM2t8.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/TrendingRacePage-D6YGM2t8.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
           "url": "https://vp.nyt.com/video/hlsfmp4/2026/04/21/167349_1_00vid-rv-iran-negotiations_wg/index-f1-v1-a1.m3u8",
           "tag": "source",
           "attribute": "src",
@@ -5604,8 +5777,9 @@
         "https://www.nytimes.com/es/",
         "https://cn.nytimes.com",
         "https://www.nytimes.com/section/todayspaper",
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news",
         "https://www.nytimes.com/live/2026/04/21/us/trump-news",
+        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news",
+        "https://www.nytimes.com/live/2026/04/21/us/virginia-redistricting-election",
         "https://www.nytimes.com/2026/04/21/us/politics/trust-trump-iran.html",
         "https://www.nytimes.com/2026/04/21/world/middleeast/us-iraq-security-cooperation.html",
         "https://www.nytimes.com/2026/04/21/world/middleeast/iran-war-europe-macron-france.html",
@@ -5618,7 +5792,7 @@
         "https://www.nytimes.com/2026/04/21/us/politics/donnyland-ukraine-donbas-trump.html",
         "https://www.nytimes.com/2026/04/21/us/politics/usaid-former-employees.html",
         "https://www.nytimes.com/interactive/2026/business/energy-environment/gas-prices-map-iran-war-oil.html",
-        "https://www.nytimes.com/2026/04/20/us/politics/lori-chavez-deremer-labor-secretary-steps-down.html",
+        "https://www.nytimes.com/2026/04/21/business/economy/labor-secretary-trump.html",
         "https://www.nytimes.com/2026/04/20/us/politics/trump-administration-tariff-refunds.html",
         "https://www.nytimes.com/2026/04/17/us/politics/republicans-trump-pope-midterms.html",
         "https://www.nytimes.com/interactive/polls/donald-trump-approval-rating-polls.html",
@@ -5646,7 +5820,8 @@
         "https://www.nytimes.com/2026/04/21/us/florida-criminal-investigation-openai-chatgpt-fsu-shooting.html",
         "https://www.nytimes.com/2026/04/21/science/march-fireballs-meteors-astronomy.html",
         "https://www.nytimes.com/2026/04/21/science/astronomy-lyrid-meteors.html",
-        "https://www.nytimes.com/2026/04/21/movies/michael-review.html",
+        "https://www.nytimes.com/2026/04/20/style/the-devil-wears-prada-2-press-tour-fashion.html",
+        "https://www.nytimes.com/2026/04/21/style/the-devil-wears-prada-2-premiere.html",
         "https://www.nytimes.com/2026/04/21/climate/rainforests-deforestation-fast-recovery.html",
         "https://www.nytimes.com/2026/04/21/arts/for-italys-art-pioneer-a-new-bronze-age.html",
         "https://www.nytimes.com/section/opinion",
@@ -5654,10 +5829,10 @@
         "https://www.nytimes.com/2026/04/21/opinion/israel-lebanon-netanyahu-hezbollah-friedman.html",
         "https://www.nytimes.com/2026/04/21/opinion/ezra-klein-podcast-alex-bores.html",
         "https://www.nytimes.com/2026/04/21/opinion/measles-child-britain-vaccination.html",
+        "https://www.nytimes.com/2026/04/21/world/iran-cease-fire-extended-asia-impact.html",
         "https://www.nytimes.com/2026/04/21/arts/music/madonna-coachella-outfits-missing-reward.html",
         "https://www.nytimes.com/2026/04/21/world/africa/nigeria-coup-plot-treason-charges.html",
-        "https://www.nytimes.com/athletic/7213118/2026/04/21/usa-paraguay-world-cup-tickets-fifa-sofi-stadium/",
-        "https://www.nytimes.com/2026/04/21/us/cherfilus-mccormick-florida.html",
+        "https://www.nytimes.com/athletic/7198353/2026/04/21/leicester-relegated-championship-league-one/",
         "https://www.nytimes.com/athletic/",
         "https://www.nytimes.com/athletic/connections-sports-edition",
         "https://www.nytimes.com/wirecutter/",
@@ -5751,6 +5926,17 @@
           "owned_cdn": "nyt.com"
         },
         {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/index-CL_xGvMO.js",
+          "tag": "script",
+          "attribute": "src",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/index-CL_xGvMO.js",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
           "url": "https://www.nytimes.com/vi-assets/static-assets/vendor-9916e8df8eecbd757328.js",
           "tag": "script",
           "attribute": "src",
@@ -5826,17 +6012,6 @@
           "tag": "img",
           "attribute": "src",
           "raw_src": "https://static01.nyt.com/images/2026/04/21/multimedia/21dc-fed-warsh-wkjz/21dc-fed-warsh-wkjz-verticalTwoByThree735.jpg?auto=webp&quality=30&disable=upscale&format=pjpg",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://static01.nyt.com/images/2026/04/21/us/elections/Light/Light-mediumSquareAt3X.png?auto=webp&quality=30&disable=upscale&format=pjpg",
-          "tag": "img",
-          "attribute": "src",
-          "raw_src": "https://static01.nyt.com/images/2026/04/21/us/elections/Light/Light-mediumSquareAt3X.png?auto=webp&quality=30&disable=upscale&format=pjpg",
           "registrable_domain": "nyt.com",
           "party": "first-party",
           "category": "first-party",
@@ -6391,6 +6566,193 @@
           "provider": null
         },
         {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/Root-xso0SmP_.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/Root-xso0SmP_.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/EmbedWrapper-CN_B6kXY.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/EmbedWrapper-CN_B6kXY.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/ComponentLayout-CIwURVW_.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/ComponentLayout-CIwURVW_.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/WinProbNeedle-32MBaUZO.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/WinProbNeedle-32MBaUZO.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/OverflowScroll-D4wmyY6C.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/OverflowScroll-D4wmyY6C.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/CandidateRankedChoiceTable-B8e3CCZ2.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/CandidateRankedChoiceTable-B8e3CCZ2.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/CandidateVotePercentTable-Be-5n5GO.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/CandidateVotePercentTable-Be-5n5GO.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/AnimationNumberTween-BDcf0RiH.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/AnimationNumberTween-BDcf0RiH.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/StateMap-B_w0t2Oy.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/StateMap-B_w0t2Oy.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/CandidateImage-DkdGe0iF.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/CandidateImage-DkdGe0iF.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/race-C5HG5-fb.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/race-C5HG5-fb.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/Caption-CdDZmDI5.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/Caption-CdDZmDI5.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/RowToggle-HJGQvbsI.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/RowToggle-HJGQvbsI.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/Hed-CiOJjow7.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/Hed-CiOJjow7.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/leaderMargin-yEIvHOyN.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/leaderMargin-yEIvHOyN.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/TrendingRaces-BAYEx37Q.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/TrendingRaces-BAYEx37Q.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/TrendingRacePage-D6YGM2t8.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/TrendingRacePage-D6YGM2t8.css",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
+        },
+        {
           "url": "https://static01.nytimes.com/newsgraphics/weather-hp-strip/6ba7540e-2691-4ad2-b02c-51ce91e43e2e/_assets/_app/immutable/assets/weather-hp-modules.cbd92ddb.css",
           "tag": "link",
           "attribute": "href",
@@ -6399,6 +6761,17 @@
           "party": "first-party",
           "category": "first-party",
           "provider": null
+        },
+        {
+          "url": "https://static01.nyt.com/elections-assets/pages/assets/preload-helper-_x8-A-Un.js",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "//static01.nyt.com/elections-assets/pages/assets/preload-helper-_x8-A-Un.js",
+          "registrable_domain": "nyt.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null,
+          "owned_cdn": "nyt.com"
         },
         {
           "url": "https://static01.nytimes.com/newsgraphics/weather-hp-strip/6ba7540e-2691-4ad2-b02c-51ce91e43e2e/_assets/_app/immutable/entry/start.a672a118.js",
@@ -6581,72 +6954,6 @@
           "category": "first-party",
           "provider": null,
           "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://vp.nyt.com/video/hlsfmp4/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg/index-f1-v1-a1.m3u8",
-          "tag": "source",
-          "attribute": "src",
-          "raw_src": "https://vp.nyt.com/video/hlsfmp4/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg/index-f1-v1-a1.m3u8",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://vp.nyt.com/video/hls/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg/index-f1-v1-a1.m3u8",
-          "tag": "source",
-          "attribute": "src",
-          "raw_src": "https://vp.nyt.com/video/hls/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg/index-f1-v1-a1.m3u8",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://vp.nyt.com/video/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg_av1-1080p.mp4",
-          "tag": "source",
-          "attribute": "src",
-          "raw_src": "https://vp.nyt.com/video/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg_av1-1080p.mp4",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://vp.nyt.com/video/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg_av1-720p.mp4",
-          "tag": "source",
-          "attribute": "src",
-          "raw_src": "https://vp.nyt.com/video/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg_av1-720p.mp4",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://vp.nyt.com/video/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg_1080p.mp4",
-          "tag": "source",
-          "attribute": "src",
-          "raw_src": "https://vp.nyt.com/video/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg_1080p.mp4",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://vp.nyt.com/video/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg_720p.mp4",
-          "tag": "source",
-          "attribute": "src",
-          "raw_src": "https://vp.nyt.com/video/2026/04/21/167021_1_00rv-virginia-gerrymandering_wg_720p.mp4",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
         }
       ],
       "internal_links_found": [
@@ -6656,15 +6963,16 @@
         "https://www.nytimes.com/es/",
         "https://cn.nytimes.com",
         "https://www.nytimes.com/section/todayspaper",
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news",
         "https://www.nytimes.com/live/2026/04/21/us/trump-news",
+        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news",
+        "https://www.nytimes.com/live/2026/04/21/us/virginia-redistricting-election",
         "https://www.nytimes.com/2026/04/21/us/politics/trust-trump-iran.html",
         "https://www.nytimes.com/2026/04/21/world/middleeast/us-iraq-security-cooperation.html",
         "https://www.nytimes.com/2026/04/21/world/middleeast/iran-war-europe-macron-france.html",
         "https://www.nytimes.com/2026/04/21/world/middleeast/southern-lebanon-israel-hezbollah-cease-fire.html",
         "https://www.nytimes.com/2026/04/21/world/middleeast/israel-soldiers-statue-lebanon-replaced.html",
         "https://www.nytimes.com/interactive/2026/business/energy-environment/gas-prices-map-iran-war-oil.html",
-        "https://www.nytimes.com/2026/04/20/us/politics/lori-chavez-deremer-labor-secretary-steps-down.html",
+        "https://www.nytimes.com/2026/04/21/business/economy/labor-secretary-trump.html",
         "https://www.nytimes.com/2026/04/20/us/politics/trump-administration-tariff-refunds.html",
         "https://www.nytimes.com/2026/04/17/us/politics/republicans-trump-pope-midterms.html",
         "https://www.nytimes.com/interactive/polls/donald-trump-approval-rating-polls.html",
@@ -6674,12 +6982,12 @@
         "https://www.nytimes.com/news-event/2026-midterm-elections",
         "https://www.nytimes.com/interactive/2026/us/elections/2026-election-calendar.html",
         "https://www.nytimes.com/interactive/polls/congressional-vote-2026.html",
-        "https://www.nytimes.com/interactive/polls/virginia-redistricting-referendum-polls-2026.html",
+        "https://www.nytimes.com/interactive/2026/us/elections/results-virginia-redistricting.html",
+        "https://www.nytimes.com/live/2026/us/times-election-results-explained",
         "https://www.nytimes.com/interactive/2026/04/21/us/politics/congress-redistricting-virginia-missouri-texas.html",
         "https://www.nytimes.com/interactive/2026/us/politics/midterms-house-maps-redistricting.html",
-        "https://www.nytimes.com/2026/04/21/us/cherfilus-mccormick-florida.html",
-        "https://www.nytimes.com/2026/04/21/us/elections/virginia-redistricting-referendum-what-to-watch.html",
-        "https://www.nytimes.com/2026/04/21/us/elections/virginia-gerrymandering-election-midterms.html",
+        "https://www.nytimes.com/2026/04/21/us/elections/virginia-redistricting-election-day-turnout.html",
+        "https://www.nytimes.com/2026/04/21/us/politics/cherfilus-mccormick-florida.html",
         "https://www.nytimes.com/2026/04/21/us/politics/usaid-former-employees.html",
         "https://www.nytimes.com/tips",
         "https://www.nytimes.com/2026/04/20/books/could-a-river-runs-through-it-have-been-a-hit-today.html",
@@ -6708,8 +7016,8 @@
         "https://www.nytimes.com/2026/04/21/opinion/ezra-klein-podcast-alex-bores.html",
         "https://www.nytimes.com/2026/04/21/opinion/measles-child-britain-vaccination.html",
         "https://www.nytimes.com/2026/04/21/world/americas/americans-cia-mexico-crash.html",
+        "https://www.nytimes.com/2026/04/21/weather/fresno-tornado-california.html",
         "https://www.nytimes.com/2026/04/21/us/ohio-state-walter-carter-relationship-president-resignation.html",
-        "https://www.nytimes.com/athletic/7213118/2026/04/21/usa-paraguay-world-cup-tickets-fifa-sofi-stadium/",
         "https://www.nytimes.com/2026/04/20/science/cocaine-salmon-sweden.html",
         "https://www.nytimes.com/athletic/",
         "https://www.nytimes.com/athletic/connections-sports-edition",
@@ -7434,698 +7742,6 @@
       ]
     },
     {
-      "url": "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news",
-      "final_url": "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news",
-      "depth": 1,
-      "status": "ok",
-      "http_status": 200,
-      "security_headers": {
-        "content-security-policy": "upgrade-insecure-requests; default-src data: 'unsafe-inline' 'unsafe-eval' https: nytresource:; script-src data: 'unsafe-inline' 'unsafe-eval' https: blob: nytresource:; style-src data: 'unsafe-inline' https: nytresource:; img-src data: https: blob: android-webview-video-poster: nytresource:; font-src data: https: nytresource:; connect-src data: https: wss: blob: nytresource:; media-src data: https: blob: nytresource:; object-src https:; child-src https: data: blob: nytresource:; form-action https: nytimes: nytcooking: nytxwd:; report-uri https://csp.nytimes.com/report;",
-        "x-frame-options": "DENY",
-        "x-content-type-options": "nosniff",
-        "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
-        "permissions-policy": "browsing-topics=()"
-      },
-      "resources": [
-        {
-          "url": "https://www.nytimes.com/vi-assets/static-assets/adslot-85f75cbf48b1162ebdbb.js",
-          "tag": "script",
-          "attribute": "src",
-          "raw_src": "/vi-assets/static-assets/adslot-85f75cbf48b1162ebdbb.js",
-          "registrable_domain": "nytimes.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null
-        },
-        {
-          "url": "https://www.nytimes.com/vi-assets/static-assets/vendor-9916e8df8eecbd757328.js",
-          "tag": "script",
-          "attribute": "src",
-          "raw_src": "/vi-assets/static-assets/vendor-9916e8df8eecbd757328.js",
-          "registrable_domain": "nytimes.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null
-        },
-        {
-          "url": "https://www.nytimes.com/vi-assets/static-assets/liveAsset-33a570750d20d0e29505.js",
-          "tag": "script",
-          "attribute": "src",
-          "raw_src": "/vi-assets/static-assets/liveAsset-33a570750d20d0e29505.js",
-          "registrable_domain": "nytimes.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null
-        },
-        {
-          "url": "https://www.nytimes.com/vi-assets/static-assets/defaultSiteIndexData-88df45f019df15459e4c.js",
-          "tag": "script",
-          "attribute": "src",
-          "raw_src": "/vi-assets/static-assets/defaultSiteIndexData-88df45f019df15459e4c.js",
-          "registrable_domain": "nytimes.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null
-        },
-        {
-          "url": "https://www.nytimes.com/vi-assets/static-assets/siteIndexContent-a0bb6466813f709d390c.js",
-          "tag": "script",
-          "attribute": "src",
-          "raw_src": "/vi-assets/static-assets/siteIndexContent-a0bb6466813f709d390c.js",
-          "registrable_domain": "nytimes.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null
-        },
-        {
-          "url": "https://www.nytimes.com/vi-assets/static-assets/cssModulesStyles-67982248ede4abbeaa1f.js",
-          "tag": "script",
-          "attribute": "src",
-          "raw_src": "/vi-assets/static-assets/cssModulesStyles-67982248ede4abbeaa1f.js",
-          "registrable_domain": "nytimes.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null
-        },
-        {
-          "url": "https://www.nytimes.com/vi-assets/static-assets/main-7a6f704cd0244c2cbada.js",
-          "tag": "script",
-          "attribute": "src",
-          "raw_src": "/vi-assets/static-assets/main-7a6f704cd0244c2cbada.js",
-          "registrable_domain": "nytimes.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null
-        },
-        {
-          "url": "https://www.googletagmanager.com/gtm.js?id=GTM-P528B3>m_auth=tfAzqo1rYDLgYhmTnSjPqw>m_preview=env-130>m_cookies_win=x",
-          "tag": "script",
-          "attribute": "src",
-          "raw_src": "https://www.googletagmanager.com/gtm.js?id=GTM-P528B3>m_auth=tfAzqo1rYDLgYhmTnSjPqw>m_preview=env-130>m_cookies_win=x",
-          "registrable_domain": "googletagmanager.com",
-          "party": "third-party",
-          "category": "analytics",
-          "provider": "Google Tag Manager"
-        },
-        {
-          "url": "https://www.googletagmanager.com/ns.html?id=GTM-P528B3>m_auth=tfAzqo1rYDLgYhmTnSjPqw>m_preview=env-130>m_cookies_win=x",
-          "tag": "iframe",
-          "attribute": "src",
-          "raw_src": "https://www.googletagmanager.com/ns.html?id=GTM-P528B3>m_auth=tfAzqo1rYDLgYhmTnSjPqw>m_preview=env-130>m_cookies_win=x",
-          "registrable_domain": "googletagmanager.com",
-          "party": "third-party",
-          "category": "analytics",
-          "provider": "Google Tag Manager"
-        },
-        {
-          "url": "https://static01.nyt.com/images/2026/04/21/multimedia/21israel-iran-header420p-zwgc/21israel-iran-header420p-zwgc-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
-          "tag": "img",
-          "attribute": "src",
-          "raw_src": "https://static01.nyt.com/images/2026/04/21/multimedia/21israel-iran-header420p-zwgc/21israel-iran-header420p-zwgc-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://static01.nyt.com/images/icons/t_logo_291_black.png",
-          "tag": "img",
-          "attribute": "src",
-          "raw_src": "https://static01.nyt.com/images/icons/t_logo_291_black.png",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://static01.nyt.com/images/2022/01/05/us/politics/author-luke-broadwater/author-luke-broadwater-thumbLarge-v3.png?quality=75&auto=webp",
-          "tag": "img",
-          "attribute": "src",
-          "raw_src": "https://static01.nyt.com/images/2022/01/05/us/politics/author-luke-broadwater/author-luke-broadwater-thumbLarge-v3.png?quality=75&auto=webp",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://static01.nyt.com/images/2023/02/08/reader-center/author-euan-ward/author-euan-ward-thumbLarge.png?quality=75&auto=webp",
-          "tag": "img",
-          "attribute": "src",
-          "raw_src": "https://static01.nyt.com/images/2023/02/08/reader-center/author-euan-ward/author-euan-ward-thumbLarge.png?quality=75&auto=webp",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://static01.nyt.com/images/icons/t_logo_291_black.png?quality=75&auto=webp",
-          "tag": "img",
-          "attribute": "src",
-          "raw_src": "https://static01.nyt.com/images/icons/t_logo_291_black.png?quality=75&auto=webp",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://static01.nyt.com/images/2019/11/22/reader-center/author-christina-goldbaum/author-christina-goldbaum-thumbLarge-v2.png?quality=75&auto=webp",
-          "tag": "img",
-          "attribute": "src",
-          "raw_src": "https://static01.nyt.com/images/2019/11/22/reader-center/author-christina-goldbaum/author-christina-goldbaum-thumbLarge-v2.png?quality=75&auto=webp",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://static01.nyt.com/images/2024/09/11/reader-center/author-rebecca-elliott/author-rebecca-elliott-thumbLarge.png?quality=75&auto=webp",
-          "tag": "img",
-          "attribute": "src",
-          "raw_src": "https://static01.nyt.com/images/2024/09/11/reader-center/author-rebecca-elliott/author-rebecca-elliott-thumbLarge.png?quality=75&auto=webp",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://static01.nyt.com/images/2025/02/14/reader-center/author-tyler-pager/author-tyler-pager-thumbLarge-v3.png?quality=75&auto=webp",
-          "tag": "img",
-          "attribute": "src",
-          "raw_src": "https://static01.nyt.com/images/2025/02/14/reader-center/author-tyler-pager/author-tyler-pager-thumbLarge-v3.png?quality=75&auto=webp",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://static01.nyt.com/images/2022/02/04/reader-center/author-jason-karaian/author-jason-karaian-thumbLarge.png?quality=75&auto=webp",
-          "tag": "img",
-          "attribute": "src",
-          "raw_src": "https://static01.nyt.com/images/2022/02/04/reader-center/author-jason-karaian/author-jason-karaian-thumbLarge.png?quality=75&auto=webp",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://static01.nyt.com/images/2018/06/12/multimedia/author-alan-rappeport/author-alan-rappeport-thumbLarge-v4.png?quality=75&auto=webp",
-          "tag": "img",
-          "attribute": "src",
-          "raw_src": "https://static01.nyt.com/images/2018/06/12/multimedia/author-alan-rappeport/author-alan-rappeport-thumbLarge-v4.png?quality=75&auto=webp",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://static01.nyt.com/images/2019/07/03/reader-center/author-elian-peltier/author-elian-peltier-thumbLarge-v7.png?quality=75&auto=webp",
-          "tag": "img",
-          "attribute": "src",
-          "raw_src": "https://static01.nyt.com/images/2019/07/03/reader-center/author-elian-peltier/author-elian-peltier-thumbLarge-v7.png?quality=75&auto=webp",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://static01.nyt.com/images/2018/06/12/multimedia/author-eric-schmitt/author-eric-schmitt-thumbLarge-v2.png?quality=75&auto=webp",
-          "tag": "img",
-          "attribute": "src",
-          "raw_src": "https://static01.nyt.com/images/2018/06/12/multimedia/author-eric-schmitt/author-eric-schmitt-thumbLarge-v2.png?quality=75&auto=webp",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://static01.nyt.com/images/2026/04/17/reader-center/author-leo-sands/author-leo-sands-thumbLarge.png?quality=75&auto=webp",
-          "tag": "img",
-          "attribute": "src",
-          "raw_src": "https://static01.nyt.com/images/2026/04/17/reader-center/author-leo-sands/author-leo-sands-thumbLarge.png?quality=75&auto=webp",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://static01.nyt.com/images/2020/03/06/reader-center/author-jenny-gross/author-jenny-gross-thumbLarge-v6.png?quality=75&auto=webp",
-          "tag": "img",
-          "attribute": "src",
-          "raw_src": "https://static01.nyt.com/images/2020/03/06/reader-center/author-jenny-gross/author-jenny-gross-thumbLarge-v6.png?quality=75&auto=webp",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://static01.nyt.com/images/2023/04/09/reader-center/author-david-pierson/author-david-pierson-thumbLarge.png?quality=75&auto=webp",
-          "tag": "img",
-          "attribute": "src",
-          "raw_src": "https://static01.nyt.com/images/2023/04/09/reader-center/author-david-pierson/author-david-pierson-thumbLarge.png?quality=75&auto=webp",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://static01.nyt.com/images/2022/05/16/reader-center/author-erika-solomon/author-erika-solomon-thumbLarge.png?quality=75&auto=webp",
-          "tag": "img",
-          "attribute": "src",
-          "raw_src": "https://static01.nyt.com/images/2022/05/16/reader-center/author-erika-solomon/author-erika-solomon-thumbLarge.png?quality=75&auto=webp",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://static01.nyt.com/images/2019/10/25/reader-center/author-michael-crowley/author-michael-crowley-thumbLarge-v4.png?quality=75&auto=webp",
-          "tag": "img",
-          "attribute": "src",
-          "raw_src": "https://static01.nyt.com/images/2019/10/25/reader-center/author-michael-crowley/author-michael-crowley-thumbLarge-v4.png?quality=75&auto=webp",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news",
-          "tag": "link",
-          "attribute": "href",
-          "raw_src": "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news",
-          "registrable_domain": "nytimes.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null
-        },
-        {
-          "url": "https://www.nytimes.com/vi-assets/static-assets/favicon-d2483f10ef688e6f89e23806b9700298.ico",
-          "tag": "link",
-          "attribute": "href",
-          "raw_src": "/vi-assets/static-assets/favicon-d2483f10ef688e6f89e23806b9700298.ico",
-          "registrable_domain": "nytimes.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null
-        },
-        {
-          "url": "https://www.nytimes.com/vi-assets/static-assets/apple-touch-icon-28865b72953380a40aa43318108876cb.png",
-          "tag": "link",
-          "attribute": "href",
-          "raw_src": "/vi-assets/static-assets/apple-touch-icon-28865b72953380a40aa43318108876cb.png",
-          "registrable_domain": "nytimes.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null
-        },
-        {
-          "url": "https://www.nytimes.com/vi-assets/static-assets/ios-ipad-144x144-28865b72953380a40aa43318108876cb.png",
-          "tag": "link",
-          "attribute": "href",
-          "raw_src": "/vi-assets/static-assets/ios-ipad-144x144-28865b72953380a40aa43318108876cb.png",
-          "registrable_domain": "nytimes.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null
-        },
-        {
-          "url": "https://www.nytimes.com/vi-assets/static-assets/ios-iphone-114x144-080e7ec6514fdc62bcbb7966d9b257d2.png",
-          "tag": "link",
-          "attribute": "href",
-          "raw_src": "/vi-assets/static-assets/ios-iphone-114x144-080e7ec6514fdc62bcbb7966d9b257d2.png",
-          "registrable_domain": "nytimes.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null
-        },
-        {
-          "url": "https://www.nytimes.com/vi-assets/static-assets/ios-default-homescreen-57x57-43808a4cd5333b648057a01624d84960.png",
-          "tag": "link",
-          "attribute": "href",
-          "raw_src": "/vi-assets/static-assets/ios-default-homescreen-57x57-43808a4cd5333b648057a01624d84960.png",
-          "registrable_domain": "nytimes.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null
-        },
-        {
-          "url": "https://www.nytimes.com/vi-assets/static-assets/live-favicon-29072d699076b4150ceb4d77a33c448e.ico",
-          "tag": "link",
-          "attribute": "href",
-          "raw_src": "/vi-assets/static-assets/live-favicon-29072d699076b4150ceb4d77a33c448e.ico",
-          "registrable_domain": "nytimes.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null
-        },
-        {
-          "url": "https://g1.nyt.com",
-          "tag": "link",
-          "attribute": "href",
-          "raw_src": "https://g1.nyt.com",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://g1.nyt.com/fonts/css/web-fonts.c851560786173ad206e1f76c1901be7e096e8f8b.css",
-          "tag": "link",
-          "attribute": "href",
-          "raw_src": "https://g1.nyt.com/fonts/css/web-fonts.c851560786173ad206e1f76c1901be7e096e8f8b.css",
-          "registrable_domain": "nyt.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null,
-          "owned_cdn": "nyt.com"
-        },
-        {
-          "url": "https://www.nytimes.com/vi-assets/static-assets/global-bf55b3b62e74478ad488922130f07a8e.css",
-          "tag": "link",
-          "attribute": "href",
-          "raw_src": "/vi-assets/static-assets/global-bf55b3b62e74478ad488922130f07a8e.css",
-          "registrable_domain": "nytimes.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null
-        },
-        {
-          "url": "https://www.nytimes.com/vi-assets/static-assets/cssModulesStyles-194a4f08b37a2be7fb8f.css",
-          "tag": "link",
-          "attribute": "href",
-          "raw_src": "/vi-assets/static-assets/cssModulesStyles-194a4f08b37a2be7fb8f.css",
-          "registrable_domain": "nytimes.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null
-        },
-        {
-          "url": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/assets/4.ByV4iHiL.css",
-          "tag": "link",
-          "attribute": "href",
-          "raw_src": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/assets/4.ByV4iHiL.css",
-          "registrable_domain": "nytimes.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null
-        },
-        {
-          "url": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/entry/start.DvP_z-M2.js",
-          "tag": "link",
-          "attribute": "href",
-          "raw_src": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/entry/start.DvP_z-M2.js",
-          "registrable_domain": "nytimes.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null
-        },
-        {
-          "url": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/CZ2b5r9Y.js",
-          "tag": "link",
-          "attribute": "href",
-          "raw_src": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/CZ2b5r9Y.js",
-          "registrable_domain": "nytimes.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null
-        },
-        {
-          "url": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/DBjht_cN.js",
-          "tag": "link",
-          "attribute": "href",
-          "raw_src": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/DBjht_cN.js",
-          "registrable_domain": "nytimes.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null
-        },
-        {
-          "url": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/AkF08DtW.js",
-          "tag": "link",
-          "attribute": "href",
-          "raw_src": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/AkF08DtW.js",
-          "registrable_domain": "nytimes.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null
-        },
-        {
-          "url": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/entry/app.DYYEKu7D.js",
-          "tag": "link",
-          "attribute": "href",
-          "raw_src": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/entry/app.DYYEKu7D.js",
-          "registrable_domain": "nytimes.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null
-        },
-        {
-          "url": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/C68ciNhP.js",
-          "tag": "link",
-          "attribute": "href",
-          "raw_src": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/C68ciNhP.js",
-          "registrable_domain": "nytimes.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null
-        },
-        {
-          "url": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/B-eHZApt.js",
-          "tag": "link",
-          "attribute": "href",
-          "raw_src": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/B-eHZApt.js",
-          "registrable_domain": "nytimes.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null
-        },
-        {
-          "url": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/eLR1wiyd.js",
-          "tag": "link",
-          "attribute": "href",
-          "raw_src": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/eLR1wiyd.js",
-          "registrable_domain": "nytimes.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null
-        },
-        {
-          "url": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/B8smKJ9D.js",
-          "tag": "link",
-          "attribute": "href",
-          "raw_src": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/B8smKJ9D.js",
-          "registrable_domain": "nytimes.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null
-        },
-        {
-          "url": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/nodes/0.13nfVBnA.js",
-          "tag": "link",
-          "attribute": "href",
-          "raw_src": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/nodes/0.13nfVBnA.js",
-          "registrable_domain": "nytimes.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null
-        },
-        {
-          "url": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/nodes/4.iBwD0xfI.js",
-          "tag": "link",
-          "attribute": "href",
-          "raw_src": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/nodes/4.iBwD0xfI.js",
-          "registrable_domain": "nytimes.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null
-        },
-        {
-          "url": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/D5bzQx20.js",
-          "tag": "link",
-          "attribute": "href",
-          "raw_src": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/D5bzQx20.js",
-          "registrable_domain": "nytimes.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null
-        },
-        {
-          "url": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/D85Dk9iE.js",
-          "tag": "link",
-          "attribute": "href",
-          "raw_src": "https://static01.nytimes.com/newsgraphics/otqgZdUsAIaafg/_app.0a1cqmkKgHujrd348Sp9tkO5zSAucrTgIJJzV9uL6v0/immutable/chunks/D85Dk9iE.js",
-          "registrable_domain": "nytimes.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null
-        },
-        {
-          "url": "https://static01.nytimes.com/newsgraphics/bk-MH6FuKgaY0rxiQ/_app/immutable/assets/bundle.C_sbD02F.css",
-          "tag": "link",
-          "attribute": "href",
-          "raw_src": "https://static01.nytimes.com/newsgraphics/bk-MH6FuKgaY0rxiQ/_app/immutable/assets/bundle.C_sbD02F.css",
-          "registrable_domain": "nytimes.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null
-        },
-        {
-          "url": "https://static01.nytimes.com/newsgraphics/bk-MH6FuKgaY0rxiQ/_app/immutable/bundle.vXacvZTv.js",
-          "tag": "link",
-          "attribute": "href",
-          "raw_src": "https://static01.nytimes.com/newsgraphics/bk-MH6FuKgaY0rxiQ/_app/immutable/bundle.vXacvZTv.js",
-          "registrable_domain": "nytimes.com",
-          "party": "first-party",
-          "category": "first-party",
-          "provider": null
-        }
-      ],
-      "internal_links_found": [
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news",
-        "https://www.nytimes.com/",
-        "https://www.nytimes.com/section/todayspaper",
-        "https://www.nytimes.com/2026/04/21/us/politics/vance-islamabad-iran-peace-talks.html",
-        "https://www.nytimes.com/2026/04/17/world/middleeast/israel-lebanon-ceasefire.html",
-        "https://www.nytimes.com/2026/03/12/world/middleeast/strait-of-hormuz-iran-blockade-explained.html",
-        "https://www.nytimes.com/article/iran-war-trump-us-oil-hormuz-key-dates-events.html",
-        "https://www.nytimes.com/by/luke-broadwater",
-        "https://www.nytimes.com/by/jonathan-swan",
-        "https://www.nytimes.com/by/farnaz-fassihi",
-        "https://www.nytimes.com/by/somini-sengupta",
-        "https://www.nytimes.com/2026/04/17/us/politics/trump-iran-nuclear-site.html?searchResultPosition=2",
-        "https://www.nytimes.com/2026/04/20/world/middleeast/strait-hormuz-traffic-ships-iran-us.html",
-        "https://www.nytimes.com/by/euan-ward",
-        "https://www.nytimes.com/by/christina-goldbaum",
-        "https://www.nytimes.com/2026/04/14/world/middleeast/israell-lebanon-talks.html",
-        "https://www.nytimes.com/by/rebecca-f-elliott",
-        "https://www.nytimes.com/by/maggie-haberman",
-        "https://www.nytimes.com/by/tyler-pager",
-        "https://www.nytimes.com/by/jason-karaian",
-        "https://www.nytimes.com/2026/04/19/world/iran-war-stock-market-hormuz-attack.html",
-        "https://www.nytimes.com/by/alan-rappeport",
-        "https://www.nytimes.com/2025/10/17/us/politics/trump-argentina-bailout-bessent.html",
-        "https://www.nytimes.com/by/elian-peltier",
-        "https://www.nytimes.com/by/eric-schmitt",
-        "https://www.nytimes.com/by/jenny-gross",
-        "https://www.nytimes.com/live/2026/04/17/world/iran-us-war-trump",
-        "https://www.nytimes.com/by/david-pierson",
-        "https://www.nytimes.com/by/berry-wang",
-        "https://www.nytimes.com/2026/04/14/world/middleeast/xi-iran-war-china.html%20",
-        "https://www.nytimes.com/2026/04/16/world/asia/china-iran-trump-diplomacy-hormuz.html",
-        "https://www.nytimes.com/2026/04/15/us/politics/trump-iran-war.html",
-        "https://www.nytimes.com/2026/03/30/world/middleeast/trump-regime-change-iran.html",
-        "https://www.nytimes.com/by/the-new-york-times",
-        "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news/vances-trip-to-islamabad-on-hold-as-iran-fails-to-respond-to-us-terms",
-        "https://www.nytimes.com/2026/04/09/business/iran-strait-of-hormuz-what-to-know.html",
-        "https://www.nytimes.com/by/erika-solomon",
-        "https://www.nytimes.com/explain/2022/new-york-times-journalism",
-        "https://www.nytimes.com/by/leo-sands",
-        "https://www.nytimes.com/2026/04/11/us/politics/china-iran-war-missiles-supplies.html?smid=nytcore-ios-share",
-        "https://www.nytimes.com/2026/04/19/us/us-military-iranian-ship.html",
-        "https://www.nytimes.com/by/michael-crowley",
-        "https://www.nytimes.com/spotlight/donald-trump",
-        "https://www.nytimes.com/topic/organization/hezbollah",
-        "https://www.nytimes.com/section/us",
-        "https://www.nytimes.com/section/world",
-        "https://www.nytimes.com/section/politics",
-        "https://www.nytimes.com/section/nyregion",
-        "https://www.nytimes.com/section/education",
-        "https://www.nytimes.com/section/sports",
-        "https://www.nytimes.com/section/business",
-        "https://www.nytimes.com/section/technology",
-        "https://www.nytimes.com/section/science",
-        "https://www.nytimes.com/section/weather",
-        "https://www.nytimes.com/spotlight/the-great-read",
-        "https://www.nytimes.com/section/obituaries",
-        "https://www.nytimes.com/section/headway",
-        "https://www.nytimes.com/spotlight/visual-investigations",
-        "https://www.nytimes.com/section/magazine",
-        "https://www.nytimes.com/section/books/review",
-        "https://www.nytimes.com/books/best-sellers/",
-        "https://www.nytimes.com/section/arts/dance",
-        "https://www.nytimes.com/section/movies",
-        "https://www.nytimes.com/section/arts/music",
-        "https://www.nytimes.com/spotlight/pop-culture",
-        "https://www.nytimes.com/section/arts/television",
-        "https://www.nytimes.com/section/theater",
-        "https://www.nytimes.com/section/arts/design",
-        "https://www.nytimes.com/section/health",
-        "https://www.nytimes.com/section/well",
-        "https://www.nytimes.com/section/food",
-        "https://www.nytimes.com/reviews/dining",
-        "https://www.nytimes.com/section/fashion/weddings",
-        "https://www.nytimes.com/section/travel",
-        "https://www.nytimes.com/section/style",
-        "https://www.nytimes.com/section/fashion",
-        "https://www.nytimes.com/section/realestate",
-        "https://www.nytimes.com/section/t-magazine",
-        "https://www.nytimes.com/section/opinion",
-        "https://www.nytimes.com/section/opinion/columnists",
-        "https://www.nytimes.com/section/opinion/editorials",
-        "https://www.nytimes.com/section/opinion/contributors",
-        "https://www.nytimes.com/column/op-docs",
-        "https://www.nytimes.com/section/opinion/letters",
-        "https://www.nytimes.com/section/opinion/sunday",
-        "https://www.nytimes.com/spotlight/opinion-video",
-        "https://www.nytimes.com/series/opinion-audio",
-        "https://www.nytimes.com/spotlight/podcasts",
-        "https://www.nytimes.com/crosswords",
-        "https://cooking.nytimes.com",
-        "https://www.nytimes.com/wirecutter/",
-        "https://www.nytimes.com/athletic/",
-        "https://www.nytimes.com/section/jobs",
-        "https://www.nytimes.com/video",
-        "https://www.nytimes.com/spotlight/graphics",
-        "https://www.nytimes.com/trending/",
-        "https://www.nytimes.com/spotlight/nyt-events",
-        "https://www.nytimes.com/section/corrections",
-        "https://www.nytimes.com/section/reader-center",
-        "https://timesmachine.nytimes.com/browser",
-        "https://www.nytimes.com/section/learning",
-        "https://www.nytimes.com/spotlight/nytimesineducation",
-        "https://www.nytimes.com/subscription",
-        "https://www.nytimes.com/account",
-        "https://www.nytimes.com/subscription/home-delivery",
-        "https://www.nytimes.com/gift",
-        "https://www.nytimes.com/subscription/groups?Pardot_Campaign_Code_Form_Input=89FQX",
-        "https://www.nytimes.com/gift-articles",
-        "https://www.nytimes.com/newsletters",
-        "https://store.nytimes.com/",
-        "https://help.nytimes.com/hc/en-us/articles/115014792127-Copyright-Notice",
-        "https://help.nytimes.com/hc/en-us/articles/115015385887-Contact-The-New-York-Times",
-        "https://help.nytimes.com/hc/en-us/articles/115015727108-Accessibility",
-        "https://advertising.nytimes.com/",
-        "https://advertising.nytimes.com/custom-content/",
-        "https://help.nytimes.com/hc/en-us/articles/10940941449492-The-New-York-Times-Company-Privacy-Policy",
-        "https://www.nytimes.com/privacy/cookie-policy",
-        "https://help.nytimes.com/hc/en-us/articles/115014893428-Terms-of-Service",
-        "https://help.nytimes.com/hc/en-us/articles/115014893968-Terms-of-Sale",
-        "https://www.nytimes.com/sitemap/",
-        "https://www.nytimes.com/ca/",
-        "https://www.nytimes.com/international/",
-        "https://help.nytimes.com/hc/en-us",
-        "https://www.nytimes.com/subscription?campaignId=37WXW",
-        "https://www.nytimes.com/privacy/manage-settings"
-      ]
-    },
-    {
       "url": "https://www.nytimes.com/live/2026/04/21/us/trump-news",
       "final_url": "https://www.nytimes.com/live/2026/04/21/us/trump-news",
       "depth": 1,
@@ -8152,8 +7768,34 @@
       "internal_links_found": []
     },
     {
-      "url": "https://www.nytimes.com/2026/04/21/us/politics/trust-trump-iran.html",
-      "final_url": "https://www.nytimes.com/2026/04/21/us/politics/trust-trump-iran.html",
+      "url": "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news",
+      "final_url": "https://www.nytimes.com/live/2026/04/21/world/iran-us-war-trump-news",
+      "depth": 1,
+      "status": "ok",
+      "http_status": 403,
+      "security_headers": {
+        "content-security-policy": "upgrade-insecure-requests; default-src data: 'unsafe-inline' 'unsafe-eval' https: nytresource:; script-src data: 'unsafe-inline' 'unsafe-eval' https: blob: nytresource:; style-src data: 'unsafe-inline' https: nytresource:; img-src data: https: blob: android-webview-video-poster: nytresource:; font-src data: https: nytresource:; connect-src data: https: wss: blob: nytresource:; media-src data: https: blob: nytresource:; object-src https:; child-src https: data: blob: nytresource:; form-action https: nytimes: nytcooking: nytxwd:; report-uri https://csp.nytimes.com/report;",
+        "x-frame-options": "DENY",
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+        "permissions-policy": "browsing-topics=()"
+      },
+      "resources": [
+        {
+          "url": "https://ct.captcha-delivery.com/c.js",
+          "tag": "script",
+          "attribute": "src",
+          "raw_src": "https://ct.captcha-delivery.com/c.js",
+          "registrable_domain": "captcha-delivery.com",
+          "party": "third-party",
+          "category": "cdn",
+          "provider": null
+        }
+      ],
+      "internal_links_found": []
+    },
+    {
+      "url": "https://www.nytimes.com/live/2026/04/21/us/virginia-redistricting-election",
+      "final_url": "https://www.nytimes.com/live/2026/04/21/us/virginia-redistricting-election",
       "depth": 1,
       "status": "ok",
       "http_status": 403,

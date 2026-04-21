@@ -1,12 +1,30 @@
 {
   "format_version": 1,
-  "last_updated": "2026-04-21T21:22:26.614974+00:00",
+  "last_updated": "2026-04-21T22:30:51.413753+00:00",
   "notes": "Review and promote high-confidence entries into data/domain_classifications.json",
   "domains": {
+    "google.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 9,
+      "sites": [
+        "nypost.com",
+        "cnn.com",
+        "techcrunch.com"
+      ],
+      "example_urls": [
+        "https://accounts.google.com/gsi/client",
+        "https://accounts.google.com",
+        "https://google.com",
+        "https://www.google.com",
+        "https://www.google.com/recaptcha/api.js?render=6LcKaMEUAAAAACNhMymsVMHg25lFfksvZZO9EMTZ&ver=0.1.0"
+      ],
+      "status": "needs_review"
+    },
     "pagesix.com": {
       "proposed_category": null,
       "proposed_provider": null,
-      "seen_count": 7,
+      "seen_count": 8,
       "sites": [
         "nypost.com"
       ],
@@ -50,24 +68,10 @@
       "status": "promoted",
       "promoted_at": "2026-04-21T21:22:26.613462+00:00"
     },
-    "google.com": {
-      "proposed_category": null,
-      "proposed_provider": null,
-      "seen_count": 3,
-      "sites": [
-        "nypost.com"
-      ],
-      "example_urls": [
-        "https://accounts.google.com/gsi/client",
-        "https://accounts.google.com",
-        "https://google.com"
-      ],
-      "status": "needs_review"
-    },
     "decider.com": {
       "proposed_category": null,
       "proposed_provider": null,
-      "seen_count": 2,
+      "seen_count": 3,
       "sites": [
         "nypost.com"
       ],
@@ -79,12 +83,24 @@
     "gmpg.org": {
       "proposed_category": null,
       "proposed_provider": null,
-      "seen_count": 2,
+      "seen_count": 3,
       "sites": [
         "nypost.com"
       ],
       "example_urls": [
         "https://gmpg.org/xfn/11"
+      ],
+      "status": "needs_review"
+    },
+    "wordpress.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 3,
+      "sites": [
+        "nypost.com"
+      ],
+      "example_urls": [
+        "https://v0.wordpress.com"
       ],
       "status": "needs_review"
     },
@@ -101,6 +117,57 @@
       "status": "promoted",
       "promoted_at": "2026-04-21T21:22:26.613462+00:00"
     },
+    "hsforms.net": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 2,
+      "sites": [
+        "techcrunch.com"
+      ],
+      "example_urls": [
+        "https://js.hsforms.net/forms/embed/v2.js?ver=v2",
+        "https://js.hsforms.net"
+      ],
+      "status": "needs_review"
+    },
+    "ophan.co.uk": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 2,
+      "sites": [
+        "theguardian.com"
+      ],
+      "example_urls": [
+        "https://j.ophan.co.uk"
+      ],
+      "status": "needs_review"
+    },
+    "sail-horizon.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 2,
+      "sites": [
+        "techcrunch.com"
+      ],
+      "example_urls": [
+        "https://ak.sail-horizon.com/spm/spm.v1.min.js?ver=6.9.4",
+        "https://ak.sail-horizon.com"
+      ],
+      "status": "needs_review"
+    },
+    "servenobid.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 2,
+      "sites": [
+        "techcrunch.com"
+      ],
+      "example_urls": [
+        "https://public.servenobid.com/partner/163965/163966/wrapup_1.0.0.js?ver=692234b82bbd521da4fa",
+        "https://public.servenobid.com"
+      ],
+      "status": "needs_review"
+    },
     "tinypass.com": {
       "proposed_category": "support",
       "proposed_provider": "Piano (Tinypass)",
@@ -114,27 +181,51 @@
       "status": "promoted",
       "promoted_at": "2026-04-21T21:22:26.613462+00:00"
     },
-    "wordpress.com": {
-      "proposed_category": null,
-      "proposed_provider": null,
-      "seen_count": 2,
-      "sites": [
-        "nypost.com"
-      ],
-      "example_urls": [
-        "https://v0.wordpress.com"
-      ],
-      "status": "needs_review"
-    },
-    "ophan.co.uk": {
+    "cnn.io": {
       "proposed_category": null,
       "proposed_provider": null,
       "seen_count": 1,
       "sites": [
-        "theguardian.com"
+        "cnn.com"
       ],
       "example_urls": [
-        "https://j.ophan.co.uk"
+        "https://registry.api.cnn.io"
+      ],
+      "status": "needs_review"
+    },
+    "gobankingrates.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 1,
+      "sites": [
+        "cnn.com"
+      ],
+      "example_urls": [
+        "https://products.gobankingrates.com/pub/515fec14-ee9f-11ed-8078-0a919b37cd73"
+      ],
+      "status": "needs_review"
+    },
+    "turner.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 1,
+      "sites": [
+        "cnn.com"
+      ],
+      "example_urls": [
+        "https://turnip.cdn.turner.com"
+      ],
+      "status": "needs_review"
+    },
+    "zqtk.net": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 1,
+      "sites": [
+        "cnn.com"
+      ],
+      "example_urls": [
+        "https://segment-data-us-east.zqtk.net"
       ],
       "status": "needs_review"
     }
