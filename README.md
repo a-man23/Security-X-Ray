@@ -4,7 +4,7 @@ Security X-Ray is a lightweight crawler that maps first-party and third-party we
 to help analyze client-side security and privacy risk.
 
 This repository currently covers the crawler and data pipeline work from the project
-proposal/progress report. Graph visualization is intentionally not implemented yet.
+proposal/progress report, including an optional interactive graph preview in the browser.
 
 ## What It Does
 
@@ -165,6 +165,33 @@ python scripts/promote_candidates.py
 python scripts/promote_candidates.py --apply
 ```
 
+## Graph visualization (browser)
+
+After crawling, generate an interactive graph as HTML and open it in your **default browser**.
+The page uses the **full viewport**. Layout starts **top-down**, then you can **drag nodes freely**.
+The **crawl hub** uses the same dot shape as leaves (larger) and **category** diamonds show **counts** inside (fixed node sizes,
+hub slightly larger than diamonds); **leaf** dots are fixed size with **domain only** under
+the dot. **Diamond → domain** edges show the
+resource **count** beside the line (upright, not tilted with the edge) and scale in thickness. Hover tooltips stay plain text (no raw HTML).
+
+Requires: `pip install -r requirements.txt` (adds `pyvis`).
+
+```bash
+python scripts/visualize_graph.py --input output/cnn.com.json
+```
+
+Writes `output/graph_preview.html` by default and opens it. Optional fixed size in pixels (default is full window):
+
+```bash
+python scripts/visualize_graph.py -i output/nytimes.com.json --width 1100 --height 720
+```
+
+Write HTML only without launching the browser:
+
+```bash
+python scripts/visualize_graph.py -i output/cnn.com.json --no-open
+```
+
 ## Next Planned Step
 
-- Convert JSON crawl output into graph-ready structures for visualization (not implemented yet)
+- Extend graph mode (aggregate multi-site, filter by category, export PNG/SVG)

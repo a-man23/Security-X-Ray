@@ -3,3 +3,4 @@ beautifulsoup4>=4.12.0
 tldextract>=5.1.0
 urllib3>=2.0.0
 lxml>=5.0.0   # optional faster HTML parser for BeautifulSoup
+pyvis>=0.3.2
