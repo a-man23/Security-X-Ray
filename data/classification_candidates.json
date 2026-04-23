@@ -1,16 +1,17 @@
 {
   "format_version": 1,
-  "last_updated": "2026-04-21T22:30:51.413753+00:00",
+  "last_updated": "2026-04-22T22:51:26.122269+00:00",
   "notes": "Review and promote high-confidence entries into data/domain_classifications.json",
   "domains": {
     "google.com": {
       "proposed_category": null,
       "proposed_provider": null,
-      "seen_count": 9,
+      "seen_count": 32,
       "sites": [
         "nypost.com",
         "cnn.com",
-        "techcrunch.com"
+        "techcrunch.com",
+        "booking.com"
       ],
       "example_urls": [
         "https://accounts.google.com/gsi/client",
@@ -18,6 +19,69 @@
         "https://google.com",
         "https://www.google.com",
         "https://www.google.com/recaptcha/api.js?render=6LcKaMEUAAAAACNhMymsVMHg25lFfksvZZO9EMTZ&ver=0.1.0"
+      ],
+      "status": "needs_review"
+    },
+    "hsforms.net": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 12,
+      "sites": [
+        "techcrunch.com"
+      ],
+      "example_urls": [
+        "https://js.hsforms.net/forms/embed/v2.js?ver=v2",
+        "https://js.hsforms.net"
+      ],
+      "status": "needs_review"
+    },
+    "sail-horizon.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 12,
+      "sites": [
+        "techcrunch.com"
+      ],
+      "example_urls": [
+        "https://ak.sail-horizon.com/spm/spm.v1.min.js?ver=6.9.4",
+        "https://ak.sail-horizon.com"
+      ],
+      "status": "needs_review"
+    },
+    "servenobid.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 12,
+      "sites": [
+        "techcrunch.com"
+      ],
+      "example_urls": [
+        "https://public.servenobid.com/partner/163965/163966/wrapup_1.0.0.js?ver=692234b82bbd521da4fa",
+        "https://public.servenobid.com"
+      ],
+      "status": "needs_review"
+    },
+    "gobankingrates.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 9,
+      "sites": [
+        "cnn.com"
+      ],
+      "example_urls": [
+        "https://products.gobankingrates.com/pub/515fec14-ee9f-11ed-8078-0a919b37cd73"
+      ],
+      "status": "needs_review"
+    },
+    "zqtk.net": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 9,
+      "sites": [
+        "cnn.com"
+      ],
+      "example_urls": [
+        "https://segment-data-us-east.zqtk.net"
       ],
       "status": "needs_review"
     },
@@ -117,19 +181,6 @@
       "status": "promoted",
       "promoted_at": "2026-04-21T21:22:26.613462+00:00"
     },
-    "hsforms.net": {
-      "proposed_category": null,
-      "proposed_provider": null,
-      "seen_count": 2,
-      "sites": [
-        "techcrunch.com"
-      ],
-      "example_urls": [
-        "https://js.hsforms.net/forms/embed/v2.js?ver=v2",
-        "https://js.hsforms.net"
-      ],
-      "status": "needs_review"
-    },
     "ophan.co.uk": {
       "proposed_category": null,
       "proposed_provider": null,
@@ -139,32 +190,6 @@
       ],
       "example_urls": [
         "https://j.ophan.co.uk"
-      ],
-      "status": "needs_review"
-    },
-    "sail-horizon.com": {
-      "proposed_category": null,
-      "proposed_provider": null,
-      "seen_count": 2,
-      "sites": [
-        "techcrunch.com"
-      ],
-      "example_urls": [
-        "https://ak.sail-horizon.com/spm/spm.v1.min.js?ver=6.9.4",
-        "https://ak.sail-horizon.com"
-      ],
-      "status": "needs_review"
-    },
-    "servenobid.com": {
-      "proposed_category": null,
-      "proposed_provider": null,
-      "seen_count": 2,
-      "sites": [
-        "techcrunch.com"
-      ],
-      "example_urls": [
-        "https://public.servenobid.com/partner/163965/163966/wrapup_1.0.0.js?ver=692234b82bbd521da4fa",
-        "https://public.servenobid.com"
       ],
       "status": "needs_review"
     },
@@ -193,18 +218,6 @@
       ],
       "status": "needs_review"
     },
-    "gobankingrates.com": {
-      "proposed_category": null,
-      "proposed_provider": null,
-      "seen_count": 1,
-      "sites": [
-        "cnn.com"
-      ],
-      "example_urls": [
-        "https://products.gobankingrates.com/pub/515fec14-ee9f-11ed-8078-0a919b37cd73"
-      ],
-      "status": "needs_review"
-    },
     "turner.com": {
       "proposed_category": null,
       "proposed_provider": null,
@@ -214,18 +227,6 @@
       ],
       "example_urls": [
         "https://turnip.cdn.turner.com"
-      ],
-      "status": "needs_review"
-    },
-    "zqtk.net": {
-      "proposed_category": null,
-      "proposed_provider": null,
-      "seen_count": 1,
-      "sites": [
-        "cnn.com"
-      ],
-      "example_urls": [
-        "https://segment-data-us-east.zqtk.net"
       ],
       "status": "needs_review"
     }

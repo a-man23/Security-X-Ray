@@ -55,6 +55,12 @@ With aggregate output:
 python main.py --targets targets.txt --aggregate
 ```
 
+With aggregate output plus one auto-generated graph HTML for the run:
+
+```bash
+python main.py --targets targets.txt --aggregate --graph
+```
+
 Tune crawl depth/breadth:
 
 ```bash
@@ -71,7 +77,11 @@ python main.py --targets targets.txt --depth 2 --max-pages 25 --max-internal-lin
 - `--rate-limit`: minimum delay between requests to same host in seconds (default `1.2`)
 - `--timeout`: HTTP timeout in seconds (default `15`)
 - `--output` / `-o`: output directory (default `./output`)
-- `--aggregate`: write combined `_aggregate.json`
+- `--aggregate`: write combined `_aggregate.json` plus `aggregate_graph.json` (full crawl payloads for offline graphing)
+- `--graph`: auto-generate `output/graph_preview.html` (uses `aggregate_graph.json` when `--aggregate` was set; otherwise per-site JSON)
+- `--graph-open`: open generated graph HTML in browser (requires `--graph`)
+- `--graph-width`: fixed graph width in pixels for auto-generated graph
+- `--graph-height`: fixed graph height in pixels for auto-generated graph
 - `--quiet` / `-q`: suppress per-site terminal summaries
 - `--verbose` / `-v`: enable debug logging
 
@@ -88,6 +98,11 @@ Optional aggregate report:
 
 - `_aggregate.json`: cross-site totals, category/provider breakdowns, shared domains,
   and `run_config` (crawl settings used for that run)
+- `aggregate_graph.json` (with `--aggregate`): includes `crawl_results` (full per-site
+  crawl dicts), `aggregate_summary`, and `run_config` so you can rebuild the combined
+  graph without re-crawling
+- `graph_preview.html`: when `--graph` is enabled, one graph HTML is generated per run
+  in the output directory
 
 Classifier improvement helper:
 
@@ -168,16 +183,28 @@ python scripts/promote_candidates.py --apply
 ## Graph visualization (browser)
 
 After crawling, generate an interactive graph as HTML and open it in your **default browser**.
-The page uses the **full viewport**. Layout starts **top-down**, then you can **drag nodes freely**.
-The **crawl hub** uses the same dot shape as leaves (larger) and **category** diamonds show **counts** inside (fixed node sizes,
-hub slightly larger than diamonds); **leaf** dots are fixed size with **domain only** under
-the dot. **Diamond → domain** edges show the
-resource **count** beside the line (upright, not tilted with the edge) and scale in thickness. Hover tooltips stay plain text (no raw HTML).
+The page uses the **full viewport**. **Single-site** JSON: top-down tree, then free drag.
+**Multi-site** (`--inputs` …) or **`aggregate_graph.json`**: same hub → category → domain
+graph, then a **radial** layout (domains inner ring, categories middle, site hubs outer).
+Counts are drawn in nodes; domain labels sit under leaf dots; diamond→leaf edge counts are
+drawn upright on the canvas. Hover tooltips stay plain text (no raw HTML).
+
+Re-open the last combined graph **without crawling** (after a run with `--aggregate`):
+
+```bash
+python scripts/visualize_graph.py --input output/aggregate_graph.json
+```
 
 Requires: `pip install -r requirements.txt` (adds `pyvis`).
 
 ```bash
 python scripts/visualize_graph.py --input output/cnn.com.json
+```
+
+For a combined multi-site graph, pass multiple crawl JSON files:
+
+```bash
+python scripts/visualize_graph.py --inputs output/cnn.com.json output/nytimes.com.json output/theguardian.com.json
 ```
 
 Writes `output/graph_preview.html` by default and opens it. Optional fixed size in pixels (default is full window):

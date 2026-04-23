@@ -2,7 +2,7 @@
   "crawl_metadata": {
     "target_url": "https://washingtonpost.com",
     "site_domain": "washingtonpost.com",
-    "crawled_at": "2026-04-21T22:29:37.349781+00:00",
+    "crawled_at": "2026-04-22T22:49:38.643970+00:00",
     "max_depth": 1,
     "max_internal_links_per_page": 20,
     "pages_crawled": 1,

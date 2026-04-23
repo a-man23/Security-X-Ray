@@ -1,42 +1,48 @@
 {
   "report_type": "aggregate",
-  "generated_at": "2026-04-21T22:30:51.412241+00:00",
-  "sites_crawled": 5,
+  "generated_at": "2026-04-22T22:51:25.999274+00:00",
+  "sites_crawled": 7,
   "run_config": {
     "depth": 1,
-    "max_pages": 8,
+    "max_pages": 10,
     "max_internal_links": 20,
     "rate_limit_seconds": 1.2,
     "timeout_seconds": 15,
     "targets": [
       "https://cnn.com",
+      "https://nytimes.com",
       "https://washingtonpost.com",
       "https://theguardian.com",
+      "https://techcrunch.com",
       "https://ebay.com",
-      "https://techcrunch.com"
+      "https://booking.com"
     ]
   },
   "totals": {
-    "total_resources": 904,
-    "total_third_party": 40,
-    "total_third_party_scripts": 8,
-    "unique_third_party_domains_across_all_sites": 24
+    "total_resources": 1965,
+    "total_third_party": 668,
+    "total_third_party_scripts": 144,
+    "unique_third_party_domains_across_all_sites": 27
   },
   "by_category": {
-    "unknown": 14,
+    "analytics": 632,
+    "unknown": 12,
     "advertising": 10,
-    "analytics": 8,
-    "cdn": 4,
+    "cdn": 8,
     "ab_testing": 2,
-    "social": 2
+    "social": 2,
+    "consent": 2
   },
   "by_provider": {
-    "Comscore": 5,
+    "Comscore": 6,
+    "Google Tag Manager": 5,
     "Cloudflare": 3,
+    "Amazon CloudFront": 3,
     "Optimizely": 2,
     "Google AdSense": 2,
     "Outbrain": 2,
     "WordPress Stats": 2,
+    "OneTrust Cookie Law": 2,
     "Google Tag Services": 1,
     "Amazon Ads": 1,
     "AppNexus/Xandr": 1,
@@ -47,11 +53,15 @@
   },
   "domains_appearing_on_multiple_sites": [
     {
+      "domain": "google.com",
+      "site_count": 3
+    },
+    {
       "domain": "cloudflare.com",
       "site_count": 2
     },
     {
-      "domain": "google.com",
+      "domain": "googletagmanager.com",
       "site_count": 2
     }
   ],
@@ -59,15 +69,26 @@
     {
       "site_domain": "cnn.com",
       "target_url": "https://cnn.com",
-      "third_party_count": 19,
+      "third_party_count": 17,
       "third_party_script_count": 2,
-      "unique_third_party_domains": 15,
+      "unique_third_party_domains": 13,
       "by_category": {
         "ab_testing": 2,
         "cdn": 1,
         "advertising": 10,
         "analytics": 1,
-        "unknown": 5
+        "unknown": 3
+      }
+    },
+    {
+      "site_domain": "nytimes.com",
+      "target_url": "https://nytimes.com",
+      "third_party_count": 7,
+      "third_party_script_count": 3,
+      "unique_third_party_domains": 3,
+      "by_category": {
+        "analytics": 3,
+        "cdn": 4
       }
     },
     {
@@ -83,19 +104,10 @@
       "target_url": "https://theguardian.com",
       "third_party_count": 6,
       "third_party_script_count": 0,
-      "unique_third_party_domains": 2,
+      "unique_third_party_domains": 1,
       "by_category": {
-        "analytics": 5,
-        "unknown": 1
+        "analytics": 6
       }
-    },
-    {
-      "site_domain": "ebay.com",
-      "target_url": "https://ebay.com",
-      "third_party_count": 0,
-      "third_party_script_count": 0,
-      "unique_third_party_domains": 0,
-      "by_category": {}
     },
     {
       "site_domain": "techcrunch.com",
@@ -108,6 +120,26 @@
         "unknown": 8,
         "analytics": 2,
         "social": 2
+      }
+    },
+    {
+      "site_domain": "ebay.com",
+      "target_url": "https://ebay.com",
+      "third_party_count": 0,
+      "third_party_script_count": 0,
+      "unique_third_party_domains": 0,
+      "by_category": {}
+    },
+    {
+      "site_domain": "booking.com",
+      "target_url": "https://booking.com",
+      "third_party_count": 623,
+      "third_party_script_count": 133,
+      "unique_third_party_domains": 5,
+      "by_category": {
+        "consent": 2,
+        "analytics": 620,
+        "unknown": 1
       }
     }
   ]

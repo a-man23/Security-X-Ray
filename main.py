@@ -14,6 +14,9 @@ Example Inputs:
  
   # Combine all site results into one aggregate JSON
   python main.py --targets targets.txt --depth 1 --aggregate
+
+  # Aggregate + graph (writes aggregate_graph.json for offline visualization)
+  python main.py --targets targets.txt --aggregate --graph
 """
  
 from __future__ import annotations
@@ -22,6 +25,7 @@ import argparse
 import json
 import logging
 import re
+import subprocess
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -79,6 +83,78 @@ def write_json(data: dict | list, path: Path):
     logger.info("Wrote %s  (%d bytes)", path, path.stat().st_size)
  
  
+def generate_graph_from_input(
+    input_path: Path,
+    graph_output_path: Path,
+    open_browser: bool,
+    width: int | None = None,
+    height: int | None = None,
+) -> bool:
+    """Generate graph HTML from a single JSON input (e.g. aggregate_graph.json or one crawl file)."""
+    script_path = Path("scripts") / "visualize_graph.py"
+    if not script_path.exists():
+        logger.warning("Graph script not found: %s", script_path)
+        return False
+
+    cmd = [
+        sys.executable,
+        str(script_path),
+        "--input",
+        str(input_path),
+        "--output",
+        str(graph_output_path),
+    ]
+    if not open_browser:
+        cmd.append("--no-open")
+    if width is not None:
+        cmd.extend(["--width", str(width)])
+    if height is not None:
+        cmd.extend(["--height", str(height)])
+
+    try:
+        subprocess.run(cmd, check=True)
+        logger.info("Generated graph HTML: %s", graph_output_path)
+        return True
+    except subprocess.CalledProcessError as exc:
+        logger.warning("Graph generation failed (exit %s)", exc.returncode)
+        return False
+
+
+def generate_graph_from_reports(
+    report_paths: list[Path],
+    graph_output_path: Path,
+    open_browser: bool,
+    width: int | None = None,
+    height: int | None = None,
+) -> bool:
+    """Generate graph HTML from one or more per-site crawl JSON files (no aggregate_graph.json)."""
+    script_path = Path("scripts") / "visualize_graph.py"
+    if not script_path.exists():
+        logger.warning("Graph script not found: %s", script_path)
+        return False
+
+    cmd = [sys.executable, str(script_path), "--output", str(graph_output_path)]
+    if len(report_paths) == 1:
+        cmd.extend(["--input", str(report_paths[0])])
+    else:
+        cmd.append("--inputs")
+        cmd.extend(str(p) for p in report_paths)
+    if not open_browser:
+        cmd.append("--no-open")
+    if width is not None:
+        cmd.extend(["--width", str(width)])
+    if height is not None:
+        cmd.extend(["--height", str(height)])
+
+    try:
+        subprocess.run(cmd, check=True)
+        logger.info("Generated graph HTML: %s", graph_output_path)
+        return True
+    except subprocess.CalledProcessError as exc:
+        logger.warning("Graph generation failed (exit %s)", exc.returncode)
+        return False
+
+
 def update_unknown_candidates(results: list[dict], path: Path):
     """
     Merge unknown third-party domains into a persistent review file.
@@ -302,7 +378,29 @@ def parse_args():
     parser.add_argument(
         "--aggregate",
         action="store_true",
-        help="Also write a combined aggregate report across all crawled sites.",
+        help="Write _aggregate.json and aggregate_graph.json (bundle for offline graphing).",
+    )
+    parser.add_argument(
+        "--graph",
+        action="store_true",
+        help="Write graph_preview.html; with --aggregate uses aggregate_graph.json, else per-site JSON.",
+    )
+    parser.add_argument(
+        "--graph-open",
+        action="store_true",
+        help="When used with --graph, open generated graph HTML in the browser.",
+    )
+    parser.add_argument(
+        "--graph-width",
+        type=int,
+        metavar="PX",
+        help="When used with --graph, set fixed graph width in pixels.",
+    )
+    parser.add_argument(
+        "--graph-height",
+        type=int,
+        metavar="PX",
+        help="When used with --graph, set fixed graph height in pixels.",
     )
     parser.add_argument(
         "--quiet", "-q",
@@ -338,6 +436,15 @@ def main():
     if args.rate_limit < 0:
         logger.error("--rate-limit must be >= 0")
         return 1
+    if args.graph_width is not None and args.graph_width < 1:
+        logger.error("--graph-width must be >= 1")
+        return 1
+    if args.graph_height is not None and args.graph_height < 1:
+        logger.error("--graph-height must be >= 1")
+        return 1
+    if args.graph_open and not args.graph:
+        logger.error("--graph-open requires --graph")
+        return 1
  
     # Build target list
     if args.targets:
@@ -369,6 +476,7 @@ def main():
     )
  
     all_results: list[dict] = []
+    result_paths: list[Path] = []
     failed: list[str] = []
  
     for i, url in enumerate(targets, 1):
@@ -378,7 +486,9 @@ def main():
             all_results.append(result)
  
             fname = safe_filename(url) + ".json"
-            write_json(result, output_dir / fname)
+            result_path = output_dir / fname
+            write_json(result, result_path)
+            result_paths.append(result_path)
  
             if not args.quiet:
                 print_summary(result)
@@ -403,6 +513,16 @@ def main():
         agg = build_aggregate(all_results, run_config=run_config)
         write_json(agg, output_dir / "_aggregate.json")
         logger.info("Aggregate report written to %s/_aggregate.json", output_dir)
+        graph_data = {
+            "format_version": 1,
+            "report_type": "aggregate_graph",
+            "generated_at": datetime.now(timezone.utc).isoformat(),
+            "run_config": run_config,
+            "aggregate_summary": agg,
+            "crawl_results": all_results,
+        }
+        write_json(graph_data, output_dir / "aggregate_graph.json")
+        logger.info("Aggregate graph bundle written to %s/aggregate_graph.json", output_dir)
 
     # Always refresh unknown-domain review queue after crawling.
     if all_results:
@@ -410,6 +530,27 @@ def main():
             all_results,
             Path("data") / "classification_candidates.json",
         )
+
+    # Optional graph output: exactly one graph per run.
+    if args.graph and result_paths:
+        graph_path = output_dir / "graph_preview.html"
+        agg_graph_path = output_dir / "aggregate_graph.json"
+        if args.aggregate and all_results and agg_graph_path.exists():
+            generate_graph_from_input(
+                input_path=agg_graph_path,
+                graph_output_path=graph_path,
+                open_browser=args.graph_open,
+                width=args.graph_width,
+                height=args.graph_height,
+            )
+        else:
+            generate_graph_from_reports(
+                report_paths=result_paths,
+                graph_output_path=graph_path,
+                open_browser=args.graph_open,
+                width=args.graph_width,
+                height=args.graph_height,
+            )
 
     # Final status
     logger.info("Done. %d site(s) crawled successfully, %d failed.", len(all_results), len(failed))

@@ -2,7 +2,7 @@
   "crawl_metadata": {
     "target_url": "https://ebay.com",
     "site_domain": "ebay.com",
-    "crawled_at": "2026-04-21T22:30:14.868712+00:00",
+    "crawled_at": "2026-04-22T22:50:45.469522+00:00",
     "max_depth": 1,
     "max_internal_links_per_page": 20,
     "pages_crawled": 1,
