@@ -1,145 +1,277 @@
 {
   "report_type": "aggregate",
-  "generated_at": "2026-04-22T22:51:25.999274+00:00",
-  "sites_crawled": 7,
+  "generated_at": "2026-04-28T20:55:18.538117+00:00",
+  "sites_crawled": 1,
   "run_config": {
     "depth": 1,
     "max_pages": 10,
-    "max_internal_links": 20,
+    "max_internal_links": 30,
     "rate_limit_seconds": 1.2,
     "timeout_seconds": 15,
     "targets": [
-      "https://cnn.com",
-      "https://nytimes.com",
-      "https://washingtonpost.com",
-      "https://theguardian.com",
-      "https://techcrunch.com",
-      "https://ebay.com",
-      "https://booking.com"
+      "https://www.dailymail.co.uk"
     ]
   },
   "totals": {
-    "total_resources": 1965,
-    "total_third_party": 668,
-    "total_third_party_scripts": 144,
-    "unique_third_party_domains_across_all_sites": 27
+    "total_resources": 385,
+    "total_third_party": 349,
+    "total_third_party_scripts": 13,
+    "unique_third_party_domains_across_all_sites": 14
   },
   "by_category": {
-    "analytics": 632,
-    "unknown": 12,
-    "advertising": 10,
-    "cdn": 8,
-    "ab_testing": 2,
-    "social": 2,
-    "consent": 2
+    "unknown": 343,
+    "advertising": 5,
+    "fonts": 1
   },
   "by_provider": {
-    "Comscore": 6,
-    "Google Tag Manager": 5,
-    "Cloudflare": 3,
-    "Amazon CloudFront": 3,
-    "Optimizely": 2,
-    "Google AdSense": 2,
-    "Outbrain": 2,
-    "WordPress Stats": 2,
-    "OneTrust Cookie Law": 2,
-    "Google Tag Services": 1,
-    "Amazon Ads": 1,
-    "AppNexus/Xandr": 1,
+    "Google Fonts API": 1,
     "Google DoubleClick": 1,
-    "Index Exchange": 1,
-    "Google Static CDN": 1,
-    "YouTube": 1
+    "Magnite/Rubicon": 1,
+    "Google AdSense": 1,
+    "Google Ads": 1
   },
-  "domains_appearing_on_multiple_sites": [
-    {
-      "domain": "google.com",
-      "site_count": 3
-    },
-    {
-      "domain": "cloudflare.com",
-      "site_count": 2
-    },
-    {
-      "domain": "googletagmanager.com",
-      "site_count": 2
-    }
-  ],
+  "domains_appearing_on_multiple_sites": [],
+  "risk_summary": {
+    "version": 1,
+    "average_score": 45.0,
+    "max_score": 45,
+    "highest_risk_site": "dailymail.co.uk",
+    "site_scores": [
+      {
+        "site_domain": "dailymail.co.uk",
+        "score": 45,
+        "tier": "medium"
+      }
+    ],
+    "domain_scores": [
+      {
+        "domain": "dailymail.com",
+        "max_score": 61,
+        "average_score": 61.0,
+        "site_count": 1,
+        "sites": [
+          "dailymail.co.uk"
+        ],
+        "sample_categories": [
+          "unknown"
+        ],
+        "sample_providers": []
+      },
+      {
+        "domain": "googleapis.com",
+        "max_score": 7,
+        "average_score": 7.0,
+        "site_count": 1,
+        "sites": [
+          "dailymail.co.uk"
+        ],
+        "sample_categories": [
+          "fonts"
+        ],
+        "sample_providers": [
+          "Google Fonts API"
+        ]
+      },
+      {
+        "domain": "2mdn.net",
+        "max_score": 0,
+        "average_score": 0.0,
+        "site_count": 1,
+        "sites": [
+          "dailymail.co.uk"
+        ],
+        "sample_categories": [
+          "unknown"
+        ],
+        "sample_providers": []
+      },
+      {
+        "domain": "connatix.com",
+        "max_score": 0,
+        "average_score": 0.0,
+        "site_count": 1,
+        "sites": [
+          "dailymail.co.uk"
+        ],
+        "sample_categories": [
+          "unknown"
+        ],
+        "sample_providers": []
+      },
+      {
+        "domain": "doubleclick.net",
+        "max_score": 0,
+        "average_score": 0.0,
+        "site_count": 1,
+        "sites": [
+          "dailymail.co.uk"
+        ],
+        "sample_categories": [
+          "advertising"
+        ],
+        "sample_providers": [
+          "Google DoubleClick"
+        ]
+      },
+      {
+        "domain": "doubleverify.com",
+        "max_score": 0,
+        "average_score": 0.0,
+        "site_count": 1,
+        "sites": [
+          "dailymail.co.uk"
+        ],
+        "sample_categories": [
+          "unknown"
+        ],
+        "sample_providers": []
+      },
+      {
+        "domain": "flashtalking.com",
+        "max_score": 0,
+        "average_score": 0.0,
+        "site_count": 1,
+        "sites": [
+          "dailymail.co.uk"
+        ],
+        "sample_categories": [
+          "unknown"
+        ],
+        "sample_providers": []
+      },
+      {
+        "domain": "googleadservices.com",
+        "max_score": 0,
+        "average_score": 0.0,
+        "site_count": 1,
+        "sites": [
+          "dailymail.co.uk"
+        ],
+        "sample_categories": [
+          "advertising"
+        ],
+        "sample_providers": [
+          "Google Ads"
+        ]
+      },
+      {
+        "domain": "googlesyndication.com",
+        "max_score": 0,
+        "average_score": 0.0,
+        "site_count": 1,
+        "sites": [
+          "dailymail.co.uk"
+        ],
+        "sample_categories": [
+          "advertising"
+        ],
+        "sample_providers": [
+          "Google AdSense"
+        ]
+      },
+      {
+        "domain": "kargo.com",
+        "max_score": 0,
+        "average_score": 0.0,
+        "site_count": 1,
+        "sites": [
+          "dailymail.co.uk"
+        ],
+        "sample_categories": [
+          "unknown"
+        ],
+        "sample_providers": []
+      },
+      {
+        "domain": "mol.im",
+        "max_score": 0,
+        "average_score": 0.0,
+        "site_count": 1,
+        "sites": [
+          "dailymail.co.uk"
+        ],
+        "sample_categories": [
+          "unknown"
+        ],
+        "sample_providers": []
+      },
+      {
+        "domain": "rubiconproject.com",
+        "max_score": 0,
+        "average_score": 0.0,
+        "site_count": 1,
+        "sites": [
+          "dailymail.co.uk"
+        ],
+        "sample_categories": [
+          "advertising"
+        ],
+        "sample_providers": [
+          "Magnite/Rubicon"
+        ]
+      },
+      {
+        "domain": "serving-sys.com",
+        "max_score": 0,
+        "average_score": 0.0,
+        "site_count": 1,
+        "sites": [
+          "dailymail.co.uk"
+        ],
+        "sample_categories": [
+          "unknown"
+        ],
+        "sample_providers": []
+      },
+      {
+        "domain": "teads.tv",
+        "max_score": 0,
+        "average_score": 0.0,
+        "site_count": 1,
+        "sites": [
+          "dailymail.co.uk"
+        ],
+        "sample_categories": [
+          "advertising"
+        ],
+        "sample_providers": []
+      }
+    ]
+  },
   "per_site": [
     {
-      "site_domain": "cnn.com",
-      "target_url": "https://cnn.com",
-      "third_party_count": 17,
-      "third_party_script_count": 2,
-      "unique_third_party_domains": 13,
+      "site_domain": "dailymail.co.uk",
+      "target_url": "https://www.dailymail.co.uk",
+      "third_party_count": 349,
+      "third_party_script_count": 13,
+      "unique_third_party_domains": 14,
       "by_category": {
-        "ab_testing": 2,
-        "cdn": 1,
-        "advertising": 10,
-        "analytics": 1,
-        "unknown": 3
-      }
-    },
-    {
-      "site_domain": "nytimes.com",
-      "target_url": "https://nytimes.com",
-      "third_party_count": 7,
-      "third_party_script_count": 3,
-      "unique_third_party_domains": 3,
-      "by_category": {
-        "analytics": 3,
-        "cdn": 4
-      }
-    },
-    {
-      "site_domain": "washingtonpost.com",
-      "target_url": "https://washingtonpost.com",
-      "third_party_count": 0,
-      "third_party_script_count": 0,
-      "unique_third_party_domains": 0,
-      "by_category": {}
-    },
-    {
-      "site_domain": "theguardian.com",
-      "target_url": "https://theguardian.com",
-      "third_party_count": 6,
-      "third_party_script_count": 0,
-      "unique_third_party_domains": 1,
-      "by_category": {
-        "analytics": 6
-      }
-    },
-    {
-      "site_domain": "techcrunch.com",
-      "target_url": "https://techcrunch.com",
-      "third_party_count": 15,
-      "third_party_script_count": 6,
-      "unique_third_party_domains": 9,
-      "by_category": {
-        "cdn": 3,
-        "unknown": 8,
-        "analytics": 2,
-        "social": 2
-      }
-    },
-    {
-      "site_domain": "ebay.com",
-      "target_url": "https://ebay.com",
-      "third_party_count": 0,
-      "third_party_script_count": 0,
-      "unique_third_party_domains": 0,
-      "by_category": {}
-    },
-    {
-      "site_domain": "booking.com",
-      "target_url": "https://booking.com",
-      "third_party_count": 623,
-      "third_party_script_count": 133,
-      "unique_third_party_domains": 5,
-      "by_category": {
-        "consent": 2,
-        "analytics": 620,
-        "unknown": 1
+        "unknown": 343,
+        "fonts": 1,
+        "advertising": 5
+      },
+      "risk_score": {
+        "version": 1,
+        "score": 45,
+        "tier": "medium",
+        "components": [
+          {
+            "code": "THIRD_PARTY_SCRIPT_VOLUME",
+            "points": 20,
+            "evidence": "13 third-party scripts"
+          },
+          {
+            "code": "UNKNOWN_SCRIPT_PRESENCE",
+            "points": 20,
+            "evidence": "12 unknown third-party scripts"
+          },
+          {
+            "code": "DOMAIN_FOOTPRINT_SIZE",
+            "points": 5,
+            "evidence": "14 unique third-party domains"
+          }
+        ],
+        "note": "Heuristic score for prioritization; not a definitive security assessment."
       }
     }
   ]

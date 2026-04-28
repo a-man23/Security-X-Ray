@@ -77,6 +77,24 @@ def _plain_tip(*lines: str) -> str:
     return "\n".join(lines)
 
 
+def _risk_reason_text(parts: list[str], max_items: int = 3) -> str:
+    """Short, human-readable reason summary for hover cards."""
+    cleaned = [p.strip() for p in parts if isinstance(p, str) and p.strip()]
+    if not cleaned:
+        return "No specific factors recorded."
+    return " | ".join(cleaned[:max_items])
+
+
+def _top_component_reasons(components: list[dict], max_items: int = 3) -> list[str]:
+    """Extract top evidence strings from risk-score components."""
+    reasons: list[str] = []
+    for comp in components[:max_items]:
+        ev = comp.get("evidence")
+        if isinstance(ev, str) and ev.strip():
+            reasons.append(ev.strip())
+    return reasons
+
+
 def _finalize_pyvis_html(
     html: str,
     *,
@@ -105,10 +123,85 @@ def _finalize_pyvis_html(
     if '<style type="text/css">' in html:
         html = html.replace('<style type="text/css">', '<style type="text/css">' + inject, 1)
 
-    # Hub + diamond counts (canvas); captions under all nodes that set sxr_caption. Then drop hierarchical lock for free drag.
+    # Hub + diamond counts (canvas); captions under nodes; custom hover risk card; then drop
+    # hierarchical lock for free drag.
     hook = """
                   (function () {
                     var __sxrRel = false;
+                    var __sxrTip = document.createElement("div");
+                    __sxrTip.id = "sxr-risk-tooltip";
+                    __sxrTip.style.position = "fixed";
+                    __sxrTip.style.display = "none";
+                    __sxrTip.style.pointerEvents = "none";
+                    __sxrTip.style.background = "rgba(24,24,24,0.96)";
+                    __sxrTip.style.border = "1px solid #3b3b3b";
+                    __sxrTip.style.borderRadius = "8px";
+                    __sxrTip.style.padding = "8px 10px";
+                    __sxrTip.style.maxWidth = "360px";
+                    __sxrTip.style.color = "#e6e6e6";
+                    __sxrTip.style.font = "12px/1.35 Segoe UI, Arial, sans-serif";
+                    __sxrTip.style.zIndex = "99999";
+                    __sxrTip.style.boxShadow = "0 8px 24px rgba(0,0,0,0.45)";
+                    document.body.appendChild(__sxrTip);
+
+                    function __sxrClamp(n, lo, hi) { return Math.max(lo, Math.min(hi, n)); }
+                    function __sxrRiskColor(score) {
+                      var s = __sxrClamp(Number(score) || 0, 0, 100);
+                      var hue = Math.round((100 - s) * 1.2); // 0->red, 100->green
+                      return "hsl(" + hue + ", 88%, 52%)";
+                    }
+                    function __sxrEsc(v) {
+                      return String(v)
+                        .replace(/&/g, "&amp;")
+                        .replace(/</g, "&lt;")
+                        .replace(/>/g, "&gt;")
+                        .replace(/"/g, "&quot;");
+                    }
+                    function __sxrShowRiskTooltip(node, pointerDOM) {
+                      if (!node) return;
+                      var score = node.sxr_risk_score;
+                      if (score === undefined || score === null) return;
+                      var who = node.sxr_caption || node.id || "node";
+                      var tier = String(node.sxr_risk_tier || "low").toUpperCase();
+                      var reasons = String(node.sxr_risk_reason || "");
+                      var scoreColor = __sxrRiskColor(score);
+                      __sxrTip.innerHTML =
+                        "<div style='font-weight:600;margin-bottom:4px;'>" + __sxrEsc(who) + "</div>" +
+                        "<div style='margin-bottom:4px;'>Risk score: " +
+                        "<span style='font-weight:700;color:" + scoreColor + ";'>" + __sxrEsc(score) + "/100</span>" +
+                        " (" + __sxrEsc(tier) + ")" +
+                        "</div>" +
+                        "<div style='color:#cfcfcf;'>" + __sxrEsc(reasons || "No specific factors recorded.") + "</div>";
+                      __sxrTip.style.display = "block";
+                      var x = Math.round((pointerDOM && pointerDOM.x) ? pointerDOM.x : 0) + 14;
+                      var y = Math.round((pointerDOM && pointerDOM.y) ? pointerDOM.y : 0) + 14;
+                      __sxrTip.style.left = x + "px";
+                      __sxrTip.style.top = y + "px";
+                    }
+                    function __sxrHideRiskTooltip() {
+                      __sxrTip.style.display = "none";
+                    }
+                    network.on("hoverNode", function (params) {
+                      try {
+                        var n = nodes.get(params.node);
+                        if (!n || !n.sxr_show_risk_hover) {
+                          __sxrHideRiskTooltip();
+                          return;
+                        }
+                        __sxrShowRiskTooltip(n, params.pointer && params.pointer.DOM);
+                      } catch (e) { __sxrHideRiskTooltip(); }
+                    });
+                    network.on("blurNode", __sxrHideRiskTooltip);
+                    network.on("dragStart", __sxrHideRiskTooltip);
+                    network.on("zoom", __sxrHideRiskTooltip);
+                    network.on("dragging", function (params) {
+                      if (__sxrTip.style.display !== "block") return;
+                      var hoverId = network.getNodeAt(params.pointer.DOM);
+                      if (!hoverId) { __sxrHideRiskTooltip(); return; }
+                      var n = nodes.get(hoverId);
+                      if (!n || !n.sxr_show_risk_hover) { __sxrHideRiskTooltip(); return; }
+                      __sxrShowRiskTooltip(n, params.pointer.DOM);
+                    });
                     network.on("afterDrawing", function (ctx) {
                       try {
                         var list = nodes.get();
@@ -579,6 +672,11 @@ def build_aggregate_graph(data: dict, width: int | None, height: int | None) -> 
         per_site,
         key=lambda r: (-int(r.get("third_party_count") or 0), str(r.get("site_domain") or "")),
     )
+    site_risk_map = {
+        str(r.get("site_domain")): (r.get("risk_score") or {})
+        for r in rows
+        if r.get("site_domain")
+    }
 
     for row in rows:
         site = row.get("site_domain")
@@ -586,18 +684,22 @@ def build_aggregate_graph(data: dict, width: int | None, height: int | None) -> 
             continue
         tot = int(row.get("third_party_count") or 0)
         res_word = "third-party resource" if tot == 1 else "third-party resources"
+        site_risk = site_risk_map.get(site, {})
+        site_risk_components = site_risk.get("components") if isinstance(site_risk, dict) else []
+        site_risk_reasons = _top_component_reasons(site_risk_components if isinstance(site_risk_components, list) else [])
         net.add_node(
             site,
             label="\u200b",
             sxr_inner_count=tot,
             sxr_caption=site,
             sxr_is_site_hub=True,
-            title=_plain_tip(
-                site,
-                "First-party · crawl hub (from aggregate)",
-                f"{tot} {res_word}",
-                str(row.get("target_url") or ""),
+            sxr_show_risk_hover=True,
+            sxr_risk_score=int(site_risk.get("score", 0)) if isinstance(site_risk, dict) else 0,
+            sxr_risk_tier=str(site_risk.get("tier", "low")) if isinstance(site_risk, dict) else "low",
+            sxr_risk_reason=_risk_reason_text(
+                site_risk_reasons + [f"{tot} {res_word}", str(row.get("target_url") or "")]
             ),
+            title=None,
             color=CATEGORY_COLORS["first-party"],
             size=_HUB_NODE_SIZE,
             shape="dot",
@@ -686,6 +788,13 @@ def build_graph(data: dict, width: int | None, height: int | None) -> str:
     domain_totals_single: dict[str, int] = defaultdict(int)
     for dst, meta, _pc in domain_rows:
         domain_totals_single[dst] += meta["count"]
+    domain_risk_map: dict[str, dict] = {}
+    for row in data.get("summary", {}).get("domain_risk_scores", []):
+        domain = row.get("domain")
+        if isinstance(domain, str):
+            domain_risk_map[domain] = row
+    site_risk = data.get("summary", {}).get("risk_score", {})
+    site_risk_reasons = _top_component_reasons(site_risk.get("components", [])) if isinstance(site_risk, dict) else []
 
     # Category hub nodes + resource totals for tooltips / edge labels.
     cat_domains: dict[str, list[tuple[str, dict]]] = defaultdict(list)
@@ -700,7 +809,11 @@ def build_graph(data: dict, width: int | None, height: int | None) -> str:
         label="\u200b",
         sxr_inner_count=grand_total,
         sxr_caption=site,
-        title=_plain_tip(site, "First-party · crawl hub", f"{grand_total} {res_word} (sum of edges below)", title),
+        sxr_show_risk_hover=True,
+        sxr_risk_score=int(site_risk.get("score", 0)) if isinstance(site_risk, dict) else 0,
+        sxr_risk_tier=str(site_risk.get("tier", "low")) if isinstance(site_risk, dict) else "low",
+        sxr_risk_reason=_risk_reason_text(site_risk_reasons + [f"{grand_total} {res_word} (sum of edges below)"]),
+        title=None,
         color=CATEGORY_COLORS["first-party"],
         size=_HUB_NODE_SIZE,
         shape="dot",
@@ -747,21 +860,24 @@ def build_graph(data: dict, width: int | None, height: int | None) -> str:
         leaf_total = domain_totals_single[dst]
         leaf_sz = _leaf_node_size_from_total(leaf_total)
 
-        tip = _plain_tip(
-            dst,
-            f"Categories: {cats}",
-            f"Provider: {provs}",
-            f"Resources (this site): {meta['count']}",
-            f"Total for domain: {leaf_total}",
-            f"Tags: {tag_lines}" if tag_lines else "Tags: —",
-        )
+        domain_risk = domain_risk_map.get(dst, {})
+        domain_risk_reasons = _top_component_reasons(domain_risk.get("components", [])) if isinstance(domain_risk, dict) else []
+        if not domain_risk_reasons:
+            domain_risk_reasons = [
+                f"{meta['count']} resources from this site",
+                f"{len(meta['tags'])} resource tag types",
+            ]
         if dst not in seen_domain:
             net.add_node(
                 dst,
                 label="\u200b",
                 sxr_inner_count=leaf_total,
                 sxr_caption=dst,
-                title=tip,
+                sxr_show_risk_hover=True,
+                sxr_risk_score=int(domain_risk.get("score", 0)) if isinstance(domain_risk, dict) else 0,
+                sxr_risk_tier=str(domain_risk.get("tier", "low")) if isinstance(domain_risk, dict) else "low",
+                sxr_risk_reason=_risk_reason_text(domain_risk_reasons),
+                title=None,
                 color=color,
                 size=leaf_sz,
                 shape="dot",
@@ -794,11 +910,27 @@ def build_multi_site_graph(results: list[dict], width: int | None, height: int |
     )
     site_totals: dict[str, int] = defaultdict(int)
     domain_category_votes: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
+    site_risk_map: dict[str, dict] = {}
+    domain_risk_rollup: dict[str, dict] = defaultdict(
+        lambda: {"scores": [], "tiers": [], "reasons": []}
+    )
 
     for data in results:
         site = data.get("crawl_metadata", {}).get("site_domain")
         if not site:
             continue
+        site_risk = data.get("summary", {}).get("risk_score", {})
+        if isinstance(site_risk, dict):
+            site_risk_map[site] = site_risk
+        for drow in data.get("summary", {}).get("domain_risk_scores", []):
+            domain = drow.get("domain")
+            if not isinstance(domain, str):
+                continue
+            agg = domain_risk_rollup[domain]
+            agg["scores"].append(int(drow.get("score", 0)))
+            agg["tiers"].append(str(drow.get("tier", "low")))
+            if isinstance(drow.get("components"), list):
+                agg["reasons"].extend(_top_component_reasons(drow["components"], max_items=2))
         for res in data.get("resources", []):
             if res.get("party") != "third-party":
                 continue
@@ -843,13 +975,19 @@ def build_multi_site_graph(results: list[dict], width: int | None, height: int |
     for site in sorted(site_totals.keys(), key=lambda s: (-site_totals[s], s)):
         tot = site_totals[site]
         res_word = "third-party resource" if tot == 1 else "third-party resources"
+        site_risk = site_risk_map.get(site, {})
+        site_reasons = _top_component_reasons(site_risk.get("components", [])) if isinstance(site_risk, dict) else []
         net.add_node(
             site,
             label="\u200b",
             sxr_inner_count=tot,
             sxr_caption=site,
             sxr_is_site_hub=True,
-            title=_plain_tip(site, "First-party · crawl hub", f"{tot} {res_word}"),
+            sxr_show_risk_hover=True,
+            sxr_risk_score=int(site_risk.get("score", 0)) if isinstance(site_risk, dict) else 0,
+            sxr_risk_tier=str(site_risk.get("tier", "low")) if isinstance(site_risk, dict) else "low",
+            sxr_risk_reason=_risk_reason_text(site_reasons + [f"{tot} {res_word}"]),
+            title=None,
             color=CATEGORY_COLORS["first-party"],
             size=_HUB_NODE_SIZE,
             shape="dot",
@@ -896,16 +1034,27 @@ def build_multi_site_graph(results: list[dict], width: int | None, height: int |
             color = CATEGORY_COLORS.get(primary_cat, CATEGORY_COLORS["unknown"])
             grand = domain_grand_totals[dst]
             leaf_sz = _leaf_node_size_from_total(grand)
+            droll = domain_risk_rollup.get(dst, {"scores": [], "tiers": [], "reasons": []})
+            dscores = droll.get("scores", [])
+            avg_score = int(round(sum(dscores) / len(dscores))) if dscores else 0
+            tier = "low"
+            if avg_score >= 75:
+                tier = "critical"
+            elif avg_score >= 50:
+                tier = "high"
+            elif avg_score >= 25:
+                tier = "medium"
+            reasons = droll.get("reasons", [])
             net.add_node(
                 dst,
                 label="\u200b",
                 sxr_inner_count=grand,
                 sxr_caption=dst,
-                title=_plain_tip(
-                    dst,
-                    f"Dominant category: {_category_display_name(primary_cat)}",
-                    f"Total resources (all crawled sites): {grand}",
-                ),
+                sxr_show_risk_hover=True,
+                sxr_risk_score=avg_score,
+                sxr_risk_tier=tier,
+                sxr_risk_reason=_risk_reason_text(reasons if reasons else [f"{grand} resources across crawled sites"]),
+                title=None,
                 color=color,
                 size=leaf_sz,
                 shape="dot",

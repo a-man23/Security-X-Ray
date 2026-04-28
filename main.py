@@ -242,6 +242,22 @@ def print_summary(result: dict):
                 print("      Examples:")
                 for ex in examples:
                     print(f"        - {ex}")
+    risk_score = summ.get("risk_score")
+    if risk_score:
+        print()
+        print(
+            "  Risk score:          "
+            f"{risk_score.get('score', 0)}/100 ({str(risk_score.get('tier', 'low')).upper()})"
+        )
+    domain_scores = summ.get("domain_risk_scores", [])
+    if domain_scores:
+        print("  Top risky domains:")
+        for row in domain_scores[:5]:
+            print(
+                "    "
+                f"{row.get('domain')}  "
+                f"{row.get('score', 0)}/100 ({str(row.get('tier', 'low')).upper()})"
+            )
     print("=" * 60)
     print()
  
@@ -260,6 +276,19 @@ def build_aggregate(results: list[dict], run_config: dict | None = None) -> dict
     category_totals: dict[str, int] = defaultdict(int)
     provider_totals: dict[str, int] = defaultdict(int)
     site_summaries = []
+    site_risk_scores: list[dict] = []
+    domain_risk_rollup: dict[str, dict] = defaultdict(
+        lambda: {
+            "domain": "",
+            "max_score": 0,
+            "average_score": 0.0,
+            "site_count": 0,
+            "sites": [],
+            "sample_categories": set(),
+            "sample_providers": set(),
+            "_scores": [],
+        }
+    )
  
     for r in results:
         s = r.get("summary", {})
@@ -271,6 +300,34 @@ def build_aggregate(results: list[dict], run_config: dict | None = None) -> dict
             category_totals[cat] += n
         for prov, n in s.get("by_provider", {}).items():
             provider_totals[prov] += n
+        risk_score = s.get("risk_score", {})
+        if risk_score:
+            site_risk_scores.append(
+                {
+                    "site_domain": r["crawl_metadata"]["site_domain"],
+                    "score": int(risk_score.get("score", 0)),
+                    "tier": risk_score.get("tier", "low"),
+                }
+            )
+        site_domain = r["crawl_metadata"]["site_domain"]
+        for drow in s.get("domain_risk_scores", []):
+            domain = drow.get("domain")
+            if not domain:
+                continue
+            agg = domain_risk_rollup[domain]
+            agg["domain"] = domain
+            score = int(drow.get("score", 0))
+            agg["_scores"].append(score)
+            agg["max_score"] = max(agg["max_score"], score)
+            if site_domain not in agg["sites"]:
+                agg["sites"].append(site_domain)
+                agg["site_count"] += 1
+            category = drow.get("primary_category")
+            if category:
+                agg["sample_categories"].add(category)
+            provider = drow.get("provider")
+            if provider:
+                agg["sample_providers"].add(provider)
         site_summaries.append({
             "site_domain": r["crawl_metadata"]["site_domain"],
             "target_url": r["crawl_metadata"]["target_url"],
@@ -278,6 +335,7 @@ def build_aggregate(results: list[dict], run_config: dict | None = None) -> dict
             "third_party_script_count": s.get("third_party_script_count", 0),
             "unique_third_party_domains": s.get("unique_third_party_domains", 0),
             "by_category": s.get("by_category", {}),
+            "risk_score": s.get("risk_score"),
         })
  
     # Domains present across multiple sites
@@ -290,6 +348,25 @@ def build_aggregate(results: list[dict], run_config: dict | None = None) -> dict
         [(d, c) for d, c in domain_site_count.items() if c > 1],
         key=lambda x: -x[1],
     )
+
+    risk_average = 0.0
+    risk_max = 0
+    highest_risk_site = None
+    if site_risk_scores:
+        risk_average = round(sum(row["score"] for row in site_risk_scores) / len(site_risk_scores), 2)
+        highest = max(site_risk_scores, key=lambda row: row["score"])
+        risk_max = highest["score"]
+        highest_risk_site = highest["site_domain"]
+
+    rolled_domains: list[dict] = []
+    for row in domain_risk_rollup.values():
+        scores = row.pop("_scores")
+        row["average_score"] = round(sum(scores) / len(scores), 2) if scores else 0.0
+        row["sites"].sort()
+        row["sample_categories"] = sorted(row["sample_categories"])
+        row["sample_providers"] = sorted(row["sample_providers"])
+        rolled_domains.append(row)
+    rolled_domains.sort(key=lambda row: (-row["max_score"], -row["site_count"], row["domain"]))
  
     return {
         "report_type": "aggregate",
@@ -307,6 +384,14 @@ def build_aggregate(results: list[dict], run_config: dict | None = None) -> dict
         "domains_appearing_on_multiple_sites": [
             {"domain": d, "site_count": c} for d, c in ubiquitous
         ],
+        "risk_summary": {
+            "version": 1,
+            "average_score": risk_average,
+            "max_score": risk_max,
+            "highest_risk_site": highest_risk_site,
+            "site_scores": sorted(site_risk_scores, key=lambda row: -row["score"]),
+            "domain_scores": rolled_domains,
+        },
         "per_site": site_summaries,
     }
  

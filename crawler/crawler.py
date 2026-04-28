@@ -480,6 +480,14 @@ class SiteCrawler:
  
         # Scripts specifically (highest privilege)
         third_party_scripts = [r for r in third_party if r["tag"] == "script"]
+        domain_risk_scores = self._compute_domain_risk_scores(third_party)
+        risk_indicators = self._risk_indicators(resources)
+        risk_score = self._compute_risk_score(
+            third_party=third_party,
+            third_party_scripts=third_party_scripts,
+            by_category=by_category,
+            risk_indicators=risk_indicators,
+        )
  
         return {
             "total_resources": len(resources),
@@ -490,8 +498,182 @@ class SiteCrawler:
             "third_party_domains": third_party_domains,
             "by_category": dict(by_category),
             "by_provider": dict(sorted(by_provider.items(), key=lambda x: -x[1])),
-            "risk_indicators": self._risk_indicators(resources),
+            "domain_risk_scores": domain_risk_scores,
+            "risk_indicators": risk_indicators,
+            "risk_score": risk_score,
         }
+
+    def _risk_tier(self, score: int) -> str:
+        """Map numeric risk score to a human-readable tier."""
+        if score >= 75:
+            return "critical"
+        if score >= 50:
+            return "high"
+        if score >= 25:
+            return "medium"
+        return "low"
+
+    def _compute_risk_score(
+        self,
+        third_party: list[dict],
+        third_party_scripts: list[dict],
+        by_category: dict[str, int],
+        risk_indicators: list[dict],
+    ) -> dict:
+        """
+        Compute a deterministic risk score from crawl evidence.
+        Score is 0-100 and intended as a prioritization signal, not a verdict.
+        """
+        components: list[dict] = []
+        indicator_codes = {f.get("code") for f in risk_indicators}
+        unique_third_party_domains = len({r["registrable_domain"] for r in third_party if r.get("registrable_domain")})
+        unknown_scripts = [r for r in third_party_scripts if r.get("category") == "unknown"]
+        advertising_scripts = [r for r in third_party_scripts if r.get("category") == "advertising"]
+
+        def add_component(code: str, points: int, evidence: str):
+            if points <= 0:
+                return
+            components.append({"code": code, "points": points, "evidence": evidence})
+
+        # Script volume is the main attack-surface factor.
+        script_count = len(third_party_scripts)
+        if script_count > 20:
+            add_component("THIRD_PARTY_SCRIPT_VOLUME", 30, f"{script_count} third-party scripts")
+        elif script_count > 10:
+            add_component("THIRD_PARTY_SCRIPT_VOLUME", 20, f"{script_count} third-party scripts")
+        elif script_count > 5:
+            add_component("THIRD_PARTY_SCRIPT_VOLUME", 10, f"{script_count} third-party scripts")
+
+        # Unknown scripts represent classification blind spots.
+        if unknown_scripts:
+            add_component(
+                "UNKNOWN_SCRIPT_PRESENCE",
+                min(20, len(unknown_scripts) * 3),
+                f"{len(unknown_scripts)} unknown third-party scripts",
+            )
+
+        # Advertising/tracking scripts can be high-risk in data-sensitive contexts.
+        if advertising_scripts:
+            add_component(
+                "AD_TRACKING_SCRIPT_PRESENCE",
+                min(16, len(advertising_scripts) * 2),
+                f"{len(advertising_scripts)} advertising/tracking scripts",
+            )
+
+        # Broad third-party domain footprint generally increases supply-chain risk.
+        if unique_third_party_domains > 25:
+            add_component("DOMAIN_FOOTPRINT_SIZE", 15, f"{unique_third_party_domains} unique third-party domains")
+        elif unique_third_party_domains > 15:
+            add_component("DOMAIN_FOOTPRINT_SIZE", 10, f"{unique_third_party_domains} unique third-party domains")
+        elif unique_third_party_domains > 8:
+            add_component("DOMAIN_FOOTPRINT_SIZE", 5, f"{unique_third_party_domains} unique third-party domains")
+
+        # Category-specific weighting for common risky classes.
+        tag_manager_count = by_category.get("tag_manager", 0)
+        if tag_manager_count:
+            add_component(
+                "TAG_MANAGER_DEPENDENCY",
+                min(12, tag_manager_count * 3),
+                f"{tag_manager_count} tag manager resources",
+            )
+
+        # Promote existing heuristic alerts directly into score context.
+        if "MANY_THIRD_PARTY_SCRIPTS" in indicator_codes:
+            add_component("HEURISTIC_ALERT_MANY_SCRIPTS", 8, "many third-party scripts heuristic triggered")
+        if "ADVERTISING_SCRIPTS" in indicator_codes:
+            add_component("HEURISTIC_ALERT_ADVERTISING", 6, "advertising scripts heuristic triggered")
+
+        score = min(100, sum(c["points"] for c in components))
+        return {
+            "version": 1,
+            "score": score,
+            "tier": self._risk_tier(score),
+            "components": sorted(components, key=lambda c: -c["points"]),
+            "note": "Heuristic score for prioritization; not a definitive security assessment.",
+        }
+
+    def _compute_domain_risk_scores(self, third_party: list[dict]) -> list[dict]:
+        """Compute per-domain risk scores for third-party domains on a site."""
+        by_domain: dict[str, list[dict]] = defaultdict(list)
+        for r in third_party:
+            domain = r.get("registrable_domain")
+            if not domain:
+                continue
+            by_domain[domain].append(r)
+
+        scored_domains: list[dict] = []
+        for domain, rows in by_domain.items():
+            script_rows = [r for r in rows if r.get("tag") == "script"]
+            unknown_script_rows = [r for r in script_rows if r.get("category") == "unknown"]
+            ad_script_rows = [r for r in script_rows if r.get("category") == "advertising"]
+            tag_manager_rows = [r for r in rows if r.get("category") == "tag_manager"]
+
+            category_counts: dict[str, int] = defaultdict(int)
+            provider_counts: dict[str, int] = defaultdict(int)
+            for r in rows:
+                category_counts[r.get("category") or "unknown"] += 1
+                provider = r.get("provider")
+                if provider:
+                    provider_counts[provider] += 1
+            primary_category = max(category_counts.items(), key=lambda item: item[1])[0]
+            primary_provider = max(provider_counts.items(), key=lambda item: item[1])[0] if provider_counts else None
+
+            components: list[dict] = []
+
+            def add_component(code: str, points: int, evidence: str):
+                if points <= 0:
+                    return
+                components.append({"code": code, "points": points, "evidence": evidence})
+
+            # Domain-local scoring factors.
+            if script_rows:
+                add_component(
+                    "SCRIPT_REFERENCES",
+                    min(35, len(script_rows) * 7),
+                    f"{len(script_rows)} script references",
+                )
+            if unknown_script_rows:
+                add_component(
+                    "UNKNOWN_SCRIPT_CONTENT",
+                    min(18, len(unknown_script_rows) * 6),
+                    f"{len(unknown_script_rows)} unknown-category scripts",
+                )
+            if ad_script_rows:
+                add_component(
+                    "AD_TRACKING_SCRIPT_CONTENT",
+                    min(18, len(ad_script_rows) * 5),
+                    f"{len(ad_script_rows)} advertising scripts",
+                )
+            if tag_manager_rows:
+                add_component(
+                    "TAG_MANAGER_CONTENT",
+                    min(12, len(tag_manager_rows) * 4),
+                    f"{len(tag_manager_rows)} tag-manager resources",
+                )
+            if len(rows) >= 5:
+                add_component("HIGH_REFERENCE_COUNT", 8, f"{len(rows)} total references")
+            elif len(rows) >= 3:
+                add_component("ELEVATED_REFERENCE_COUNT", 4, f"{len(rows)} total references")
+
+            score = min(100, sum(c["points"] for c in components))
+            scored_domains.append(
+                {
+                    "domain": domain,
+                    "score": score,
+                    "tier": self._risk_tier(score),
+                    "primary_category": primary_category,
+                    "provider": primary_provider,
+                    "total_references": len(rows),
+                    "script_references": len(script_rows),
+                    "components": sorted(components, key=lambda c: -c["points"]),
+                    "examples": [r.get("url") for r in rows if r.get("url")][:3],
+                }
+            )
+
+        return sorted(
+            scored_domains,
+            key=lambda row: (-row["score"], -row["script_references"], -row["total_references"], row["domain"]),
+        )
  
     def _risk_indicators(self, resources: list[dict]) -> list[dict]:
         """

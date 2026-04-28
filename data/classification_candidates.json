@@ -1,12 +1,28 @@
 {
   "format_version": 1,
-  "last_updated": "2026-04-22T22:51:26.122269+00:00",
+  "last_updated": "2026-04-28T20:55:18.622299+00:00",
   "notes": "Review and promote high-confidence entries into data/domain_classifications.json",
   "domains": {
+    "dailymail.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 335,
+      "sites": [
+        "dailymail.co.uk"
+      ],
+      "example_urls": [
+        "https://scripts.dailymail.com/rta2/v2-mol-3.14.4.js",
+        "https://www.dailymail.com/static/mol-fe/static/mol-fe-sync-bundle/15.83.1/desktop.js",
+        "https://www.dailymail.com/static/mol-adverts/11.11.3/mol-adverts-delayed.js",
+        "https://www.dailymail.com/static/mol-fe/static/mol-fe-async-bundle//11.72.2/channelDefer.js",
+        "https://www.dailymail.com/static/gunther/18.5.0/async_bundle--.js"
+      ],
+      "status": "needs_review"
+    },
     "google.com": {
       "proposed_category": null,
       "proposed_provider": null,
-      "seen_count": 32,
+      "seen_count": 35,
       "sites": [
         "nypost.com",
         "cnn.com",
@@ -19,6 +35,18 @@
         "https://google.com",
         "https://www.google.com",
         "https://www.google.com/recaptcha/api.js?render=6LcKaMEUAAAAACNhMymsVMHg25lFfksvZZO9EMTZ&ver=0.1.0"
+      ],
+      "status": "needs_review"
+    },
+    "gobankingrates.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 12,
+      "sites": [
+        "cnn.com"
+      ],
+      "example_urls": [
+        "https://products.gobankingrates.com/pub/515fec14-ee9f-11ed-8078-0a919b37cd73"
       ],
       "status": "needs_review"
     },
@@ -61,22 +89,10 @@
       ],
       "status": "needs_review"
     },
-    "gobankingrates.com": {
-      "proposed_category": null,
-      "proposed_provider": null,
-      "seen_count": 9,
-      "sites": [
-        "cnn.com"
-      ],
-      "example_urls": [
-        "https://products.gobankingrates.com/pub/515fec14-ee9f-11ed-8078-0a919b37cd73"
-      ],
-      "status": "needs_review"
-    },
     "zqtk.net": {
       "proposed_category": null,
       "proposed_provider": null,
-      "seen_count": 9,
+      "seen_count": 12,
       "sites": [
         "cnn.com"
       ],
@@ -193,6 +209,19 @@
       ],
       "status": "needs_review"
     },
+    "serving-sys.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 2,
+      "sites": [
+        "dailymail.co.uk"
+      ],
+      "example_urls": [
+        "https://secure-ds.serving-sys.com",
+        "https://bs.serving-sys.com"
+      ],
+      "status": "needs_review"
+    },
     "tinypass.com": {
       "proposed_category": "support",
       "proposed_provider": "Piano (Tinypass)",
@@ -206,6 +235,18 @@
       "status": "promoted",
       "promoted_at": "2026-04-21T21:22:26.613462+00:00"
     },
+    "2mdn.net": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 1,
+      "sites": [
+        "dailymail.co.uk"
+      ],
+      "example_urls": [
+        "https://s0.2mdn.net"
+      ],
+      "status": "needs_review"
+    },
     "cnn.io": {
       "proposed_category": null,
       "proposed_provider": null,
@@ -215,6 +256,66 @@
       ],
       "example_urls": [
         "https://registry.api.cnn.io"
+      ],
+      "status": "needs_review"
+    },
+    "connatix.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 1,
+      "sites": [
+        "dailymail.co.uk"
+      ],
+      "example_urls": [
+        "https://cdn.connatix.com"
+      ],
+      "status": "needs_review"
+    },
+    "doubleverify.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 1,
+      "sites": [
+        "dailymail.co.uk"
+      ],
+      "example_urls": [
+        "https://cdn.doubleverify.com"
+      ],
+      "status": "needs_review"
+    },
+    "flashtalking.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 1,
+      "sites": [
+        "dailymail.co.uk"
+      ],
+      "example_urls": [
+        "https://servedby.flashtalking.com"
+      ],
+      "status": "needs_review"
+    },
+    "kargo.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 1,
+      "sites": [
+        "dailymail.co.uk"
+      ],
+      "example_urls": [
+        "https://storage.cloud.kargo.com"
+      ],
+      "status": "needs_review"
+    },
+    "mol.im": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 1,
+      "sites": [
+        "dailymail.co.uk"
+      ],
+      "example_urls": [
+        "https://i.mol.im/"
       ],
       "status": "needs_review"
     },
