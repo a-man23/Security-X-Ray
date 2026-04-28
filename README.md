@@ -219,6 +219,65 @@ Write HTML only without launching the browser:
 python scripts/visualize_graph.py -i output/cnn.com.json --no-open
 ```
 
+## Risk Scoring Calibration
+
+Risk scoring weights and thresholds are configurable in:
+
+- `data/risk_scoring_config.json`
+
+The crawler merges this file with built-in defaults, so you can tune only the keys you care about.
+
+Quick presets:
+
+- Conservative:
+  - Increase `tiers.high_min` / `tiers.critical_min`
+  - Lower `site.threat_indicator_boosts` values
+  - Lower `domain.threat_multipliers.unknown_scripts`
+- Aggressive:
+  - Lower `tiers.high_min` / `tiers.critical_min`
+  - Increase `site.threat_multipliers.unknown_scripts`
+  - Increase `domain.threat_multipliers.advertising_scripts`
+
+Suggested workflow:
+
+1. Edit `data/risk_scoring_config.json`
+2. Re-run a small fixed target set (same crawl settings each run)
+3. Compare `summary.risk_score` and `summary.domain_risk_scores` across runs
+4. Keep changes that improve ranking quality for your manual review set
+
+## Data Collection Scripts
+
+Use `collection/collect_metrics.py` to build paper-ready metric tables from crawl outputs:
+
+```bash
+python collection/collect_metrics.py --output-dir output --dest collection/output
+```
+
+This writes key datasets such as:
+
+- `site_metrics.csv` (per-site dependency footprint + crawl health + risk scores)
+- `site_category_counts.csv` (site/category composition)
+- `shared_domains.csv` and `site_overlap_matrix.csv` (cross-site ecosystem structure)
+- `domain_risk_rollup.csv` (domain risk distribution + top risky domains)
+- `collection_summary.json` (distribution summaries + candidate queue status counts)
+
+Then generate plots with:
+
+```bash
+python collection/plot_metrics.py --input-dir collection/output --dest collection/plots
+```
+
+Example plot outputs:
+
+- `site_dependency_footprint.png`
+- `site_category_composition.png`
+- `top_shared_domains.png`
+- `site_overlap_matrix.png`
+- `risk_score_distributions.png`
+
 ## Next Planned Step
 
-- Flesh out risk scoring + incorporate into visualization
+- Expand dataset collection across diverse site categories (news, e-commerce, media, education)
+- Run repeated crawls on a fixed benchmark target set for consistency checks
+- Build paper-ready aggregate tables/metrics (cross-site domain overlap, category distribution, risk-score distributions)
+- Document evaluation snapshots for precision/recall-style validation against browser network observations

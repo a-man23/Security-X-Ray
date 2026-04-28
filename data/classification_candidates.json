@@ -1,12 +1,12 @@
 {
   "format_version": 1,
-  "last_updated": "2026-04-28T20:55:18.622299+00:00",
+  "last_updated": "2026-04-28T21:24:50.054373+00:00",
   "notes": "Review and promote high-confidence entries into data/domain_classifications.json",
   "domains": {
     "dailymail.com": {
       "proposed_category": null,
       "proposed_provider": null,
-      "seen_count": 335,
+      "seen_count": 1007,
       "sites": [
         "dailymail.co.uk"
       ],
@@ -19,15 +19,148 @@
       ],
       "status": "needs_review"
     },
+    "arstechnica.net": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 272,
+      "sites": [
+        "arstechnica.com"
+      ],
+      "example_urls": [
+        "https://cdn.arstechnica.net/wp/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+        "https://cdn.arstechnica.net/wp-content/plugins/article-forum-connect/public/js/iframe-resizer.parent.js?ver=5.3.1",
+        "https://cdn.arstechnica.net/wp-content/plugins/article-forum-connect/public/js/iframe.js?ver=1.2.4",
+        "https://cdn.arstechnica.net/wp-content/themes/ars-v9/public/js/app.c9a271.js",
+        "https://cdn.arstechnica.net/wp-content/themes/ars-v9/public/js/ads.ae0b0b.js"
+      ],
+      "status": "needs_review"
+    },
+    "targetimg1.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 188,
+      "sites": [
+        "target.com"
+      ],
+      "example_urls": [
+        "https://assets.targetimg1.com/ssx/ssx.mod.js?async",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/polyfills-42372ed130431b0a.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/module-component-generic-slingshot-page-planner-slot.ad06dec0796d6269.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/9632-44c81f5ebe9f81ec.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/4606-9ed9c69cb499d5d6.js"
+      ],
+      "status": "needs_review"
+    },
+    "walmartimages.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 180,
+      "sites": [
+        "walmart.com"
+      ],
+      "example_urls": [
+        "https://i5.walmartimages.com/dfw/63fd9f59-5797/ab343db8-4354-4c88-8de5-065054425d0f/v2/en-US/_next/static/chunks/polyfills-42372ed130431b0a.js",
+        "https://i5.walmartimages.com/beacon/beacon.js?bd=b.www.walmart.com&bh=beacon.lightest.walmart.com",
+        "https://i5.walmartimages.com/dfw/63fd9f59-5797/ab343db8-4354-4c88-8de5-065054425d0f/v2/en-US/_next/static/chunks/ui_global-header_component_seo-header-links.578d46219b319007.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-5797/ab343db8-4354-4c88-8de5-065054425d0f/v2/en-US/_next/static/chunks/ui_item-queue_banner_queue-banner-a9fdece37c83e102.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-5797/ab343db8-4354-4c88-8de5-065054425d0f/v2/en-US/_next/static/chunks/ui_event-timer_queue-timer.72a4f35ea8cfaa9b.js"
+      ],
+      "status": "needs_review"
+    },
+    "scene7.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 134,
+      "sites": [
+        "target.com"
+      ],
+      "example_urls": [
+        "https://target.scene7.com/is/image/Target/GUEST_610f2802-7ef6-4ef0-81f1-e30ce4b9343c?wid=668&qlt=80&fmt=pjpeg",
+        "https://target.scene7.com/is/image/Target/GUEST_efc9cd7a-a10d-499d-be67-00edd5545322?fmt=webp&qlt=80&wid=600",
+        "https://target.scene7.com/is/image/Target/GUEST_13266fbc-bb6e-4c8f-9095-34de68ba2a61?fmt=webp&qlt=80&wid=600",
+        "https://target.scene7.com/is/image/Target/GUEST_7e4ed8e9-0d44-4796-8e41-8691ed1b011d?fmt=webp&qlt=80&wid=600",
+        "https://target.scene7.com/is/image/Target/GUEST_a6ab5c12-cd46-4040-b20d-3506ab360dd5?fmt=webp&qlt=80&wid=600"
+      ],
+      "status": "needs_review"
+    },
+    "githubassets.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 126,
+      "sites": [
+        "github.com"
+      ],
+      "example_urls": [
+        "https://github.githubassets.com/assets/high-contrast-cookie-218067197ba03c91.js",
+        "https://github.githubassets.com/assets/wp-runtime-5b19619ff73497e2.js",
+        "https://github.githubassets.com/assets/fetch-utilities-3140609b5732710f.js",
+        "https://github.githubassets.com/assets/28839-7adfdde5afeb1a03.js",
+        "https://github.githubassets.com/assets/85924-ac5602ef611dc506.js"
+      ],
+      "status": "needs_review"
+    },
+    "ctfassets.net": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 111,
+      "sites": [
+        "github.com",
+        "coursera.org"
+      ],
+      "example_urls": [
+        "https://images.ctfassets.net/8aevphvgewt8/g1XhuDG7foMyNWIEIpGJj/b40a790b854d0803704deb7905b1bd82/logo-duolingo-14477f9e54a6.svg",
+        "https://images.ctfassets.net/8aevphvgewt8/6Qr8Snm4JceoMFRJhapgFa/802ded1d2c486a9d0a4c073d9f8f38f4/logo-gartner-aa8c2e452b64.svg",
+        "https://images.ctfassets.net/8aevphvgewt8/1Dt1ncaR6ZM4dQvknFzfBI/e5c2092be5bd53881622eced4fd37564/accordion-1-ce487d44c0bf.webp",
+        "https://images.ctfassets.net/8aevphvgewt8/1uXZYDy7dMcH9QwxuAU06F/1cb167cc60d725b8cf7089faf9a4ed06/accordion-2-730955545f07.webp",
+        "https://images.ctfassets.net/8aevphvgewt8/3xzVZaJhqo3B62R8NeHjX2/e37c81e4f26e9dac2aff1f23a0243087/accordion-3-52ca331d22ea.webp"
+      ],
+      "status": "needs_review"
+    },
+    "bac-assets.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 104,
+      "sites": [
+        "bankofamerica.com"
+      ],
+      "example_urls": [
+        "https://www1.bac-assets.com//homepage/spa-assets/js/common-chunks/common-es6-components-e14aeb843779f77644fb.m.js",
+        "https://www1.bac-assets.com//homepage/spa-assets/js/pages/homepage-dap-es6-page-8bf7670bc53e0683a2a0.m.js",
+        "https://www1.bac-assets.com/homepage/spa-assets/images/assets-images-global-get-app-modal-Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917-CSXd8fd3663.svg",
+        "https://www1.bac-assets.com/homepage/spa-assets/images/assets-images-global-get-app-modal-google-play-badge-CSX89f9024.svg",
+        "https://www1.bac-assets.com/homepage/spa-assets/images/assets-images-site-homepage-icons-ent_edu_bac_4953168_icon_gc_d-CSX7684a6de.svg"
+      ],
+      "status": "needs_review"
+    },
+    "forbesimg.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 57,
+      "sites": [
+        "forbes.com"
+      ],
+      "example_urls": [
+        "https://i.forbesimg.com/simple-site/_next/static/chunks/polyfills-42372ed130431b0a.js",
+        "https://i.forbesimg.com/simple-site/_next/static/chunks/webpack-2991f58360cdcd24.js",
+        "https://i.forbesimg.com/simple-site/_next/static/chunks/framework-f30cbadcebab7629.js",
+        "https://i.forbesimg.com/simple-site/_next/static/chunks/main-a6004c5457d0f87b.js",
+        "https://i.forbesimg.com/simple-site/_next/static/chunks/pages/_app-86e4a0fac32c82b6.js"
+      ],
+      "status": "needs_review"
+    },
     "google.com": {
       "proposed_category": null,
       "proposed_provider": null,
-      "seen_count": 35,
+      "seen_count": 47,
       "sites": [
         "nypost.com",
         "cnn.com",
         "techcrunch.com",
-        "booking.com"
+        "booking.com",
+        "usatoday.com",
+        "theverge.com",
+        "wired.com",
+        "kayak.com"
       ],
       "example_urls": [
         "https://accounts.google.com/gsi/client",
@@ -38,22 +171,42 @@
       ],
       "status": "needs_review"
     },
-    "gobankingrates.com": {
+    "githubusercontent.com": {
       "proposed_category": null,
       "proposed_provider": null,
-      "seen_count": 12,
+      "seen_count": 29,
       "sites": [
-        "cnn.com"
+        "github.com"
       ],
       "example_urls": [
-        "https://products.gobankingrates.com/pub/515fec14-ee9f-11ed-8078-0a919b37cd73"
+        "https://avatars.githubusercontent.com",
+        "https://user-images.githubusercontent.com/",
+        "https://avatars.githubusercontent.com/u/6154722?v=4",
+        "https://avatars.githubusercontent.com/u/43390781?v=4",
+        "https://avatars.githubusercontent.com/u/74989412?v=4"
+      ],
+      "status": "needs_review"
+    },
+    "espn.net": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 16,
+      "sites": [
+        "espn.com"
+      ],
+      "example_urls": [
+        "https://cdn1.espn.net/fitt/fbd57dc4ddaa-release-04-28-2026.2.0.4554/client/espnfitt/runtime-eb3b757d.js",
+        "https://cdn1.espn.net/fitt/fbd57dc4ddaa-release-04-28-2026.2.0.4554/client/espnfitt/dmp-sdk-eeeeba38.js",
+        "https://cdn1.espn.net/fitt/fbd57dc4ddaa-release-04-28-2026.2.0.4554/client/espnfitt/9544-d9bb93f7.js",
+        "https://cdn1.espn.net/fitt/fbd57dc4ddaa-release-04-28-2026.2.0.4554/client/espnfitt/1609-dac15037.js",
+        "https://cdn1.espn.net/fitt/fbd57dc4ddaa-release-04-28-2026.2.0.4554/client/espnfitt/1765-53c8f25a.js"
       ],
       "status": "needs_review"
     },
     "hsforms.net": {
       "proposed_category": null,
       "proposed_provider": null,
-      "seen_count": 12,
+      "seen_count": 14,
       "sites": [
         "techcrunch.com"
       ],
@@ -63,10 +216,58 @@
       ],
       "status": "needs_review"
     },
+    "kayak.ch": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 14,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.ch",
+        "https://www.fr.kayak.ch",
+        "https://www.kayak.ch/flights",
+        "https://www.fr.kayak.ch/flights",
+        "https://www.kayak.ch/stays"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.co.th": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 14,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.co.th",
+        "https://www.en.kayak.co.th",
+        "https://www.kayak.co.th/flights",
+        "https://www.en.kayak.co.th/flights",
+        "https://www.kayak.co.th/stays"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.de": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 14,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.de",
+        "https://www.en.kayak.de",
+        "https://www.kayak.de/flights",
+        "https://www.en.kayak.de/flights",
+        "https://www.kayak.de/stays"
+      ],
+      "status": "needs_review"
+    },
     "sail-horizon.com": {
       "proposed_category": null,
       "proposed_provider": null,
-      "seen_count": 12,
+      "seen_count": 14,
       "sites": [
         "techcrunch.com"
       ],
@@ -79,7 +280,7 @@
     "servenobid.com": {
       "proposed_category": null,
       "proposed_provider": null,
-      "seen_count": 12,
+      "seen_count": 14,
       "sites": [
         "techcrunch.com"
       ],
@@ -89,15 +290,347 @@
       ],
       "status": "needs_review"
     },
+    "gobankingrates.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 13,
+      "sites": [
+        "cnn.com"
+      ],
+      "example_urls": [
+        "https://products.gobankingrates.com/pub/515fec14-ee9f-11ed-8078-0a919b37cd73"
+      ],
+      "status": "needs_review"
+    },
     "zqtk.net": {
       "proposed_category": null,
       "proposed_provider": null,
-      "seen_count": 12,
+      "seen_count": 13,
       "sites": [
         "cnn.com"
       ],
       "example_urls": [
         "https://segment-data-us-east.zqtk.net"
+      ],
+      "status": "needs_review"
+    },
+    "travel-assets.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 12,
+      "sites": [
+        "expedia.com"
+      ],
+      "example_urls": [
+        "https://c.travel-assets.com/captcha-pwa/bernie.5b8a6ca403f89757c133.js",
+        "https://c.travel-assets.com/captcha-pwa/core.451dc4e8bb75e9cb164e.js",
+        "https://c.travel-assets.com/captcha-pwa/graphql.84edf06724c624474f70.js",
+        "https://c.travel-assets.com/captcha-pwa/pap.2b42328a0e45c52a7784.js",
+        "https://c.travel-assets.com/captcha-pwa/shared-ui.09bb218b8444d4f45130.js"
+      ],
+      "status": "needs_review"
+    },
+    "espn.co.uk": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 9,
+      "sites": [
+        "espn.com"
+      ],
+      "example_urls": [
+        "https://www.espn.co.uk/",
+        "https://www.espn.co.uk/where-to-watch",
+        "https://www.espn.co.uk/nfl/",
+        "https://www.espn.co.uk/nba/",
+        "https://www.espn.co.uk/mlb/"
+      ],
+      "status": "needs_review"
+    },
+    "espn.com.au": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 9,
+      "sites": [
+        "espn.com"
+      ],
+      "example_urls": [
+        "https://www.espn.com.au/",
+        "https://www.espn.com.au/where-to-watch",
+        "https://www.espn.com.au/nfl/",
+        "https://www.espn.com.au/nba/",
+        "https://www.espn.com.au/mlb/"
+      ],
+      "status": "needs_review"
+    },
+    "espn.com.sg": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 9,
+      "sites": [
+        "espn.com"
+      ],
+      "example_urls": [
+        "https://www.espn.com.sg/",
+        "https://www.espn.com.sg/where-to-watch",
+        "https://www.espn.com.sg/nfl/",
+        "https://www.espn.com.sg/nba/",
+        "https://www.espn.com.sg/mlb/"
+      ],
+      "status": "needs_review"
+    },
+    "espn.in": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 9,
+      "sites": [
+        "espn.com"
+      ],
+      "example_urls": [
+        "https://www.espn.in/",
+        "https://www.espn.in/where-to-watch",
+        "https://www.espn.in/nfl/",
+        "https://www.espn.in/nba/",
+        "https://www.espn.in/mlb/"
+      ],
+      "status": "needs_review"
+    },
+    "espn.ph": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 9,
+      "sites": [
+        "espn.com"
+      ],
+      "example_urls": [
+        "https://www.espn.ph/",
+        "https://www.espn.ph/where-to-watch",
+        "https://www.espn.ph/nfl/",
+        "https://www.espn.ph/nba/",
+        "https://www.espn.ph/mlb/"
+      ],
+      "status": "needs_review"
+    },
+    "espn.cl": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 8,
+      "sites": [
+        "espn.com"
+      ],
+      "example_urls": [
+        "https://www.espn.cl/",
+        "https://www.espn.cl/where-to-watch",
+        "https://www.espn.cl/futbol-americano/",
+        "https://www.espn.cl/basquetbol/",
+        "https://www.espn.cl/beisbol/"
+      ],
+      "status": "needs_review"
+    },
+    "espn.co.cr": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 8,
+      "sites": [
+        "espn.com"
+      ],
+      "example_urls": [
+        "https://www.espn.co.cr/",
+        "https://www.espn.co.cr/where-to-watch",
+        "https://www.espn.co.cr/futbol-americano/",
+        "https://www.espn.co.cr/basquetbol/",
+        "https://www.espn.co.cr/beisbol/"
+      ],
+      "status": "needs_review"
+    },
+    "espn.com.ar": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 8,
+      "sites": [
+        "espn.com"
+      ],
+      "example_urls": [
+        "https://www.espn.com.ar/",
+        "https://www.espn.com.ar/where-to-watch",
+        "https://www.espn.com.ar/futbol-americano/",
+        "https://www.espn.com.ar/basquetbol/",
+        "https://www.espn.com.ar/beisbol/"
+      ],
+      "status": "needs_review"
+    },
+    "espn.com.br": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 8,
+      "sites": [
+        "espn.com"
+      ],
+      "example_urls": [
+        "https://www.espn.com.br/",
+        "https://www.espn.com.br/where-to-watch",
+        "https://www.espn.com.br/nfl/",
+        "https://www.espn.com.br/nba/",
+        "https://www.espn.com.br/beisebol/"
+      ],
+      "status": "needs_review"
+    },
+    "espn.com.co": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 8,
+      "sites": [
+        "espn.com"
+      ],
+      "example_urls": [
+        "https://www.espn.com.co/",
+        "https://www.espn.com.co/where-to-watch",
+        "https://www.espn.com.co/futbol-americano/",
+        "https://www.espn.com.co/basquetbol/",
+        "https://www.espn.com.co/beisbol/"
+      ],
+      "status": "needs_review"
+    },
+    "espn.com.do": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 8,
+      "sites": [
+        "espn.com"
+      ],
+      "example_urls": [
+        "https://www.espn.com.do/",
+        "https://www.espn.com.do/where-to-watch",
+        "https://www.espn.com.do/futbol-americano/",
+        "https://www.espn.com.do/basquetbol/",
+        "https://www.espn.com.do/beisbol/"
+      ],
+      "status": "needs_review"
+    },
+    "espn.com.ec": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 8,
+      "sites": [
+        "espn.com"
+      ],
+      "example_urls": [
+        "https://www.espn.com.ec/",
+        "https://www.espn.com.ec/where-to-watch",
+        "https://www.espn.com.ec/futbol-americano/",
+        "https://www.espn.com.ec/basquetbol/",
+        "https://www.espn.com.ec/beisbol/"
+      ],
+      "status": "needs_review"
+    },
+    "espn.com.gt": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 8,
+      "sites": [
+        "espn.com"
+      ],
+      "example_urls": [
+        "https://www.espn.com.gt/",
+        "https://www.espn.com.gt/where-to-watch",
+        "https://www.espn.com.gt/futbol-americano/",
+        "https://www.espn.com.gt/basquetbol/",
+        "https://www.espn.com.gt/beisbol/"
+      ],
+      "status": "needs_review"
+    },
+    "espn.com.mx": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 8,
+      "sites": [
+        "espn.com"
+      ],
+      "example_urls": [
+        "https://www.espn.com.mx/",
+        "https://www.espn.com.mx/where-to-watch",
+        "https://www.espn.com.mx/futbol-americano/",
+        "https://www.espn.com.mx/basquetbol/",
+        "https://www.espn.com.mx/beisbol/"
+      ],
+      "status": "needs_review"
+    },
+    "espn.com.pa": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 8,
+      "sites": [
+        "espn.com"
+      ],
+      "example_urls": [
+        "https://www.espn.com.pa/",
+        "https://www.espn.com.pa/where-to-watch",
+        "https://www.espn.com.pa/futbol-americano/",
+        "https://www.espn.com.pa/basquetbol/",
+        "https://www.espn.com.pa/beisbol/"
+      ],
+      "status": "needs_review"
+    },
+    "espn.com.pe": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 8,
+      "sites": [
+        "espn.com"
+      ],
+      "example_urls": [
+        "https://www.espn.com.pe/",
+        "https://www.espn.com.pe/where-to-watch",
+        "https://www.espn.com.pe/futbol-americano/",
+        "https://www.espn.com.pe/basquetbol/",
+        "https://www.espn.com.pe/beisbol/"
+      ],
+      "status": "needs_review"
+    },
+    "espn.com.uy": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 8,
+      "sites": [
+        "espn.com"
+      ],
+      "example_urls": [
+        "https://www.espn.com.uy/",
+        "https://www.espn.com.uy/where-to-watch",
+        "https://www.espn.com.uy/futbol-americano/",
+        "https://www.espn.com.uy/basquetbol/",
+        "https://www.espn.com.uy/beisbol/"
+      ],
+      "status": "needs_review"
+    },
+    "espn.com.ve": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 8,
+      "sites": [
+        "espn.com"
+      ],
+      "example_urls": [
+        "https://www.espn.com.ve/",
+        "https://www.espn.com.ve/where-to-watch",
+        "https://www.espn.com.ve/futbol-americano/",
+        "https://www.espn.com.ve/basquetbol/",
+        "https://www.espn.com.ve/beisbol/"
+      ],
+      "status": "needs_review"
+    },
+    "espn.nl": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 8,
+      "sites": [
+        "espn.com"
+      ],
+      "example_urls": [
+        "https://www.espn.nl/",
+        "https://www.espn.nl/where-to-watch",
+        "https://www.espn.nl/nfl/",
+        "https://www.espn.nl/nba/",
+        "https://www.espn.nl/mlb/"
       ],
       "status": "needs_review"
     },
@@ -114,6 +647,708 @@
         "https://pagesix.com/wp-content/uploads/sites/3/2026/04/newspress-collage-xyivjea0w-1776799895047.jpg?quality=90&strip=all&w=1024",
         "https://pagesix.com/wp-content/uploads/sites/3/2025/02/anne-hathaway-skincare.jpg?quality=75&strip=all&w=1024",
         "https://pagesix.com/wp-content/uploads/sites/3/2025/02/anne-hathaway-skincare.jpg?quality=90&strip=all&w=1024"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.cat": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 7,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.cat",
+        "https://www.kayak.cat/flights",
+        "https://www.kayak.cat/stays",
+        "https://www.kayak.cat/cars",
+        "https://www.kayak.cat/vacaciones"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.co.id": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 7,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.co.id",
+        "https://www.kayak.co.id/flights",
+        "https://www.kayak.co.id/stays",
+        "https://www.kayak.co.id/cars",
+        "https://www.kayak.co.id/packages"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.co.in": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 7,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.co.in",
+        "https://www.kayak.co.in/flights",
+        "https://www.kayak.co.in/stays",
+        "https://www.kayak.co.in/cars",
+        "https://www.kayak.co.in/holidays"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.co.jp": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 7,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.co.jp",
+        "https://www.kayak.co.jp/flights",
+        "https://www.kayak.co.jp/stays",
+        "https://www.kayak.co.jp/cars",
+        "https://www.kayak.co.jp/packages"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.co.uk": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 7,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.co.uk",
+        "https://www.kayak.co.uk/flights",
+        "https://www.kayak.co.uk/stays",
+        "https://www.kayak.co.uk/cars",
+        "https://www.kayak.co.uk/holidays"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.com.au": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 7,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.com.au",
+        "https://www.kayak.com.au/flights",
+        "https://www.kayak.com.au/stays",
+        "https://www.kayak.com.au/cars",
+        "https://www.kayak.com.au/holidays"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.com.br": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 7,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.com.br",
+        "https://www.kayak.com.br/flights",
+        "https://www.kayak.com.br/stays",
+        "https://www.kayak.com.br/cars",
+        "https://www.kayak.com.br/packagetours"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.com.hk": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 7,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.com.hk",
+        "https://www.kayak.com.hk/flights",
+        "https://www.kayak.com.hk/stays",
+        "https://www.kayak.com.hk/cars",
+        "https://www.kayak.com.hk/packages"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.com.mx": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 7,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.com.mx",
+        "https://www.kayak.com.mx/flights",
+        "https://www.kayak.com.mx/stays",
+        "https://www.kayak.com.mx/cars",
+        "https://www.kayak.com.mx/packagetours"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.com.my": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 7,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.com.my",
+        "https://www.kayak.com.my/flights",
+        "https://www.kayak.com.my/stays",
+        "https://www.kayak.com.my/cars",
+        "https://www.kayak.com.my/packages"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.dk": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 7,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.dk",
+        "https://www.kayak.dk/flights",
+        "https://www.kayak.dk/stays",
+        "https://www.kayak.dk/cars",
+        "https://www.kayak.dk/pakkerejser"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.es": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 7,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.es",
+        "https://www.kayak.es/flights",
+        "https://www.kayak.es/stays",
+        "https://www.kayak.es/cars",
+        "https://www.kayak.es/vacaciones"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.fr": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 7,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.fr",
+        "https://www.kayak.fr/flights",
+        "https://www.kayak.fr/stays",
+        "https://www.kayak.fr/cars",
+        "https://www.kayak.fr/sejours"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.ie": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 7,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.ie",
+        "https://www.kayak.ie/flights",
+        "https://www.kayak.ie/stays",
+        "https://www.kayak.ie/cars",
+        "https://www.kayak.ie/holidays"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.it": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 7,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.it",
+        "https://www.kayak.it/flights",
+        "https://www.kayak.it/stays",
+        "https://www.kayak.it/cars",
+        "https://www.kayak.it/vacanze"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.nl": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 7,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.nl",
+        "https://www.kayak.nl/flights",
+        "https://www.kayak.nl/stays",
+        "https://www.kayak.nl/cars",
+        "https://www.kayak.nl/vakanties"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.no": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 7,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.no",
+        "https://www.kayak.no/flights",
+        "https://www.kayak.no/stays",
+        "https://www.kayak.no/cars",
+        "https://www.kayak.no/pakkereiser"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.pl": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 7,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.pl",
+        "https://www.kayak.pl/flights",
+        "https://www.kayak.pl/stays",
+        "https://www.kayak.pl/cars",
+        "https://www.kayak.pl/packages"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.pt": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 7,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.pt",
+        "https://www.kayak.pt/flights",
+        "https://www.kayak.pt/stays",
+        "https://www.kayak.pt/cars",
+        "https://www.kayak.pt/pacotes"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.se": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 7,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.se",
+        "https://www.kayak.se/flights",
+        "https://www.kayak.se/stays",
+        "https://www.kayak.se/cars",
+        "https://www.kayak.se/paketresor"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.sg": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 7,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.sg",
+        "https://www.kayak.sg/flights",
+        "https://www.kayak.sg/stays",
+        "https://www.kayak.sg/cars",
+        "https://www.kayak.sg/packages"
+      ],
+      "status": "needs_review"
+    },
+    "bbhub.io": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 6,
+      "sites": [
+        "bloomberg.com"
+      ],
+      "example_urls": [
+        "https://assets.bbhub.io/form-builder-api/logic-v1.1.5.min.js?ver=2",
+        "https://assets.bbhub.io/company/sites/44/2025/05/black-512x512-1-150x150.png",
+        "https://assets.bbhub.io/company/sites/44/2025/05/black-512x512-1-300x300.png",
+        "https://assets.bbhub.io/form-builder-api/main-v1.1.5.min.css?ver=5",
+        "https://assets.bbhub.io/company/sites/70/2025/03/black-512x512-1-108x108.png"
+      ],
+      "status": "needs_review"
+    },
+    "gmpg.org": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 6,
+      "sites": [
+        "nypost.com",
+        "foxnews.com",
+        "edx.org"
+      ],
+      "example_urls": [
+        "https://gmpg.org/xfn/11"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.ae": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 6,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.ae",
+        "https://www.kayak.ae/flights",
+        "https://www.kayak.ae/stays",
+        "https://www.kayak.ae/cars",
+        "https://www.kayak.ae/explore/"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.bo": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 6,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.bo",
+        "https://www.kayak.bo/flights",
+        "https://www.kayak.bo/stays",
+        "https://www.kayak.bo/cars",
+        "https://www.kayak.bo/explore/"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.cl": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 6,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.cl",
+        "https://www.kayak.cl/flights",
+        "https://www.kayak.cl/stays",
+        "https://www.kayak.cl/cars",
+        "https://www.kayak.cl/explore/"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.co.cr": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 6,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.co.cr",
+        "https://www.kayak.co.cr/flights",
+        "https://www.kayak.co.cr/stays",
+        "https://www.kayak.co.cr/cars",
+        "https://www.kayak.co.cr/explore/"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.co.kr": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 6,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.co.kr",
+        "https://www.kayak.co.kr/flights",
+        "https://www.kayak.co.kr/stays",
+        "https://www.kayak.co.kr/cars",
+        "https://www.kayak.co.kr/explore/"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.com.ar": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 6,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.com.ar",
+        "https://www.kayak.com.ar/flights",
+        "https://www.kayak.com.ar/stays",
+        "https://www.kayak.com.ar/cars",
+        "https://www.kayak.com.ar/explore/"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.com.co": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 6,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.com.co",
+        "https://www.kayak.com.co/flights",
+        "https://www.kayak.com.co/stays",
+        "https://www.kayak.com.co/cars",
+        "https://www.kayak.com.co/explore/"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.com.do": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 6,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.com.do",
+        "https://www.kayak.com.do/flights",
+        "https://www.kayak.com.do/stays",
+        "https://www.kayak.com.do/cars",
+        "https://www.kayak.com.do/explore/"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.com.ec": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 6,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.com.ec",
+        "https://www.kayak.com.ec/flights",
+        "https://www.kayak.com.ec/stays",
+        "https://www.kayak.com.ec/cars",
+        "https://www.kayak.com.ec/explore/"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.com.gt": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 6,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.com.gt",
+        "https://www.kayak.com.gt/flights",
+        "https://www.kayak.com.gt/stays",
+        "https://www.kayak.com.gt/cars",
+        "https://www.kayak.com.gt/explore/"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.com.hn": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 6,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.com.hn",
+        "https://www.kayak.com.hn/flights",
+        "https://www.kayak.com.hn/stays",
+        "https://www.kayak.com.hn/cars",
+        "https://www.kayak.com.hn/explore/"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.com.ni": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 6,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.com.ni",
+        "https://www.kayak.com.ni/flights",
+        "https://www.kayak.com.ni/stays",
+        "https://www.kayak.com.ni/cars",
+        "https://www.kayak.com.ni/explore/"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.com.pa": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 6,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.com.pa",
+        "https://www.kayak.com.pa/flights",
+        "https://www.kayak.com.pa/stays",
+        "https://www.kayak.com.pa/cars",
+        "https://www.kayak.com.pa/explore/"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.com.pe": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 6,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.com.pe",
+        "https://www.kayak.com.pe/flights",
+        "https://www.kayak.com.pe/stays",
+        "https://www.kayak.com.pe/cars",
+        "https://www.kayak.com.pe/explore/"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.com.ph": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 6,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.com.ph",
+        "https://www.kayak.com.ph/flights",
+        "https://www.kayak.com.ph/stays",
+        "https://www.kayak.com.ph/cars",
+        "https://www.kayak.com.ph/explore/"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.com.pr": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 6,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.com.pr",
+        "https://www.kayak.com.pr/flights",
+        "https://www.kayak.com.pr/stays",
+        "https://www.kayak.com.pr/cars",
+        "https://www.kayak.com.pr/explore/"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.com.py": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 6,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.com.py",
+        "https://www.kayak.com.py/flights",
+        "https://www.kayak.com.py/stays",
+        "https://www.kayak.com.py/cars",
+        "https://www.kayak.com.py/explore/"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.com.sv": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 6,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.com.sv",
+        "https://www.kayak.com.sv/flights",
+        "https://www.kayak.com.sv/stays",
+        "https://www.kayak.com.sv/cars",
+        "https://www.kayak.com.sv/explore/"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.com.tr": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 6,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.com.tr",
+        "https://www.kayak.com.tr/flights",
+        "https://www.kayak.com.tr/stays",
+        "https://www.kayak.com.tr/cars",
+        "https://www.kayak.com.tr/explore/"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.com.uy": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 6,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.com.uy",
+        "https://www.kayak.com.uy/flights",
+        "https://www.kayak.com.uy/stays",
+        "https://www.kayak.com.uy/cars",
+        "https://www.kayak.com.uy/explore/"
+      ],
+      "status": "needs_review"
+    },
+    "kayak.sa": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 6,
+      "sites": [
+        "kayak.com"
+      ],
+      "example_urls": [
+        "https://www.kayak.sa",
+        "https://www.kayak.sa/flights",
+        "https://www.kayak.sa/stays",
+        "https://www.kayak.sa/cars",
+        "https://www.kayak.sa/explore/"
       ],
       "status": "needs_review"
     },
@@ -134,6 +1369,96 @@
       "status": "promoted",
       "promoted_at": "2026-04-21T21:22:26.613462+00:00"
     },
+    "serving-sys.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 6,
+      "sites": [
+        "dailymail.co.uk"
+      ],
+      "example_urls": [
+        "https://secure-ds.serving-sys.com",
+        "https://bs.serving-sys.com"
+      ],
+      "status": "needs_review"
+    },
+    "ceros.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 5,
+      "sites": [
+        "forbes.com"
+      ],
+      "example_urls": [
+        "https://view.ceros.com/forbes/aws-header-1-desktop-2?heightOverride=806",
+        "https://view.ceros.com/forbes/aws-header-1-desktop-1-1-1?heightOverride=1159",
+        "https://view.ceros.com/forbes/aws-header-1-desktop?heightOverride=1054",
+        "https://view.ceros.com/forbes/aws-header-1-desktop-1?heightOverride=1054",
+        "https://view.ceros.com/forbes/aws-header-1-desktop-1-1?heightOverride=1167"
+      ],
+      "status": "needs_review"
+    },
+    "doubleverify.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 5,
+      "sites": [
+        "dailymail.co.uk",
+        "theverge.com",
+        "target.com"
+      ],
+      "example_urls": [
+        "https://cdn.doubleverify.com",
+        "https://pub.doubleverify.com/dvtag/21236410/DV464041/pub.js",
+        "https://pub.doubleverify.com/dvtag/21728514/DV1026531/pub.js"
+      ],
+      "status": "needs_review"
+    },
+    "foxweather.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 5,
+      "sites": [
+        "foxnews.com"
+      ],
+      "example_urls": [
+        "https://images.foxweather.com/static.foxweather.com/www.foxweather.com/content/uploads/2026/04/343/193/gettyimages-2271386158.jpg",
+        "https://images.foxweather.com/static.foxweather.com/www.foxweather.com/content/uploads/2026/04/343/193/gettyimages-2271386158.jpg?tl=1&ve=1",
+        "https://images.foxweather.com/static.foxweather.com/www.foxweather.com/content/uploads/2026/04/120/68/adobe-express-file-2.png?tl=1&ve=1",
+        "https://images.foxweather.com/static.foxweather.com/www.foxweather.com/content/uploads/2022/08/120/68/Boston_Rain.png?tl=1&ve=1",
+        "https://images.foxweather.com/static.foxweather.com/www.foxweather.com/content/uploads/2026/04/120/68/gettyimages-1576558913-scaled.jpg?tl=1&ve=1"
+      ],
+      "status": "needs_review"
+    },
+    "2mdn.net": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 4,
+      "sites": [
+        "dailymail.co.uk",
+        "usatoday.com"
+      ],
+      "example_urls": [
+        "https://s0.2mdn.net"
+      ],
+      "status": "needs_review"
+    },
+    "conde.digital": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 4,
+      "sites": [
+        "wired.com",
+        "arstechnica.com"
+      ],
+      "example_urls": [
+        "https://ads-static.conde.digital/production/cns/builds/wired/v6.js?v=12575",
+        "https://ads-static.conde.digital",
+        "https://ads-static.conde.digital/production/cns/builds/ars-technica/ars-technica.min.js",
+        "https://globalservices.conde.digital"
+      ],
+      "status": "needs_review"
+    },
     "typekit.net": {
       "proposed_category": "fonts",
       "proposed_provider": "Adobe Fonts (Typekit)",
@@ -148,6 +1473,72 @@
       "status": "promoted",
       "promoted_at": "2026-04-21T21:22:26.613462+00:00"
     },
+    "wordpress.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 4,
+      "sites": [
+        "nypost.com"
+      ],
+      "example_urls": [
+        "https://v0.wordpress.com"
+      ],
+      "status": "needs_review"
+    },
+    "bbthat.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 3,
+      "sites": [
+        "bloomberg.com"
+      ],
+      "example_urls": [
+        "https://www.bbthat.com/assets/v2.7.0/that.js",
+        "https://www.bbthat.com",
+        "https://www.bbthat.com/assets/v2.7.0/that.css"
+      ],
+      "status": "needs_review"
+    },
+    "bwbx.io": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 3,
+      "sites": [
+        "bloomberg.com"
+      ],
+      "example_urls": [
+        "https://assets.bwbx.io/font-service/css/akzidenz-grotesk-regular,AvenirNextPForBBG-Demi,AvenirNextPForBBG-Light,AvenirNextPForBBG-Regular,AvenirNextPForBBG-Thin,AvenirNextPForBBG-Medium/font-face.css",
+        "https://assets.bwbx.io",
+        "https://assets.bwbx.io/font-service/css/AvenirNextPForBBG:400,600/styled-font-face.css"
+      ],
+      "status": "needs_review"
+    },
+    "concert.io": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 3,
+      "sites": [
+        "theverge.com"
+      ],
+      "example_urls": [
+        "https://cdn.concert.io/lib/concert-ads/v2-latest/concert_ads.js",
+        "https://cdn.concert.io/lib/concert-concierge.2.10.1.min.js",
+        "https://cdn.concert.io/"
+      ],
+      "status": "needs_review"
+    },
+    "connatix.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 3,
+      "sites": [
+        "dailymail.co.uk"
+      ],
+      "example_urls": [
+        "https://cdn.connatix.com"
+      ],
+      "status": "needs_review"
+    },
     "decider.com": {
       "proposed_category": null,
       "proposed_provider": null,
@@ -160,27 +1551,80 @@
       ],
       "status": "needs_review"
     },
-    "gmpg.org": {
+    "flashtalking.com": {
       "proposed_category": null,
       "proposed_provider": null,
       "seen_count": 3,
       "sites": [
-        "nypost.com"
+        "dailymail.co.uk"
       ],
       "example_urls": [
-        "https://gmpg.org/xfn/11"
+        "https://servedby.flashtalking.com"
       ],
       "status": "needs_review"
     },
-    "wordpress.com": {
+    "kargo.com": {
       "proposed_category": null,
       "proposed_provider": null,
       "seen_count": 3,
       "sites": [
-        "nypost.com"
+        "dailymail.co.uk"
       ],
       "example_urls": [
-        "https://v0.wordpress.com"
+        "https://storage.cloud.kargo.com"
+      ],
+      "status": "needs_review"
+    },
+    "mol.im": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 3,
+      "sites": [
+        "dailymail.co.uk"
+      ],
+      "example_urls": [
+        "https://i.mol.im/"
+      ],
+      "status": "needs_review"
+    },
+    "omtrdc.net": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 3,
+      "sites": [
+        "foxnews.com",
+        "capitalone.com"
+      ],
+      "example_urls": [
+        "https://cdn.tt.omtrdc.net",
+        "https://foxnews.tt.omtrdc.net",
+        "https://mboxedge34.tt.omtrdc.net"
+      ],
+      "status": "needs_review"
+    },
+    "condenastdigital.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 2,
+      "sites": [
+        "wired.com"
+      ],
+      "example_urls": [
+        "https://privacy.condenastdigital.com/fides.js?property_id=FDS-LV9IAK",
+        "https://martech.condenastdigital.com/lib/martech.js"
+      ],
+      "status": "needs_review"
+    },
+    "confiant-integrations.net": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 2,
+      "sites": [
+        "usatoday.com"
+      ],
+      "example_urls": [
+        "https://cdn.confiant-integrations.net",
+        "https://cdn.confiant-integrations.net/r5TdgVvkbv-PeaJCKaQfCh5Xsto/gpt_and_prebid/config.js"
       ],
       "status": "needs_review"
     },
@@ -197,6 +1641,19 @@
       "status": "promoted",
       "promoted_at": "2026-04-21T21:22:26.613462+00:00"
     },
+    "oath.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 2,
+      "sites": [
+        "engadget.com"
+      ],
+      "example_urls": [
+        "https://consent.cmp.oath.com/version/6.4.1/cmp.js",
+        "https://consent.cmp.oath.com/version/7.0.0/cmp.js"
+      ],
+      "status": "needs_review"
+    },
     "ophan.co.uk": {
       "proposed_category": null,
       "proposed_provider": null,
@@ -209,16 +1666,29 @@
       ],
       "status": "needs_review"
     },
-    "serving-sys.com": {
+    "purl.org": {
       "proposed_category": null,
       "proposed_provider": null,
       "seen_count": 2,
       "sites": [
-        "dailymail.co.uk"
+        "foxnews.com"
       ],
       "example_urls": [
-        "https://secure-ds.serving-sys.com",
-        "https://bs.serving-sys.com"
+        "https://purl.org/dc/elements/1.1/",
+        "https://purl.org/dc/terms/"
+      ],
+      "status": "needs_review"
+    },
+    "qualified.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 2,
+      "sites": [
+        "edx.org"
+      ],
+      "example_urls": [
+        "https://js.qualified.com/docking.js",
+        "https://js.qualified.com/qualified.js?token=eAybjv6Up8uk3yrF"
       ],
       "status": "needs_review"
     },
@@ -235,15 +1705,51 @@
       "status": "promoted",
       "promoted_at": "2026-04-21T21:22:26.613462+00:00"
     },
-    "2mdn.net": {
+    "2u.com": {
       "proposed_category": null,
       "proposed_provider": null,
       "seen_count": 1,
       "sites": [
-        "dailymail.co.uk"
+        "edx.org"
       ],
       "example_urls": [
-        "https://s0.2mdn.net"
+        "https://prospect-form-plugin.2u.com"
+      ],
+      "status": "needs_review"
+    },
+    "agkn.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 1,
+      "sites": [
+        "capitalone.com"
+      ],
+      "example_urls": [
+        "https://d.agkn.com"
+      ],
+      "status": "needs_review"
+    },
+    "bullwhip.cloud": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 1,
+      "sites": [
+        "theverge.com"
+      ],
+      "example_urls": [
+        "https://cdn.bullwhip.cloud/sonar/vox-verge.umd.js"
+      ],
+      "status": "needs_review"
+    },
+    "cnevids.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 1,
+      "sites": [
+        "arstechnica.com"
+      ],
+      "example_urls": [
+        "https://player.cnevids.com"
       ],
       "status": "needs_review"
     },
@@ -259,63 +1765,219 @@
       ],
       "status": "needs_review"
     },
-    "connatix.com": {
+    "coursera-for-business.org": {
       "proposed_category": null,
       "proposed_provider": null,
       "seen_count": 1,
       "sites": [
-        "dailymail.co.uk"
+        "coursera.org"
       ],
       "example_urls": [
-        "https://cdn.connatix.com"
+        "https://pages.coursera-for-business.org/js/forms2/js/forms2.min.js"
       ],
       "status": "needs_review"
     },
-    "doubleverify.com": {
+    "ex.co": {
       "proposed_category": null,
       "proposed_provider": null,
       "seen_count": 1,
       "sites": [
-        "dailymail.co.uk"
+        "usatoday.com"
       ],
       "example_urls": [
-        "https://cdn.doubleverify.com"
+        "https://exbd.ex.co/sdk.js"
       ],
       "status": "needs_review"
     },
-    "flashtalking.com": {
+    "fox.com": {
       "proposed_category": null,
       "proposed_provider": null,
       "seen_count": 1,
       "sites": [
-        "dailymail.co.uk"
+        "foxnews.com"
       ],
       "example_urls": [
-        "https://servedby.flashtalking.com"
+        "https://foxkit.fox.com/sdk/profile/v2.9.0/profile.js"
       ],
       "status": "needs_review"
     },
-    "kargo.com": {
+    "foxnewsradio.com": {
       "proposed_category": null,
       "proposed_provider": null,
       "seen_count": 1,
       "sites": [
-        "dailymail.co.uk"
+        "foxnews.com"
       ],
       "example_urls": [
-        "https://storage.cloud.kargo.com"
+        "https://premium.foxnewsradio.com/utils/sched/view_js_schedule_dev.php?fvj8ja"
       ],
       "status": "needs_review"
     },
-    "mol.im": {
+    "go.com": {
       "proposed_category": null,
       "proposed_provider": null,
       "seen_count": 1,
       "sites": [
-        "dailymail.co.uk"
+        "espn.com"
       ],
       "example_urls": [
-        "https://i.mol.im/"
+        "https://cdn.registerdisney.go.com"
+      ],
+      "status": "needs_review"
+    },
+    "headliner.link": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 1,
+      "sites": [
+        "foxnews.com"
+      ],
+      "example_urls": [
+        "https://disco.headliner.link/d/foxnewsradio/web/js/widget.js"
+      ],
+      "status": "needs_review"
+    },
+    "iptc.org": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 1,
+      "sites": [
+        "foxnews.com"
+      ],
+      "example_urls": [
+        "https://iptc.org/std/nar/2006-10-01/"
+      ],
+      "status": "needs_review"
+    },
+    "ketchjs.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 1,
+      "sites": [
+        "forbes.com"
+      ],
+      "example_urls": [
+        "https://cdn.ketchjs.com/plugins/v1/tcf/stub.js"
+      ],
+      "status": "needs_review"
+    },
+    "livefyre.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 1,
+      "sites": [
+        "foxnews.com"
+      ],
+      "example_urls": [
+        "https://cdn.livefyre.com"
+      ],
+      "status": "needs_review"
+    },
+    "media.net": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 1,
+      "sites": [
+        "foxnews.com"
+      ],
+      "example_urls": [
+        "https://amprtc.media.net"
+      ],
+      "status": "needs_review"
+    },
+    "megaphone.fm": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 1,
+      "sites": [
+        "foxnews.com"
+      ],
+      "example_urls": [
+        "https://playlist.megaphone.fm/?p=FOXM7605961505&light=true"
+      ],
+      "status": "needs_review"
+    },
+    "permutive.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 1,
+      "sites": [
+        "theverge.com"
+      ],
+      "example_urls": [
+        "https://cdn.permutive.com"
+      ],
+      "status": "needs_review"
+    },
+    "plrsrvcs.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 1,
+      "sites": [
+        "usatoday.com"
+      ],
+      "example_urls": [
+        "https://bw-prod.plrsrvcs.com"
+      ],
+      "status": "needs_review"
+    },
+    "prismstandard.org": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 1,
+      "sites": [
+        "foxnews.com"
+      ],
+      "example_urls": [
+        "https://prismstandard.org/namespaces/basic/2.1/"
+      ],
+      "status": "needs_review"
+    },
+    "px-cloud.net": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 1,
+      "sites": [
+        "target.com"
+      ],
+      "example_urls": [
+        "https://client.px-cloud.net/PXGWPp4wUS/main.min.js"
+      ],
+      "status": "needs_review"
+    },
+    "rpxnow.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 1,
+      "sites": [
+        "foxnews.com"
+      ],
+      "example_urls": [
+        "https://widget-cdn.rpxnow.com"
+      ],
+      "status": "needs_review"
+    },
+    "tapad.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 1,
+      "sites": [
+        "foxnews.com"
+      ],
+      "example_urls": [
+        "https://assets.tapad.com"
+      ],
+      "status": "needs_review"
+    },
+    "trustx.org": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 1,
+      "sites": [
+        "foxnews.com"
+      ],
+      "example_urls": [
+        "https://sofia.trustx.org"
       ],
       "status": "needs_review"
     },
@@ -328,6 +1990,42 @@
       ],
       "example_urls": [
         "https://turnip.cdn.turner.com"
+      ],
+      "status": "needs_review"
+    },
+    "usatodaynetworkservice.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 1,
+      "sites": [
+        "usatoday.com"
+      ],
+      "example_urls": [
+        "https://www.usatodaynetworkservice.com"
+      ],
+      "status": "needs_review"
+    },
+    "weglot.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 1,
+      "sites": [
+        "foxnews.com"
+      ],
+      "example_urls": [
+        "https://cdn.weglot.com/weglot.min.js?api_key=wg_c47a74c83c89bf5fae658fd1f5a94cab2&hide_switcher=true"
+      ],
+      "status": "needs_review"
+    },
+    "zephr.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 1,
+      "sites": [
+        "theverge.com"
+      ],
+      "example_urls": [
+        "https://assets.zephr.com/zephr-browser/1.9.1/zephr-browser.umd.js"
       ],
       "status": "needs_review"
     }

@@ -42,6 +42,62 @@ def _load_aliases() -> dict[str, str]:
  
 DOMAIN_ALIASES: dict[str, str] = _load_aliases()
 
+_RISK_CONFIG_PATH = Path(__file__).parent.parent / "data" / "risk_scoring_config.json"
+
+
+def _deep_merge(base: dict, override: dict) -> dict:
+    merged = dict(base)
+    for key, val in override.items():
+        if isinstance(val, dict) and isinstance(merged.get(key), dict):
+            merged[key] = _deep_merge(merged[key], val)
+        else:
+            merged[key] = val
+    return merged
+
+
+def _default_risk_config() -> dict:
+    return {
+        "version": 1,
+        "site": {
+            "score_weights": {"exposure": 0.4, "threat": 0.6},
+            "exposure_caps": {"script_count": 40, "unique_domains": 35, "third_party_references": 25},
+            "exposure_multipliers": {"script_count": 2.0, "unique_domains": 1.3, "third_party_references": 0.5},
+            "threat_caps": {"unknown_scripts": 35, "advertising_scripts": 30, "tag_manager_resources": 20},
+            "threat_multipliers": {"unknown_scripts": 5.0, "advertising_scripts": 3.5, "tag_manager_resources": 3.0},
+            "threat_indicator_boosts": {"MANY_THIRD_PARTY_SCRIPTS": 10, "ADVERTISING_SCRIPTS": 8},
+            "confidence_weights": {"category_coverage": 55.0, "known_script_coverage": 30.0, "provider_coverage": 15.0},
+        },
+        "domain": {
+            "score_weights": {"exposure": 0.35, "threat": 0.65},
+            "exposure_caps": {"total_references": 60, "script_references": 40},
+            "exposure_multipliers": {"total_references": 7.5, "script_references": 10.0},
+            "threat_caps": {"unknown_scripts": 45, "advertising_scripts": 35, "tag_manager_resources": 20},
+            "threat_multipliers": {"unknown_scripts": 8.0, "advertising_scripts": 7.0, "tag_manager_resources": 6.0},
+            "confidence_weights": {"known_category_coverage": 75.0, "provider_coverage": 25.0},
+        },
+        "tiers": {
+            "critical_min": 75,
+            "high_min": 50,
+            "medium_min": 25,
+        },
+    }
+
+
+def _load_risk_config() -> dict:
+    cfg = _default_risk_config()
+    try:
+        raw = json.loads(_RISK_CONFIG_PATH.read_text(encoding="utf-8"))
+        if isinstance(raw, dict):
+            cfg = _deep_merge(cfg, raw)
+    except FileNotFoundError:
+        logger.info("risk_scoring_config.json not found, using built-in defaults")
+    except Exception as exc:
+        logger.warning("Could not load risk scoring config %s: %s", _RISK_CONFIG_PATH, exc)
+    return cfg
+
+
+RISK_CONFIG: dict = _load_risk_config()
+
 # Constants
  
 DEFAULT_TIMEOUT = 15 # seconds per request
@@ -505,11 +561,12 @@ class SiteCrawler:
 
     def _risk_tier(self, score: int) -> str:
         """Map numeric risk score to a human-readable tier."""
-        if score >= 75:
+        tiers = RISK_CONFIG.get("tiers", {})
+        if score >= int(tiers.get("critical_min", 75)):
             return "critical"
-        if score >= 50:
+        if score >= int(tiers.get("high_min", 50)):
             return "high"
-        if score >= 25:
+        if score >= int(tiers.get("medium_min", 25)):
             return "medium"
         return "low"
 
@@ -529,6 +586,11 @@ class SiteCrawler:
         unique_third_party_domains = len({r["registrable_domain"] for r in third_party if r.get("registrable_domain")})
         unknown_scripts = [r for r in third_party_scripts if r.get("category") == "unknown"]
         advertising_scripts = [r for r in third_party_scripts if r.get("category") == "advertising"]
+        known_scripts = [r for r in third_party_scripts if r.get("category") != "unknown"]
+        category_known_count = sum(1 for r in third_party if r.get("category") != "unknown")
+        category_total_count = len(third_party)
+        provider_labeled_count = sum(1 for r in third_party if r.get("provider"))
+        cfg = RISK_CONFIG.get("site", {})
 
         def add_component(code: str, points: int, evidence: str):
             if points <= 0:
@@ -583,11 +645,75 @@ class SiteCrawler:
         if "ADVERTISING_SCRIPTS" in indicator_codes:
             add_component("HEURISTIC_ALERT_ADVERTISING", 6, "advertising scripts heuristic triggered")
 
-        score = min(100, sum(c["points"] for c in components))
+        # v2 decomposition:
+        # - exposure: how much third-party surface exists
+        # - threat: suspicious/riskier characteristics
+        # - confidence: how trustworthy labels are (classification coverage)
+        script_count = len(third_party_scripts)
+        exp_caps = cfg.get("exposure_caps", {})
+        exp_mult = cfg.get("exposure_multipliers", {})
+        exposure_raw = (
+            min(float(exp_caps.get("script_count", 40)), script_count * float(exp_mult.get("script_count", 2.0)))
+            + min(
+                float(exp_caps.get("unique_domains", 35)),
+                unique_third_party_domains * float(exp_mult.get("unique_domains", 1.3)),
+            )
+            + min(
+                float(exp_caps.get("third_party_references", 25)),
+                len(third_party) * float(exp_mult.get("third_party_references", 0.5)),
+            )
+        )
+        exposure_score = int(min(100, round(exposure_raw)))
+
+        threat_caps = cfg.get("threat_caps", {})
+        threat_mult = cfg.get("threat_multipliers", {})
+        threat_raw = 0.0
+        threat_raw += min(
+            float(threat_caps.get("unknown_scripts", 35)),
+            len(unknown_scripts) * float(threat_mult.get("unknown_scripts", 5.0)),
+        )
+        threat_raw += min(
+            float(threat_caps.get("advertising_scripts", 30)),
+            len(advertising_scripts) * float(threat_mult.get("advertising_scripts", 3.5)),
+        )
+        threat_raw += min(
+            float(threat_caps.get("tag_manager_resources", 20)),
+            by_category.get("tag_manager", 0) * float(threat_mult.get("tag_manager_resources", 3.0)),
+        )
+        for code, boost in (cfg.get("threat_indicator_boosts", {}) or {}).items():
+            if code in indicator_codes:
+                threat_raw += float(boost)
+        threat_score = int(min(100, round(threat_raw)))
+
+        conf_w = cfg.get("confidence_weights", {})
+        coverage_ratio = (category_known_count / category_total_count) if category_total_count else 0.0
+        script_known_ratio = (len(known_scripts) / script_count) if script_count else 0.0
+        provider_ratio = (provider_labeled_count / category_total_count) if category_total_count else 0.0
+        confidence_raw = (
+            coverage_ratio * float(conf_w.get("category_coverage", 55.0))
+            + script_known_ratio * float(conf_w.get("known_script_coverage", 30.0))
+            + provider_ratio * float(conf_w.get("provider_coverage", 15.0))
+        )
+        confidence_score = int(max(0, min(100, round(confidence_raw))))
+
+        score_w = cfg.get("score_weights", {})
+        score = int(
+            min(
+                100,
+                round(
+                    exposure_score * float(score_w.get("exposure", 0.4))
+                    + threat_score * float(score_w.get("threat", 0.6))
+                ),
+            )
+        )
         return {
-            "version": 1,
+            "version": 2,
+            "method_version": "risk_v2",
             "score": score,
             "tier": self._risk_tier(score),
+            "exposure_score": exposure_score,
+            "threat_score": threat_score,
+            "confidence_score": confidence_score,
             "components": sorted(components, key=lambda c: -c["points"]),
             "note": "Heuristic score for prioritization; not a definitive security assessment.",
         }
@@ -655,12 +781,69 @@ class SiteCrawler:
             elif len(rows) >= 3:
                 add_component("ELEVATED_REFERENCE_COUNT", 4, f"{len(rows)} total references")
 
-            score = min(100, sum(c["points"] for c in components))
+            known_rows = [r for r in rows if r.get("category") != "unknown"]
+            provider_rows = [r for r in rows if r.get("provider")]
+            cfg = RISK_CONFIG.get("domain", {})
+
+            exp_caps = cfg.get("exposure_caps", {})
+            exp_mult = cfg.get("exposure_multipliers", {})
+            exposure_raw = (
+                min(
+                    float(exp_caps.get("total_references", 60)),
+                    len(rows) * float(exp_mult.get("total_references", 7.5)),
+                )
+                + min(
+                    float(exp_caps.get("script_references", 40)),
+                    len(script_rows) * float(exp_mult.get("script_references", 10.0)),
+                )
+            )
+            exposure_score = int(min(100, round(exposure_raw)))
+
+            threat_caps = cfg.get("threat_caps", {})
+            threat_mult = cfg.get("threat_multipliers", {})
+            threat_raw = 0.0
+            threat_raw += min(
+                float(threat_caps.get("unknown_scripts", 45)),
+                len(unknown_script_rows) * float(threat_mult.get("unknown_scripts", 8.0)),
+            )
+            threat_raw += min(
+                float(threat_caps.get("advertising_scripts", 35)),
+                len(ad_script_rows) * float(threat_mult.get("advertising_scripts", 7.0)),
+            )
+            threat_raw += min(
+                float(threat_caps.get("tag_manager_resources", 20)),
+                len(tag_manager_rows) * float(threat_mult.get("tag_manager_resources", 6.0)),
+            )
+            threat_score = int(min(100, round(threat_raw)))
+
+            conf_w = cfg.get("confidence_weights", {})
+            known_ratio = (len(known_rows) / len(rows)) if rows else 0.0
+            provider_ratio = (len(provider_rows) / len(rows)) if rows else 0.0
+            confidence_raw = (
+                known_ratio * float(conf_w.get("known_category_coverage", 75.0))
+                + provider_ratio * float(conf_w.get("provider_coverage", 25.0))
+            )
+            confidence_score = int(max(0, min(100, round(confidence_raw))))
+
+            score_w = cfg.get("score_weights", {})
+            score = int(
+                min(
+                    100,
+                    round(
+                        exposure_score * float(score_w.get("exposure", 0.35))
+                        + threat_score * float(score_w.get("threat", 0.65))
+                    ),
+                )
+            )
             scored_domains.append(
                 {
                     "domain": domain,
                     "score": score,
                     "tier": self._risk_tier(score),
+                    "method_version": "risk_v2",
+                    "exposure_score": exposure_score,
+                    "threat_score": threat_score,
+                    "confidence_score": confidence_score,
                     "primary_category": primary_category,
                     "provider": primary_provider,
                     "total_references": len(rows),

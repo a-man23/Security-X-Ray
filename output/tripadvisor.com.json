@@ -1,0 +1,100 @@
+{
+  "crawl_metadata": {
+    "target_url": "https://tripadvisor.com",
+    "site_domain": "tripadvisor.com",
+    "crawled_at": "2026-04-28T21:20:58.043270+00:00",
+    "max_depth": 1,
+    "max_internal_links_per_page": 20,
+    "pages_crawled": 1,
+    "pages_blocked_by_robots": 0
+  },
+  "summary": {
+    "total_resources": 1,
+    "first_party_count": 0,
+    "third_party_count": 1,
+    "third_party_script_count": 1,
+    "unique_third_party_domains": 1,
+    "third_party_domains": [
+      "captcha-delivery.com"
+    ],
+    "by_category": {
+      "cdn": 1
+    },
+    "by_provider": {},
+    "domain_risk_scores": [
+      {
+        "domain": "captcha-delivery.com",
+        "score": 6,
+        "tier": "low",
+        "method_version": "risk_v2",
+        "exposure_score": 18,
+        "threat_score": 0,
+        "confidence_score": 75,
+        "primary_category": "cdn",
+        "provider": null,
+        "total_references": 1,
+        "script_references": 1,
+        "components": [
+          {
+            "code": "SCRIPT_REFERENCES",
+            "points": 7,
+            "evidence": "1 script references"
+          }
+        ],
+        "examples": [
+          "https://ct.captcha-delivery.com/c.js"
+        ]
+      }
+    ],
+    "risk_indicators": [],
+    "risk_score": {
+      "version": 2,
+      "method_version": "risk_v2",
+      "score": 2,
+      "tier": "low",
+      "exposure_score": 4,
+      "threat_score": 0,
+      "confidence_score": 85,
+      "components": [],
+      "note": "Heuristic score for prioritization; not a definitive security assessment."
+    }
+  },
+  "resources": [
+    {
+      "url": "https://ct.captcha-delivery.com/c.js",
+      "tag": "script",
+      "attribute": "src",
+      "raw_src": "https://ct.captcha-delivery.com/c.js",
+      "registrable_domain": "captcha-delivery.com",
+      "party": "third-party",
+      "category": "cdn",
+      "provider": null,
+      "seen_on_pages": [
+        "https://tripadvisor.com"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://tripadvisor.com",
+      "final_url": "https://www.tripadvisor.com/",
+      "depth": 0,
+      "status": "ok",
+      "http_status": 403,
+      "security_headers": {},
+      "resources": [
+        {
+          "url": "https://ct.captcha-delivery.com/c.js",
+          "tag": "script",
+          "attribute": "src",
+          "raw_src": "https://ct.captcha-delivery.com/c.js",
+          "registrable_domain": "captcha-delivery.com",
+          "party": "third-party",
+          "category": "cdn",
+          "provider": null
+        }
+      ],
+      "internal_links_found": []
+    }
+  ]
+}

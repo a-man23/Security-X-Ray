@@ -1,0 +1,49 @@
+{
+  "crawl_metadata": {
+    "target_url": "https://cnbc.com",
+    "site_domain": "cnbc.com",
+    "crawled_at": "2026-04-28T21:15:54.254233+00:00",
+    "max_depth": 1,
+    "max_internal_links_per_page": 20,
+    "pages_crawled": 1,
+    "pages_blocked_by_robots": 0
+  },
+  "summary": {
+    "total_resources": 0,
+    "first_party_count": 0,
+    "third_party_count": 0,
+    "third_party_script_count": 0,
+    "unique_third_party_domains": 0,
+    "third_party_domains": [],
+    "by_category": {},
+    "by_provider": {},
+    "domain_risk_scores": [],
+    "risk_indicators": [],
+    "risk_score": {
+      "version": 2,
+      "method_version": "risk_v2",
+      "score": 0,
+      "tier": "low",
+      "exposure_score": 0,
+      "threat_score": 0,
+      "confidence_score": 0,
+      "components": [],
+      "note": "Heuristic score for prioritization; not a definitive security assessment."
+    }
+  },
+  "resources": [],
+  "pages": [
+    {
+      "url": "https://cnbc.com",
+      "final_url": "https://www.cnbc.com/",
+      "depth": 0,
+      "status": "ok",
+      "http_status": 403,
+      "security_headers": {
+        "content-security-policy": "frame-ancestors 'self' *.cnbc.com https://cnbc.zendesk.com;"
+      },
+      "resources": [],
+      "internal_links_found": []
+    }
+  ]
+}

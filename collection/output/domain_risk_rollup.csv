@@ -1,0 +1,191 @@
+domain,site_count,sites,max_score,avg_score,top_category,top_provider
+arstechnica.net,1,arstechnica.com,64,64.0,unknown,
+bac-assets.com,1,bankofamerica.com,64,64.0,unknown,
+dailymail.com,1,dailymail.co.uk,64,64.0,unknown,
+espn.net,1,espn.com,64,64.0,unknown,
+forbesimg.com,1,forbes.com,64,64.0,unknown,
+githubassets.com,1,github.com,64,64.0,unknown,
+targetimg1.com,1,target.com,64,64.0,unknown,
+travel-assets.com,1,expedia.com,64,64.0,unknown,
+walmartimages.com,1,walmart.com,64,64.0,unknown,
+cloudfront.net,4,capitalone.com;coursera.org;nytimes.com;wired.com,35,17.5,cdn,Amazon CloudFront
+bstatic.com,1,booking.com,35,35.0,analytics,
+paypalobjects.com,1,paypal.com,35,35.0,payments,PayPal Objects
+r9cdn.net,1,kayak.com,35,35.0,cdn,
+espncdn.com,1,espn.com,31,31.0,cdn,
+concert.io,1,theverge.com,25,25.0,unknown,
+amazon-adsystem.com,4,cnn.com;foxnews.com;theverge.com;usatoday.com,24,10.0,advertising,Amazon Ads
+bbhub.io,1,bloomberg.com,24,24.0,unknown,
+google.com,8,booking.com;cnn.com;kayak.com;nypost.com;techcrunch.com;theverge.com;usatoday.com;wired.com,23,8.56,unknown,
+condenastdigital.com,1,wired.com,23,23.0,unknown,
+qualified.com,1,edx.org,23,23.0,unknown,
+googleapis.com,5,dailymail.co.uk;edx.org;foxnews.com;kayak.com;nypost.com,21,7.33,fonts,Google Fonts API
+amazonaws.com,2,coursera.org;github.com,21,12.0,cdn,Amazon S3/CloudFront
+ctfassets.net,2,coursera.org;github.com,21,21.0,unknown,
+yimg.com,2,engadget.com;foxnews.com,21,12.0,advertising,Yahoo
+espn.cl,1,espn.com,21,21.0,unknown,
+espn.co.cr,1,espn.com,21,21.0,unknown,
+espn.co.uk,1,espn.com,21,21.0,unknown,
+espn.com.ar,1,espn.com,21,21.0,unknown,
+espn.com.au,1,espn.com,21,21.0,unknown,
+espn.com.br,1,espn.com,21,21.0,unknown,
+espn.com.co,1,espn.com,21,21.0,unknown,
+espn.com.do,1,espn.com,21,21.0,unknown,
+espn.com.ec,1,espn.com,21,21.0,unknown,
+espn.com.gt,1,espn.com,21,21.0,unknown,
+espn.com.mx,1,espn.com,21,21.0,unknown,
+espn.com.pa,1,espn.com,21,21.0,unknown,
+espn.com.pe,1,espn.com,21,21.0,unknown,
+espn.com.sg,1,espn.com,21,21.0,unknown,
+espn.com.uy,1,espn.com,21,21.0,unknown,
+espn.com.ve,1,espn.com,21,21.0,unknown,
+espn.in,1,espn.com,21,21.0,unknown,
+espn.nl,1,espn.com,21,21.0,unknown,
+espn.ph,1,espn.com,21,21.0,unknown,
+githubusercontent.com,1,github.com,21,21.0,unknown,
+kayak.ch,1,kayak.com,21,21.0,unknown,
+kayak.co.th,1,kayak.com,21,21.0,unknown,
+kayak.de,1,kayak.com,21,21.0,unknown,
+rcstatic.com,1,booking.com,21,21.0,analytics,
+scene7.com,1,target.com,21,21.0,unknown,
+googletagmanager.com,13,arstechnica.com;bloomberg.com;booking.com;capitalone.com;edx.org;foxnews.com;kayak.com;nypost.com;nytimes.com;paypal.com;target.com;usatoday.com;wired.com,18,5.92,analytics,Google Tag Manager
+kayak.cat,1,kayak.com,18,18.0,unknown,
+kayak.co.id,1,kayak.com,18,18.0,unknown,
+kayak.co.in,1,kayak.com,18,18.0,unknown,
+kayak.co.jp,1,kayak.com,18,18.0,unknown,
+kayak.co.uk,1,kayak.com,18,18.0,unknown,
+kayak.com.au,1,kayak.com,18,18.0,unknown,
+kayak.com.br,1,kayak.com,18,18.0,unknown,
+kayak.com.hk,1,kayak.com,18,18.0,unknown,
+kayak.com.mx,1,kayak.com,18,18.0,unknown,
+kayak.com.my,1,kayak.com,18,18.0,unknown,
+kayak.dk,1,kayak.com,18,18.0,unknown,
+kayak.es,1,kayak.com,18,18.0,unknown,
+kayak.fr,1,kayak.com,18,18.0,unknown,
+kayak.ie,1,kayak.com,18,18.0,unknown,
+kayak.it,1,kayak.com,18,18.0,unknown,
+kayak.nl,1,kayak.com,18,18.0,unknown,
+kayak.no,1,kayak.com,18,18.0,unknown,
+kayak.pl,1,kayak.com,18,18.0,unknown,
+kayak.pt,1,kayak.com,18,18.0,unknown,
+kayak.se,1,kayak.com,18,18.0,unknown,
+kayak.sg,1,kayak.com,18,18.0,unknown,
+bbthat.com,1,bloomberg.com,16,16.0,unknown,
+kayak.ae,1,kayak.com,16,16.0,unknown,
+kayak.bo,1,kayak.com,16,16.0,unknown,
+kayak.cl,1,kayak.com,16,16.0,unknown,
+kayak.co.cr,1,kayak.com,16,16.0,unknown,
+kayak.co.kr,1,kayak.com,16,16.0,unknown,
+kayak.com.ar,1,kayak.com,16,16.0,unknown,
+kayak.com.co,1,kayak.com,16,16.0,unknown,
+kayak.com.do,1,kayak.com,16,16.0,unknown,
+kayak.com.ec,1,kayak.com,16,16.0,unknown,
+kayak.com.gt,1,kayak.com,16,16.0,unknown,
+kayak.com.hn,1,kayak.com,16,16.0,unknown,
+kayak.com.ni,1,kayak.com,16,16.0,unknown,
+kayak.com.pa,1,kayak.com,16,16.0,unknown,
+kayak.com.pe,1,kayak.com,16,16.0,unknown,
+kayak.com.ph,1,kayak.com,16,16.0,unknown,
+kayak.com.pr,1,kayak.com,16,16.0,unknown,
+kayak.com.py,1,kayak.com,16,16.0,unknown,
+kayak.com.sv,1,kayak.com,16,16.0,unknown,
+kayak.com.tr,1,kayak.com,16,16.0,unknown,
+kayak.com.uy,1,kayak.com,16,16.0,unknown,
+kayak.sa,1,kayak.com,16,16.0,unknown,
+conde.digital,2,arstechnica.com;wired.com,14,14.0,unknown,
+hsforms.net,1,techcrunch.com,14,14.0,unknown,
+sail-horizon.com,1,techcrunch.com,14,14.0,unknown,
+servenobid.com,1,techcrunch.com,14,14.0,unknown,
+doubleclick.net,10,capitalone.com;cnn.com;dailymail.co.uk;engadget.com;foxnews.com;nypost.com;target.com;theverge.com;usatoday.com;wired.com,13,5.0,advertising,Google DoubleClick
+googlesyndication.com,6,cnn.com;dailymail.co.uk;foxnews.com;nypost.com;theverge.com;usatoday.com,13,4.38,advertising,Google AdSense
+scorecardresearch.com,3,foxnews.com;nypost.com;theguardian.com,13,7.0,analytics,Comscore
+ceros.com,1,forbes.com,13,13.0,unknown,
+foxweather.com,1,foxnews.com,13,13.0,unknown,
+cookielaw.org,5,booking.com;edx.org;nypost.com;theverge.com;usatoday.com,12,7.2,consent,OneTrust Cookie Law
+doubleverify.com,3,dailymail.co.uk;target.com;theverge.com,12,5.25,unknown,
+bullwhip.cloud,1,theverge.com,12,12.0,unknown,
+coursera-for-business.org,1,coursera.org,12,12.0,unknown,
+fox.com,1,foxnews.com,12,12.0,unknown,
+foxnewsradio.com,1,foxnews.com,12,12.0,unknown,
+headliner.link,1,foxnews.com,12,12.0,unknown,
+ketchjs.com,1,forbes.com,12,12.0,unknown,
+px-cloud.net,1,target.com,12,12.0,unknown,
+weglot.com,1,foxnews.com,12,12.0,unknown,
+zephr.com,1,theverge.com,12,12.0,unknown,
+tiqcdn.com,2,bankofamerica.com;foxnews.com,11,11.0,advertising,Tealium
+bounceexchange.com,1,nypost.com,11,11.0,advertising,BounceX/Wunderkind
+criteo.net,1,foxnews.com,11,11.0,advertising,Criteo
+unpkg.com,1,edx.org,11,11.0,cdn,unpkg
+taboola.com,2,foxnews.com;usatoday.com,10,6.5,advertising,Taboola
+outbrain.com,1,foxnews.com,10,10.0,advertising,Outbrain
+wp.com,3,edx.org;nypost.com;techcrunch.com,9,9.0,analytics,WordPress Stats
+cloudflare.com,2,cnn.com;techcrunch.com,9,7.33,cdn,Cloudflare
+optimizely.com,2,bbc.com;cnn.com,9,7.33,ab_testing,Optimizely
+sentry-cdn.com,1,coursera.org,9,9.0,cdn,
+google-analytics.com,4,kayak.com;paypal.com;theverge.com;usatoday.com,8,4.25,analytics,Google Analytics
+adsafeprotected.com,2,cnn.com;usatoday.com,8,4.33,advertising,
+bwbx.io,1,bloomberg.com,8,8.0,unknown,
+gannett-cdn.com,1,usatoday.com,8,8.0,cdn,
+captcha-delivery.com,6,etsy.com;forbes.com;nytimes.com;reuters.com;tripadvisor.com;wsj.com,6,6.0,cdn,
+googletagservices.com,6,arstechnica.com;cnn.com;foxnews.com;nypost.com;theverge.com;usatoday.com,6,3.43,analytics,Google Tag Services
+fncstatic.com,1,foxnews.com,6,6.0,analytics,
+mutinycdn.com,1,coursera.org,6,6.0,cdn,
+speedcurve.com,1,nypost.com,6,6.0,analytics,SpeedCurve
+tinypass.com,1,bbc.com,6,6.0,support,Piano (Tinypass)
+gstatic.com,5,foxnews.com;kayak.com;nypost.com;paypal.com;techcrunch.com,5,3.4,cdn,Google Static CDN
+omtrdc.net,2,capitalone.com;foxnews.com,5,4.0,unknown,
+youtube.com,2,engadget.com;nypost.com,5,5.0,social,YouTube
+brandmetrics.com,1,usatoday.com,5,5.0,analytics,
+confiant-integrations.net,1,usatoday.com,5,5.0,unknown,
+oath.com,1,engadget.com,5,5.0,unknown,
+purl.org,1,foxnews.com,5,5.0,unknown,
+serving-sys.com,1,dailymail.co.uk,5,5.0,unknown,
+typekit.net,1,nypost.com,5,5.0,fonts,Adobe Fonts (Typekit)
+gmpg.org,3,edx.org;foxnews.com;nypost.com,3,3.0,unknown,
+rubiconproject.com,3,dailymail.co.uk;foxnews.com;theverge.com,3,3.0,advertising,Magnite/Rubicon
+2mdn.net,2,dailymail.co.uk;usatoday.com,3,3.0,unknown,
+adnxs.com,2,cnn.com;foxnews.com,3,2.0,advertising,AppNexus/Xandr
+criteo.com,2,foxnews.com;usatoday.com,3,3.0,advertising,Criteo
+googleadservices.com,2,dailymail.co.uk;usatoday.com,3,3.0,advertising,Google Ads
+teads.tv,2,dailymail.co.uk;usatoday.com,3,3.0,advertising,
+visualwebsiteoptimizer.com,2,coursera.org;forbes.com,3,3.0,ab_testing,VWO
+2u.com,1,edx.org,3,3.0,unknown,
+agkn.com,1,capitalone.com,3,3.0,unknown,
+casalemedia.com,1,foxnews.com,3,3.0,advertising,Index Exchange
+chartbeat.com,1,foxnews.com,3,3.0,advertising,
+cnevids.com,1,arstechnica.com,3,3.0,unknown,
+connatix.com,1,dailymail.co.uk,3,3.0,unknown,
+demdex.net,1,foxnews.com,3,3.0,advertising,Adobe Audience Manager
+ex.co,1,usatoday.com,3,3.0,unknown,
+facebook.net,1,engadget.com,3,3.0,advertising,Meta Pixel
+flashtalking.com,1,dailymail.co.uk,3,3.0,unknown,
+go.com,1,espn.com,3,3.0,unknown,
+gobankingrates.com,1,cnn.com,3,1.5,unknown,
+indexww.com,1,cnn.com,3,1.5,advertising,Index Exchange
+iptc.org,1,foxnews.com,3,3.0,unknown,
+jsdelivr.net,1,coursera.org,3,3.0,cdn,jsDelivr
+kargo.com,1,dailymail.co.uk,3,3.0,unknown,
+livefyre.com,1,foxnews.com,3,3.0,unknown,
+media.net,1,foxnews.com,3,3.0,unknown,
+megaphone.fm,1,foxnews.com,3,3.0,unknown,
+moatads.com,1,foxnews.com,3,3.0,advertising,Oracle Moat
+mol.im,1,dailymail.co.uk,3,3.0,unknown,
+mstdn.social,1,techcrunch.com,3,3.0,social,
+newrelic.com,1,capitalone.com,3,3.0,analytics,New Relic
+nr-data.net,1,capitalone.com,3,3.0,analytics,New Relic
+openx.net,1,foxnews.com,3,3.0,advertising,OpenX
+permutive.com,1,theverge.com,3,3.0,unknown,
+plrsrvcs.com,1,usatoday.com,3,3.0,unknown,
+polarcdn-terrax.com,1,usatoday.com,3,3.0,cdn,
+prismstandard.org,1,foxnews.com,3,3.0,unknown,
+pubmatic.com,1,foxnews.com,3,3.0,advertising,PubMatic
+rpxnow.com,1,foxnews.com,3,3.0,unknown,
+segment.com,1,edx.org,3,3.0,analytics,Segment
+tapad.com,1,foxnews.com,3,3.0,unknown,
+teads.com,1,usatoday.com,3,3.0,advertising,
+trustx.org,1,foxnews.com,3,3.0,unknown,
+usatodaynetworkservice.com,1,usatoday.com,3,3.0,unknown,
+vox-cdn.com,1,theverge.com,3,3.0,cdn,
+wordpress.com,1,nypost.com,3,3.0,unknown,
+yahoo.com,1,foxnews.com,3,3.0,advertising,Yahoo Ads
+zqtk.net,1,cnn.com,3,1.5,unknown,

@@ -1,0 +1,689 @@
+{
+  "crawl_metadata": {
+    "target_url": "https://expedia.com",
+    "site_domain": "expedia.com",
+    "crawled_at": "2026-04-28T21:21:25.086070+00:00",
+    "max_depth": 1,
+    "max_internal_links_per_page": 20,
+    "pages_crawled": 2,
+    "pages_blocked_by_robots": 0
+  },
+  "summary": {
+    "total_resources": 16,
+    "first_party_count": 4,
+    "third_party_count": 12,
+    "third_party_script_count": 11,
+    "unique_third_party_domains": 1,
+    "third_party_domains": [
+      "travel-assets.com"
+    ],
+    "by_category": {
+      "unknown": 12
+    },
+    "by_provider": {},
+    "domain_risk_scores": [
+      {
+        "domain": "travel-assets.com",
+        "score": 64,
+        "tier": "high",
+        "method_version": "risk_v2",
+        "exposure_score": 100,
+        "threat_score": 45,
+        "confidence_score": 0,
+        "primary_category": "unknown",
+        "provider": null,
+        "total_references": 12,
+        "script_references": 11,
+        "components": [
+          {
+            "code": "SCRIPT_REFERENCES",
+            "points": 35,
+            "evidence": "11 script references"
+          },
+          {
+            "code": "UNKNOWN_SCRIPT_CONTENT",
+            "points": 18,
+            "evidence": "11 unknown-category scripts"
+          },
+          {
+            "code": "HIGH_REFERENCE_COUNT",
+            "points": 8,
+            "evidence": "12 total references"
+          }
+        ],
+        "examples": [
+          "https://c.travel-assets.com/captcha-pwa/bernie.5b8a6ca403f89757c133.js",
+          "https://c.travel-assets.com/captcha-pwa/core.451dc4e8bb75e9cb164e.js",
+          "https://c.travel-assets.com/captcha-pwa/graphql.84edf06724c624474f70.js"
+        ]
+      }
+    ],
+    "risk_indicators": [
+      {
+        "level": "medium",
+        "code": "ELEVATED_THIRD_PARTY_SCRIPTS",
+        "description": "11 third-party <script> tags loaded.",
+        "affected_count": 11
+      },
+      {
+        "level": "info",
+        "code": "UNCLASSIFIED_SCRIPTS",
+        "description": "11 third-party script(s) with unknown category — review manually.",
+        "affected_count": 11,
+        "examples": [
+          "https://c.travel-assets.com/captcha-pwa/bernie.5b8a6ca403f89757c133.js",
+          "https://c.travel-assets.com/captcha-pwa/core.451dc4e8bb75e9cb164e.js",
+          "https://c.travel-assets.com/captcha-pwa/graphql.84edf06724c624474f70.js",
+          "https://c.travel-assets.com/captcha-pwa/pap.2b42328a0e45c52a7784.js",
+          "https://c.travel-assets.com/captcha-pwa/shared-ui.09bb218b8444d4f45130.js"
+        ]
+      }
+    ],
+    "risk_score": {
+      "version": 2,
+      "method_version": "risk_v2",
+      "score": 33,
+      "tier": "medium",
+      "exposure_score": 29,
+      "threat_score": 35,
+      "confidence_score": 0,
+      "components": [
+        {
+          "code": "THIRD_PARTY_SCRIPT_VOLUME",
+          "points": 20,
+          "evidence": "11 third-party scripts"
+        },
+        {
+          "code": "UNKNOWN_SCRIPT_PRESENCE",
+          "points": 20,
+          "evidence": "11 unknown third-party scripts"
+        }
+      ],
+      "note": "Heuristic score for prioritization; not a definitive security assessment."
+    }
+  },
+  "resources": [
+    {
+      "url": "https://c.travel-assets.com/captcha-pwa/bernie.5b8a6ca403f89757c133.js",
+      "tag": "script",
+      "attribute": "src",
+      "raw_src": "https://c.travel-assets.com/captcha-pwa/bernie.5b8a6ca403f89757c133.js",
+      "registrable_domain": "travel-assets.com",
+      "party": "third-party",
+      "category": "unknown",
+      "provider": null,
+      "seen_on_pages": [
+        "https://expedia.com",
+        "https://www.expedia.com/"
+      ]
+    },
+    {
+      "url": "https://c.travel-assets.com/captcha-pwa/core.451dc4e8bb75e9cb164e.js",
+      "tag": "script",
+      "attribute": "src",
+      "raw_src": "https://c.travel-assets.com/captcha-pwa/core.451dc4e8bb75e9cb164e.js",
+      "registrable_domain": "travel-assets.com",
+      "party": "third-party",
+      "category": "unknown",
+      "provider": null,
+      "seen_on_pages": [
+        "https://expedia.com",
+        "https://www.expedia.com/"
+      ]
+    },
+    {
+      "url": "https://c.travel-assets.com/captcha-pwa/graphql.84edf06724c624474f70.js",
+      "tag": "script",
+      "attribute": "src",
+      "raw_src": "https://c.travel-assets.com/captcha-pwa/graphql.84edf06724c624474f70.js",
+      "registrable_domain": "travel-assets.com",
+      "party": "third-party",
+      "category": "unknown",
+      "provider": null,
+      "seen_on_pages": [
+        "https://expedia.com",
+        "https://www.expedia.com/"
+      ]
+    },
+    {
+      "url": "https://c.travel-assets.com/captcha-pwa/pap.2b42328a0e45c52a7784.js",
+      "tag": "script",
+      "attribute": "src",
+      "raw_src": "https://c.travel-assets.com/captcha-pwa/pap.2b42328a0e45c52a7784.js",
+      "registrable_domain": "travel-assets.com",
+      "party": "third-party",
+      "category": "unknown",
+      "provider": null,
+      "seen_on_pages": [
+        "https://expedia.com",
+        "https://www.expedia.com/"
+      ]
+    },
+    {
+      "url": "https://c.travel-assets.com/captcha-pwa/shared-ui.09bb218b8444d4f45130.js",
+      "tag": "script",
+      "attribute": "src",
+      "raw_src": "https://c.travel-assets.com/captcha-pwa/shared-ui.09bb218b8444d4f45130.js",
+      "registrable_domain": "travel-assets.com",
+      "party": "third-party",
+      "category": "unknown",
+      "provider": null,
+      "seen_on_pages": [
+        "https://expedia.com",
+        "https://www.expedia.com/"
+      ]
+    },
+    {
+      "url": "https://c.travel-assets.com/captcha-pwa/vendor.b91c56dce8aee649db78.js",
+      "tag": "script",
+      "attribute": "src",
+      "raw_src": "https://c.travel-assets.com/captcha-pwa/vendor.b91c56dce8aee649db78.js",
+      "registrable_domain": "travel-assets.com",
+      "party": "third-party",
+      "category": "unknown",
+      "provider": null,
+      "seen_on_pages": [
+        "https://expedia.com",
+        "https://www.expedia.com/"
+      ]
+    },
+    {
+      "url": "https://c.travel-assets.com/captcha-pwa/app.e7088bee82af1d5f84e1.js",
+      "tag": "script",
+      "attribute": "src",
+      "raw_src": "https://c.travel-assets.com/captcha-pwa/app.e7088bee82af1d5f84e1.js",
+      "registrable_domain": "travel-assets.com",
+      "party": "third-party",
+      "category": "unknown",
+      "provider": null,
+      "seen_on_pages": [
+        "https://expedia.com",
+        "https://www.expedia.com/"
+      ]
+    },
+    {
+      "url": "https://c.travel-assets.com/captcha-pwa/egds.9493eddf1ab0701d8450.js",
+      "tag": "script",
+      "attribute": "src",
+      "raw_src": "https://c.travel-assets.com/captcha-pwa/egds.9493eddf1ab0701d8450.js",
+      "registrable_domain": "travel-assets.com",
+      "party": "third-party",
+      "category": "unknown",
+      "provider": null,
+      "seen_on_pages": [
+        "https://expedia.com",
+        "https://www.expedia.com/"
+      ]
+    },
+    {
+      "url": "https://c.travel-assets.com/captcha-pwa/root-challenge.41ccfa238a77ffa88636.js",
+      "tag": "script",
+      "attribute": "src",
+      "raw_src": "https://c.travel-assets.com/captcha-pwa/root-challenge.41ccfa238a77ffa88636.js",
+      "registrable_domain": "travel-assets.com",
+      "party": "third-party",
+      "category": "unknown",
+      "provider": null,
+      "seen_on_pages": [
+        "https://expedia.com",
+        "https://www.expedia.com/"
+      ]
+    },
+    {
+      "url": "https://c.travel-assets.com/captcha-pwa/app-shared.a31caf91030da024a737.js",
+      "tag": "script",
+      "attribute": "src",
+      "raw_src": "https://c.travel-assets.com/captcha-pwa/app-shared.a31caf91030da024a737.js",
+      "registrable_domain": "travel-assets.com",
+      "party": "third-party",
+      "category": "unknown",
+      "provider": null,
+      "seen_on_pages": [
+        "https://expedia.com",
+        "https://www.expedia.com/"
+      ]
+    },
+    {
+      "url": "https://c.travel-assets.com/captcha-pwa/l10n-bundle-en_US-js.8abc106aa2406978baa7.js",
+      "tag": "script",
+      "attribute": "src",
+      "raw_src": "https://c.travel-assets.com/captcha-pwa/l10n-bundle-en_US-js.8abc106aa2406978baa7.js",
+      "registrable_domain": "travel-assets.com",
+      "party": "third-party",
+      "category": "unknown",
+      "provider": null,
+      "seen_on_pages": [
+        "https://expedia.com",
+        "https://www.expedia.com/"
+      ]
+    },
+    {
+      "url": "https://www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1",
+      "tag": "img",
+      "attribute": "src",
+      "raw_src": "https://www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1",
+      "registrable_domain": "expedia.com",
+      "party": "first-party",
+      "category": "first-party",
+      "provider": null,
+      "seen_on_pages": [
+        "https://expedia.com",
+        "https://www.expedia.com/"
+      ]
+    },
+    {
+      "url": "https://www.expedia.com/favicon.ico",
+      "tag": "link",
+      "attribute": "href",
+      "raw_src": "https://www.expedia.com/favicon.ico",
+      "registrable_domain": "expedia.com",
+      "party": "first-party",
+      "category": "first-party",
+      "provider": null,
+      "seen_on_pages": [
+        "https://expedia.com",
+        "https://www.expedia.com/"
+      ]
+    },
+    {
+      "url": "https://c.travel-assets.com/captcha-pwa/unbranded-app-styles.2290f972.css",
+      "tag": "link",
+      "attribute": "href",
+      "raw_src": "https://c.travel-assets.com/captcha-pwa/unbranded-app-styles.2290f972.css",
+      "registrable_domain": "travel-assets.com",
+      "party": "third-party",
+      "category": "unknown",
+      "provider": null,
+      "seen_on_pages": [
+        "https://expedia.com",
+        "https://www.expedia.com/"
+      ]
+    },
+    {
+      "url": "https://www.expedia.com/cgp/simple/challenge.initial.styles",
+      "tag": "link",
+      "attribute": "href",
+      "raw_src": "/cgp/simple/challenge.initial.styles",
+      "registrable_domain": "expedia.com",
+      "party": "first-party",
+      "category": "first-party",
+      "provider": null,
+      "seen_on_pages": [
+        "https://expedia.com",
+        "https://www.expedia.com/"
+      ]
+    },
+    {
+      "url": "https://www.expedia.com/cgp/simple/challenge.noscript.styles",
+      "tag": "link",
+      "attribute": "href",
+      "raw_src": "/cgp/simple/challenge.noscript.styles",
+      "registrable_domain": "expedia.com",
+      "party": "first-party",
+      "category": "first-party",
+      "provider": null,
+      "seen_on_pages": [
+        "https://expedia.com",
+        "https://www.expedia.com/"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://expedia.com",
+      "final_url": "https://www.expedia.com/",
+      "depth": 0,
+      "status": "ok",
+      "http_status": 429,
+      "security_headers": {
+        "content-security-policy": "frame-ancestors 'self'",
+        "x-frame-options": "SAMEORIGIN",
+        "x-content-type-options": "nosniff",
+        "strict-transport-security": "max-age=7776000; includeSubDomains;"
+      },
+      "resources": [
+        {
+          "url": "https://c.travel-assets.com/captcha-pwa/bernie.5b8a6ca403f89757c133.js",
+          "tag": "script",
+          "attribute": "src",
+          "raw_src": "https://c.travel-assets.com/captcha-pwa/bernie.5b8a6ca403f89757c133.js",
+          "registrable_domain": "travel-assets.com",
+          "party": "third-party",
+          "category": "unknown",
+          "provider": null
+        },
+        {
+          "url": "https://c.travel-assets.com/captcha-pwa/core.451dc4e8bb75e9cb164e.js",
+          "tag": "script",
+          "attribute": "src",
+          "raw_src": "https://c.travel-assets.com/captcha-pwa/core.451dc4e8bb75e9cb164e.js",
+          "registrable_domain": "travel-assets.com",
+          "party": "third-party",
+          "category": "unknown",
+          "provider": null
+        },
+        {
+          "url": "https://c.travel-assets.com/captcha-pwa/graphql.84edf06724c624474f70.js",
+          "tag": "script",
+          "attribute": "src",
+          "raw_src": "https://c.travel-assets.com/captcha-pwa/graphql.84edf06724c624474f70.js",
+          "registrable_domain": "travel-assets.com",
+          "party": "third-party",
+          "category": "unknown",
+          "provider": null
+        },
+        {
+          "url": "https://c.travel-assets.com/captcha-pwa/pap.2b42328a0e45c52a7784.js",
+          "tag": "script",
+          "attribute": "src",
+          "raw_src": "https://c.travel-assets.com/captcha-pwa/pap.2b42328a0e45c52a7784.js",
+          "registrable_domain": "travel-assets.com",
+          "party": "third-party",
+          "category": "unknown",
+          "provider": null
+        },
+        {
+          "url": "https://c.travel-assets.com/captcha-pwa/shared-ui.09bb218b8444d4f45130.js",
+          "tag": "script",
+          "attribute": "src",
+          "raw_src": "https://c.travel-assets.com/captcha-pwa/shared-ui.09bb218b8444d4f45130.js",
+          "registrable_domain": "travel-assets.com",
+          "party": "third-party",
+          "category": "unknown",
+          "provider": null
+        },
+        {
+          "url": "https://c.travel-assets.com/captcha-pwa/vendor.b91c56dce8aee649db78.js",
+          "tag": "script",
+          "attribute": "src",
+          "raw_src": "https://c.travel-assets.com/captcha-pwa/vendor.b91c56dce8aee649db78.js",
+          "registrable_domain": "travel-assets.com",
+          "party": "third-party",
+          "category": "unknown",
+          "provider": null
+        },
+        {
+          "url": "https://c.travel-assets.com/captcha-pwa/app.e7088bee82af1d5f84e1.js",
+          "tag": "script",
+          "attribute": "src",
+          "raw_src": "https://c.travel-assets.com/captcha-pwa/app.e7088bee82af1d5f84e1.js",
+          "registrable_domain": "travel-assets.com",
+          "party": "third-party",
+          "category": "unknown",
+          "provider": null
+        },
+        {
+          "url": "https://c.travel-assets.com/captcha-pwa/egds.9493eddf1ab0701d8450.js",
+          "tag": "script",
+          "attribute": "src",
+          "raw_src": "https://c.travel-assets.com/captcha-pwa/egds.9493eddf1ab0701d8450.js",
+          "registrable_domain": "travel-assets.com",
+          "party": "third-party",
+          "category": "unknown",
+          "provider": null
+        },
+        {
+          "url": "https://c.travel-assets.com/captcha-pwa/root-challenge.41ccfa238a77ffa88636.js",
+          "tag": "script",
+          "attribute": "src",
+          "raw_src": "https://c.travel-assets.com/captcha-pwa/root-challenge.41ccfa238a77ffa88636.js",
+          "registrable_domain": "travel-assets.com",
+          "party": "third-party",
+          "category": "unknown",
+          "provider": null
+        },
+        {
+          "url": "https://c.travel-assets.com/captcha-pwa/app-shared.a31caf91030da024a737.js",
+          "tag": "script",
+          "attribute": "src",
+          "raw_src": "https://c.travel-assets.com/captcha-pwa/app-shared.a31caf91030da024a737.js",
+          "registrable_domain": "travel-assets.com",
+          "party": "third-party",
+          "category": "unknown",
+          "provider": null
+        },
+        {
+          "url": "https://c.travel-assets.com/captcha-pwa/l10n-bundle-en_US-js.8abc106aa2406978baa7.js",
+          "tag": "script",
+          "attribute": "src",
+          "raw_src": "https://c.travel-assets.com/captcha-pwa/l10n-bundle-en_US-js.8abc106aa2406978baa7.js",
+          "registrable_domain": "travel-assets.com",
+          "party": "third-party",
+          "category": "unknown",
+          "provider": null
+        },
+        {
+          "url": "https://www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1",
+          "tag": "img",
+          "attribute": "src",
+          "raw_src": "https://www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1",
+          "registrable_domain": "expedia.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null
+        },
+        {
+          "url": "https://www.expedia.com/favicon.ico",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "https://www.expedia.com/favicon.ico",
+          "registrable_domain": "expedia.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null
+        },
+        {
+          "url": "https://c.travel-assets.com/captcha-pwa/unbranded-app-styles.2290f972.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "https://c.travel-assets.com/captcha-pwa/unbranded-app-styles.2290f972.css",
+          "registrable_domain": "travel-assets.com",
+          "party": "third-party",
+          "category": "unknown",
+          "provider": null
+        },
+        {
+          "url": "https://www.expedia.com/cgp/simple/challenge.initial.styles",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "/cgp/simple/challenge.initial.styles",
+          "registrable_domain": "expedia.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null
+        },
+        {
+          "url": "https://www.expedia.com/cgp/simple/challenge.noscript.styles",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "/cgp/simple/challenge.noscript.styles",
+          "registrable_domain": "expedia.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null
+        }
+      ],
+      "internal_links_found": [
+        "https://www.expedia.com/"
+      ]
+    },
+    {
+      "url": "https://www.expedia.com/",
+      "final_url": "https://www.expedia.com/",
+      "depth": 1,
+      "status": "ok",
+      "http_status": 429,
+      "security_headers": {
+        "content-security-policy": "frame-ancestors 'self'",
+        "x-frame-options": "SAMEORIGIN",
+        "x-content-type-options": "nosniff",
+        "strict-transport-security": "max-age=7776000; includeSubDomains;"
+      },
+      "resources": [
+        {
+          "url": "https://c.travel-assets.com/captcha-pwa/bernie.5b8a6ca403f89757c133.js",
+          "tag": "script",
+          "attribute": "src",
+          "raw_src": "https://c.travel-assets.com/captcha-pwa/bernie.5b8a6ca403f89757c133.js",
+          "registrable_domain": "travel-assets.com",
+          "party": "third-party",
+          "category": "unknown",
+          "provider": null
+        },
+        {
+          "url": "https://c.travel-assets.com/captcha-pwa/core.451dc4e8bb75e9cb164e.js",
+          "tag": "script",
+          "attribute": "src",
+          "raw_src": "https://c.travel-assets.com/captcha-pwa/core.451dc4e8bb75e9cb164e.js",
+          "registrable_domain": "travel-assets.com",
+          "party": "third-party",
+          "category": "unknown",
+          "provider": null
+        },
+        {
+          "url": "https://c.travel-assets.com/captcha-pwa/graphql.84edf06724c624474f70.js",
+          "tag": "script",
+          "attribute": "src",
+          "raw_src": "https://c.travel-assets.com/captcha-pwa/graphql.84edf06724c624474f70.js",
+          "registrable_domain": "travel-assets.com",
+          "party": "third-party",
+          "category": "unknown",
+          "provider": null
+        },
+        {
+          "url": "https://c.travel-assets.com/captcha-pwa/pap.2b42328a0e45c52a7784.js",
+          "tag": "script",
+          "attribute": "src",
+          "raw_src": "https://c.travel-assets.com/captcha-pwa/pap.2b42328a0e45c52a7784.js",
+          "registrable_domain": "travel-assets.com",
+          "party": "third-party",
+          "category": "unknown",
+          "provider": null
+        },
+        {
+          "url": "https://c.travel-assets.com/captcha-pwa/shared-ui.09bb218b8444d4f45130.js",
+          "tag": "script",
+          "attribute": "src",
+          "raw_src": "https://c.travel-assets.com/captcha-pwa/shared-ui.09bb218b8444d4f45130.js",
+          "registrable_domain": "travel-assets.com",
+          "party": "third-party",
+          "category": "unknown",
+          "provider": null
+        },
+        {
+          "url": "https://c.travel-assets.com/captcha-pwa/vendor.b91c56dce8aee649db78.js",
+          "tag": "script",
+          "attribute": "src",
+          "raw_src": "https://c.travel-assets.com/captcha-pwa/vendor.b91c56dce8aee649db78.js",
+          "registrable_domain": "travel-assets.com",
+          "party": "third-party",
+          "category": "unknown",
+          "provider": null
+        },
+        {
+          "url": "https://c.travel-assets.com/captcha-pwa/app.e7088bee82af1d5f84e1.js",
+          "tag": "script",
+          "attribute": "src",
+          "raw_src": "https://c.travel-assets.com/captcha-pwa/app.e7088bee82af1d5f84e1.js",
+          "registrable_domain": "travel-assets.com",
+          "party": "third-party",
+          "category": "unknown",
+          "provider": null
+        },
+        {
+          "url": "https://c.travel-assets.com/captcha-pwa/egds.9493eddf1ab0701d8450.js",
+          "tag": "script",
+          "attribute": "src",
+          "raw_src": "https://c.travel-assets.com/captcha-pwa/egds.9493eddf1ab0701d8450.js",
+          "registrable_domain": "travel-assets.com",
+          "party": "third-party",
+          "category": "unknown",
+          "provider": null
+        },
+        {
+          "url": "https://c.travel-assets.com/captcha-pwa/root-challenge.41ccfa238a77ffa88636.js",
+          "tag": "script",
+          "attribute": "src",
+          "raw_src": "https://c.travel-assets.com/captcha-pwa/root-challenge.41ccfa238a77ffa88636.js",
+          "registrable_domain": "travel-assets.com",
+          "party": "third-party",
+          "category": "unknown",
+          "provider": null
+        },
+        {
+          "url": "https://c.travel-assets.com/captcha-pwa/app-shared.a31caf91030da024a737.js",
+          "tag": "script",
+          "attribute": "src",
+          "raw_src": "https://c.travel-assets.com/captcha-pwa/app-shared.a31caf91030da024a737.js",
+          "registrable_domain": "travel-assets.com",
+          "party": "third-party",
+          "category": "unknown",
+          "provider": null
+        },
+        {
+          "url": "https://c.travel-assets.com/captcha-pwa/l10n-bundle-en_US-js.8abc106aa2406978baa7.js",
+          "tag": "script",
+          "attribute": "src",
+          "raw_src": "https://c.travel-assets.com/captcha-pwa/l10n-bundle-en_US-js.8abc106aa2406978baa7.js",
+          "registrable_domain": "travel-assets.com",
+          "party": "third-party",
+          "category": "unknown",
+          "provider": null
+        },
+        {
+          "url": "https://www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1",
+          "tag": "img",
+          "attribute": "src",
+          "raw_src": "https://www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1",
+          "registrable_domain": "expedia.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null
+        },
+        {
+          "url": "https://www.expedia.com/favicon.ico",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "https://www.expedia.com/favicon.ico",
+          "registrable_domain": "expedia.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null
+        },
+        {
+          "url": "https://c.travel-assets.com/captcha-pwa/unbranded-app-styles.2290f972.css",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "https://c.travel-assets.com/captcha-pwa/unbranded-app-styles.2290f972.css",
+          "registrable_domain": "travel-assets.com",
+          "party": "third-party",
+          "category": "unknown",
+          "provider": null
+        },
+        {
+          "url": "https://www.expedia.com/cgp/simple/challenge.initial.styles",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "/cgp/simple/challenge.initial.styles",
+          "registrable_domain": "expedia.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null
+        },
+        {
+          "url": "https://www.expedia.com/cgp/simple/challenge.noscript.styles",
+          "tag": "link",
+          "attribute": "href",
+          "raw_src": "/cgp/simple/challenge.noscript.styles",
+          "registrable_domain": "expedia.com",
+          "party": "first-party",
+          "category": "first-party",
+          "provider": null
+        }
+      ],
+      "internal_links_found": [
+        "https://www.expedia.com/"
+      ]
+    }
+  ]
+}

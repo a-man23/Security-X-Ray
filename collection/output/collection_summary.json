@@ -1,0 +1,70 @@
+{
+  "sites_analyzed": 42,
+  "reports": [
+    "output\\arstechnica.com.json",
+    "output\\bankofamerica.com.json",
+    "output\\bbc.com.json",
+    "output\\bestbuy.com.json",
+    "output\\bloomberg.com.json",
+    "output\\booking.com.json",
+    "output\\capitalone.com.json",
+    "output\\chase.com.json",
+    "output\\cnbc.com.json",
+    "output\\cnn.com.json",
+    "output\\costco.com.json",
+    "output\\coursera.org.json",
+    "output\\dailymail.co.uk.json",
+    "output\\ebay.com.json",
+    "output\\edx.org.json",
+    "output\\engadget.com.json",
+    "output\\espn.com.json",
+    "output\\etsy.com.json",
+    "output\\expedia.com.json",
+    "output\\facebook.com.json",
+    "output\\forbes.com.json",
+    "output\\foxnews.com.json",
+    "output\\github.com.json",
+    "output\\homedepot.com.json",
+    "output\\kayak.com.json",
+    "output\\lowes.com.json",
+    "output\\nypost.com.json",
+    "output\\nytimes.com.json",
+    "output\\paypal.com.json",
+    "output\\reuters.com.json",
+    "output\\shopify.com.json",
+    "output\\stackoverflow.com.json",
+    "output\\target.com.json",
+    "output\\techcrunch.com.json",
+    "output\\theguardian.com.json",
+    "output\\theverge.com.json",
+    "output\\tripadvisor.com.json",
+    "output\\usatoday.com.json",
+    "output\\walmart.com.json",
+    "output\\washingtonpost.com.json",
+    "output\\wired.com.json",
+    "output\\wsj.com.json",
+    "output\\www.bbc.com.json",
+    "output\\www.cnn.com.json",
+    "output\\www.dailymail.co.uk.json",
+    "output\\www.nytimes.com.json"
+  ],
+  "site_risk_distribution": {
+    "mean": 19.72,
+    "median": 11.5,
+    "max": 56.0,
+    "variance": 451.25
+  },
+  "domain_risk_distribution": {
+    "mean": 11.29,
+    "median": 6.0,
+    "max": 64.0,
+    "variance": 150.33
+  },
+  "candidate_queue": {
+    "domains_total": 138,
+    "status_counts": {
+      "needs_review": 134,
+      "promoted": 4
+    }
+  }
+}
