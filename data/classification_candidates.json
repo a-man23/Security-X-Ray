@@ -1,6 +1,6 @@
 {
   "format_version": 1,
-  "last_updated": "2026-04-28T21:24:50.054373+00:00",
+  "last_updated": "2026-05-02T21:47:37.050556+00:00",
   "notes": "Review and promote high-confidence entries into data/domain_classifications.json",
   "domains": {
     "dailymail.com": {
@@ -151,7 +151,7 @@
     "google.com": {
       "proposed_category": null,
       "proposed_provider": null,
-      "seen_count": 47,
+      "seen_count": 49,
       "sites": [
         "nypost.com",
         "cnn.com",
@@ -200,6 +200,30 @@
         "https://cdn1.espn.net/fitt/fbd57dc4ddaa-release-04-28-2026.2.0.4554/client/espnfitt/9544-d9bb93f7.js",
         "https://cdn1.espn.net/fitt/fbd57dc4ddaa-release-04-28-2026.2.0.4554/client/espnfitt/1609-dac15037.js",
         "https://cdn1.espn.net/fitt/fbd57dc4ddaa-release-04-28-2026.2.0.4554/client/espnfitt/1765-53c8f25a.js"
+      ],
+      "status": "needs_review"
+    },
+    "gobankingrates.com": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 15,
+      "sites": [
+        "cnn.com"
+      ],
+      "example_urls": [
+        "https://products.gobankingrates.com/pub/515fec14-ee9f-11ed-8078-0a919b37cd73"
+      ],
+      "status": "needs_review"
+    },
+    "zqtk.net": {
+      "proposed_category": null,
+      "proposed_provider": null,
+      "seen_count": 15,
+      "sites": [
+        "cnn.com"
+      ],
+      "example_urls": [
+        "https://segment-data-us-east.zqtk.net"
       ],
       "status": "needs_review"
     },
@@ -287,30 +311,6 @@
       "example_urls": [
         "https://public.servenobid.com/partner/163965/163966/wrapup_1.0.0.js?ver=692234b82bbd521da4fa",
         "https://public.servenobid.com"
-      ],
-      "status": "needs_review"
-    },
-    "gobankingrates.com": {
-      "proposed_category": null,
-      "proposed_provider": null,
-      "seen_count": 13,
-      "sites": [
-        "cnn.com"
-      ],
-      "example_urls": [
-        "https://products.gobankingrates.com/pub/515fec14-ee9f-11ed-8078-0a919b37cd73"
-      ],
-      "status": "needs_review"
-    },
-    "zqtk.net": {
-      "proposed_category": null,
-      "proposed_provider": null,
-      "seen_count": 13,
-      "sites": [
-        "cnn.com"
-      ],
-      "example_urls": [
-        "https://segment-data-us-east.zqtk.net"
       ],
       "status": "needs_review"
     },
